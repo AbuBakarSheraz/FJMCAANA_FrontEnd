@@ -10,7 +10,7 @@ export default function Leadership() {
           <img
             src="/images/president.png"
             alt="Dr. Umbreen Chaudhary"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover scale-110 sm:scale-100"
           />
         </div>
 
