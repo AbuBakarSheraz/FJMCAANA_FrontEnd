@@ -33,11 +33,10 @@ export default function HomePage() {
       <SealDivider />
       <Leadership />
       <SealDivider />
+      <TeamSlider />
       <CausesSection />
       <SealDivider />
       <GetInvolved />
-      <SealDivider />
-      <TeamSlider />
       <SealDivider />
       <NewsSection />
       <Footer />
