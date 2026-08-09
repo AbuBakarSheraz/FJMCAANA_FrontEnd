@@ -1,42 +1,86 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ========================================
+   Theme
+   ======================================== */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* Colors */
+  --color-pine: #0e3b2e;
+  --color-pine-dark: #092b21;
+  --color-pine-light: #1c5943;
 
-  --color-burgundy: #6E1B2E;
-  --color-burgundy-dark: #4E1120;
-  --color-burgundy-light: #8C2C41;
+  --color-gold: #c99a44;
+  --color-gold-light: #e4c387;
 
-  --color-gold: #C9A24B;
-  --color-gold-light: #E1C588;
+  --color-cream: #faf6ef;
+  --color-card: #f0eadb;
+  --color-sage: #e6ede7;
 
-  --color-cream: #FAF6F0;
-  --color-card: #F3E9E4;
-  --color-blush: #E7C9C4;
+  --color-ink: #202a24;
+  --color-ink-soft: #4c574f;
 
-  --color-ink: #2B1116;
-  --color-ink-soft: #5C4A4C;
-
-  --font-display: var(--font-fraunces);
-  --font-body: var(--font-public-sans);
-  --font-mono: var(--font-space-grotesk);
+  /* Fonts */
+  --font-display: var(--font-fraunces), serif;
+  --font-body: var(--font-public-sans), sans-serif;
+  --font-mono: var(--font-space-grotesk), monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ========================================
+   Base
+   ======================================== */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #faf6ef;
+  color: #202a24;
+  font-family: var(--font-public-sans), sans-serif;
 }
+
+/* ========================================
+   Signature Divider
+   ======================================== */
+
+.seal-divider {
+  position: relative;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seal-divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: rgba(14, 59, 46, 0.14);
+}
+
+.seal-divider::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #faf6ef;
+  border: 2px solid #c99a44;
+  position: relative;
+  z-index: 1;
+  box-shadow:
+    0 0 0 5px #faf6ef,
+    0 0 0 6px rgba(14, 59, 46, 0.14);
+}
+
+/* ========================================
+   Progress / Bar
+   ======================================== */
+
+.bar-fill {
+  transition: width 1.2s ease;
+}
+

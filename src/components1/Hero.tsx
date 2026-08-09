@@ -1,21 +1,21 @@
 export default function Hero() {
   return (
-    <header className="relative overflow-hidden min-h-[600px] text-cream bg-pine-dark">
-      {/* Background video — hidden for users who prefer reduced motion */}
+    <header className="relative overflow-hidden min-h-[600px] text-cream">
+      {/* Background video */}
       <video
-        className="absolute inset-0 w-full h-full object-cover motion-reduce:hidden"
+        className="absolute inset-0 w-full h-full object-cover"
         autoPlay
         muted
         loop
         playsInline
-        preload="auto"
-        poster="/videos/hero-poster.jpg"
-        aria-hidden="true"
       >
         <source src="/videos/hero.mp4" type="video/mp4" />
       </video>
 
-      {/* Single gradient overlay for text readability */}
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-pine-dark/1" />
+
+      {/* Optional burgundy gradient for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-pine-dark/80 via-pine/60 to-pine-dark/90" />
 
       {/* Decorative circle */}
@@ -41,12 +41,11 @@ export default function Hero() {
           <a
             href="#involved"
             className="bg-gold text-pine-dark font-semibold text-sm px-6 py-3 rounded-lg hover:bg-gold-light transition"
-       >
+          >
             Become a Member
           </a>
-          <a
 
-          
+          <a
             href="#donate"
             className="border border-white/40 text-white font-semibold text-sm px-6 py-3 rounded-lg hover:bg-white/10 transition"
           >
