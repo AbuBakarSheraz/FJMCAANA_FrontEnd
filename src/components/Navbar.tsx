@@ -4,12 +4,11 @@ import { useState } from "react";
 import Link from "next/link";
 
 const NAV_LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#involved", label: "Get Involved" },
-  { href: "#impact", label: "Our Impact" },
-  { href: "/team", label: "Team" },
-  { href: "#news", label: "News" },
-  { href: "#contact", label: "Contact" },
+  { href: "/about", label: "About" },
+  { href: "/get-involved", label: "Get Involved" },
+  { href: "/impact", label: "Our Impact" },
+  { href: "/news", label: "News" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -24,19 +23,19 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-ink-soft">
           {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href} className="hover:text-pine-dark transition">
+            <Link key={link.href} href={link.href} className="hover:text-pine-dark transition">
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 
         <div className="flex items-center gap-3">
-          <a
-            href="#donate"
+          <Link
+            href="/donate"
             className="hidden sm:inline-block bg-gold text-pine-dark text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gold-light transition"
           >
             Donate
-          </a>
+          </Link>
           <button
             onClick={() => setOpen((v) => !v)}
             className="md:hidden text-pine-dark"
@@ -53,17 +52,17 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden border-t border-pine/10 bg-cream px-6 py-4 flex flex-col gap-4 text-sm font-medium text-ink-soft">
           {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
+            <Link key={link.href} href={link.href} onClick={() => setOpen(false)}>
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#donate"
+          <Link
+            href="/donate"
             onClick={() => setOpen(false)}
             className="bg-gold text-pine-dark font-semibold px-4 py-2 rounded-lg text-center"
           >
             Donate
-          </a>
+          </Link>
         </div>
       )}
     </nav>

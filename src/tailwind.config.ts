@@ -1,29 +1,16 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./app/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-  ],
+  content: ["./src/app/**/*.{ts,tsx}", "./src/components/**/*.{ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        burgundy: {
-          DEFAULT: "#6E1B2E",
-          dark: "#4E1120",
-          light: "#8C2C41",
-        },
-        gold: {
-          DEFAULT: "#C9A24B",
-          light: "#E1C588",
-        },
-        cream: "#FAF6F0",
-        card: "#F3E9E4",
-        blush: "#E7C9C4",
-        ink: {
-          DEFAULT: "#2B1116",
-          soft: "#5C4A4C",
-        },
+        pine: { DEFAULT: "#0E3B2E", dark: "#092B21", light: "#1C5943" },
+        gold: { DEFAULT: "#C99A44", light: "#E4C387" },
+        cream: "#FAF6EF",
+        sage: "#E6EDE7",
+        card: "#F0EADB",
+        ink: { DEFAULT: "#202A24", soft: "#4C574F" },
       },
       fontFamily: {
         display: ["var(--font-fraunces)", "serif"],

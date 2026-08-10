@@ -1,41 +1,29 @@
+import Link from "next/link";
 import { Cause } from "@/lib/types";
-
-const FALLBACK_CAUSES: Cause[] = [
-  { slug: "cornea-transplant", title: "Cornea Transplant Project", amountRaised: "$10,350", percentFunded: 70 },
-  { slug: "flood-relief", title: "Pakistan Flood Relief", amountRaised: "$46,810", percentFunded: 45 },
-  { slug: "meethi-zindagi", title: "Meethi Zindagi — Diabetic Care", amountRaised: "Newly launched", percentFunded: 15 },
-];
+import { FEATURED_CAUSES } from "@/lib/siteContent";
 
 function CauseCard({ cause }: { cause: Cause }) {
   return (
-    <div className="bg-white rounded-xl p-5 border border-pine/10" data-cause-id={cause.slug}>
-      <div className="font-semibold text-sm">{cause.title}</div>
-      <div className="h-1.5 rounded bg-sage overflow-hidden mt-3 mb-2">
+    <div className="rounded-xl border border-pine/10 bg-white p-5" data-cause-id={cause.slug}>
+      <h3 className="font-display text-lg font-semibold text-pine-dark">{cause.title}</h3>
+      {cause.description && <p className="mt-2 text-sm leading-relaxed text-ink-soft">{cause.description}</p>}
+      <div className="mb-2 mt-4 h-1.5 overflow-hidden rounded bg-sage">
         <div className="bar-fill h-full bg-pine" style={{ width: `${cause.percentFunded}%` }} />
       </div>
       <div className="text-xs text-ink-soft">{cause.amountRaised} raised</div>
-      <a
-        href={`/donate/${cause.slug}`}
-        className="inline-block mt-3 text-xs font-semibold text-pine border border-pine px-3 py-1.5 rounded-md hover:bg-pine hover:text-white transition"
-      >
-        Donate
-      </a>
+      <Link href="/donate" className="mt-4 inline-block rounded-md border border-pine px-3 py-1.5 text-xs font-semibold text-pine transition hover:bg-pine hover:text-white">Donate</Link>
     </div>
   );
 }
 
-export default function CausesSection({ causes = FALLBACK_CAUSES }: { causes?: Cause[] }) {
+export default function CausesSection({ causes = FEATURED_CAUSES, expanded = false }: { causes?: Cause[]; expanded?: boolean }) {
   return (
     <section id="impact" className="bg-card/60">
       <div className="max-w-6xl mx-auto px-6 py-20">
         <span className="font-mono text-xs tracking-widest uppercase text-gold">Featured Causes</span>
-        <h2 className="font-display font-semibold text-3xl text-pine-dark mt-2 mb-10">
-          Where your gift goes right now
-        </h2>
-        <div className="grid sm:grid-cols-3 gap-5">
-          {causes.map((cause) => (
-            <CauseCard key={cause.slug} cause={cause} />
-          ))}
+        <h2 className="mt-2 font-display text-3xl font-semibold text-pine-dark">Where your gift goes right now</h2>
+        <div className={`mt-10 grid gap-5 ${expanded ? "sm:grid-cols-2 lg:grid-cols-3" : "sm:grid-cols-3"}`}>
+          {causes.map((cause) => <CauseCard key={cause.slug} cause={cause} />)}
         </div>
       </div>
     </section>
