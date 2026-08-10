@@ -1,0 +1,321 @@
+FJMCAANA live-site inventories
+================================
+
+about-us-2.html
+  title: Home - fjmcaana.org
+  h1: Home
+  introParagraphs: Call Us : team@fjmcaana.org | Fatima Jinnah Medical College Alumni Association of North America | Welcome to the website of Fatima Jinnah Medical College Alumni Association of North America (FJMCAA). This is a website for the students and graduates of Fatima Jinnah Medical Coll | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC
+  articleFingerprint: Home - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Members Alumni Pre
+
+about_.html
+  title: President's Message - fjmcaana.org
+  h1: President's Message
+  introParagraphs: Call Us : team@fjmcaana.org | Dr. Umbreen Chaudhary | Ladies of Fjmcaana, It is an honor to serve as the president of this remarkable organization, which is dedicated to celebrating women in medicine and supporting the next generation | Our association was founded with a vision to connect, inspire, and empower women who have dedicated their lives to medicine. Through our collective experiences, we continue to shap
+  articleFingerprint: President's Message - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Mem
+
+alumni-presidents_.html
+  title: Alumni Presidents - fjmcaana.org
+  h1: Alumni Presidents
+  introParagraphs: Call Us : team@fjmcaana.org | Email: t&#101;am&#064;&#102;jmc&#097;&#097;&#110;&#097;.&#111;rg | Copyright © 2019. Designed by WPlook Studio
+  articleFingerprint: Alumni Presidents - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Membe
+
+annual-president-report-2022_.html
+  title: Annual President Report 2022 - fjmcaana.org
+  h1: News
+  introParagraphs: Call Us : team@fjmcaana.org | Sorry, no events matched your criteria. | December 31, 2022 | December 31, 2022
+  articleFingerprint: Annual President Report 2022 - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life
+
+annual-projects-activities-video-highlights-2022_.html
+  title: Annual Projects/Activities Video Highlights 2022 - fjmcaana.org
+  h1: News
+  introParagraphs: Call Us : team@fjmcaana.org | Sorry, no events matched your criteria. | December 31, 2022 | December 31, 2022
+  articleFingerprint: Annual Projects/Activities Video Highlights 2022 - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive
+
+causes_.html
+  title: Causes - fjmcaana.org
+  h1: Causes
+  introParagraphs: Call Us : team@fjmcaana.org | Email: te&#097;m&#064;f&#106;m&#099;&#097;&#097;na&#046;&#111;&#114;g | Copyright © 2019. Designed by WPlook Studio
+  articleFingerprint: Causes - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Members Alumni P
+
+cause_cornea-transplant-fundraiser_.html
+  title: Cornea Transplant Project - fjmcaana.org
+  h1: Cornea Transplant Project
+  introParagraphs: Call Us : team@fjmcaana.org |   | For check payments email: team@fjmcaana.org | https://fjmcaana.org/donations/
+  articleFingerprint: Cornea Transplant Project - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Ti
+
+cause_cornea-transplant-project-2026_.html
+  title: Cornea Transplant Project-2026 - fjmcaana.org
+  h1: Cornea Transplant Project-2026
+  introParagraphs: Call Us : team@fjmcaana.org |   | For check payments email: team@fjmcaana.org | https://fjmcaana.org/donations/
+  articleFingerprint: Cornea Transplant Project-2026 - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Li
+
+cause_donate-for-ration-support-for-kashani-basti-punjab_.html
+  title: Donate for Ration Support for Kashani Basti, Punjab - fjmcaana.org
+  h1: Donate for Ration Support for Kashani Basti, Punjab
+  introParagraphs: Call Us : team@fjmcaana.org |   | For check payments email: team@fjmcaana.org | https://fjmcaana.org/donations/
+  articleFingerprint: Donate for Ration Support for Kashani Basti, Punjab - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Execut
+
+cause_fj-scholarship-fund_.html
+  title: FJ Scholarship Fund - fjmcaana.org
+  h1: FJ Scholarship Fund
+  introParagraphs: Call Us : team@fjmcaana.org |   | For check payments email: team@fjmcaana.org | https://fjmcaana.org/donations/
+  articleFingerprint: FJ Scholarship Fund - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Mem
+
+cause_fjmcaana-mindful-wellness-project_.html
+  title: FJMCAANA Mindful Wellness Project - fjmcaana.org
+  h1: FJMCAANA Mindful Wellness Project
+  introParagraphs: Call Us : team@fjmcaana.org |   | For check payments email: team@fjmcaana.org | https://fjmcaana.org/donations/
+  articleFingerprint: FJMCAANA Mindful Wellness Project - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024
+
+cause_fjmcaana-qurbani-2026_.html
+  title: FJMCAANA Qurbani 2026 - fjmcaana.org
+  h1: FJMCAANA Qurbani 2026
+  introParagraphs: Call Us : team@fjmcaana.org |   | For check payments email: team@fjmcaana.org | https://fjmcaana.org/donations/
+  articleFingerprint: FJMCAANA Qurbani 2026 - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time M
+
+cause_fundraising-for-developmental-pediatrics-and-autism-center_.html
+  title: Fundraising for Developmental Pediatrics and Autism Center - fjmcaana.org
+  h1: Fundraising for Developmental Pediatrics and Autism Center
+  introParagraphs: Call Us : team@fjmcaana.org |   | For check payments email: team@fjmcaana.org | https://fjmcaana.org/donations/
+  articleFingerprint: Fundraising for Developmental Pediatrics and Autism Center - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message
+
+cause_help-flood-affected-families-2025_.html
+  title: Help Flood-Affected Families 2025 - fjmcaana.org
+  h1: Help Flood-Affected Families 2025
+  introParagraphs: Call Us : team@fjmcaana.org |   | For check payments email: team@fjmcaana.org | https://fjmcaana.org/donations/
+  articleFingerprint: Help Flood-Affected Families 2025 - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024
+
+cause_meethi-zindagi-provide-insulin-diabetic-care-to-children-in-need_.html
+  title: Meethi Zindagi- Provide Insulin & Diabetic Care to Children in Need - fjmcaana.org
+  h1: Meethi Zindagi- Provide Insulin & Diabetic Care to Children in Need
+  introParagraphs: Call Us : team@fjmcaana.org |   | For check payments email: team@fjmcaana.org | https://fjmcaana.org/donations/
+  articleFingerprint: Meethi Zindagi- Provide Insulin & Diabetic Care to Children in Need - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’
+
+constitution-bylaws_.html
+  title: Constitution & ByLaws - fjmcaana.org
+  h1: Constitution & ByLaws
+  introParagraphs: Call Us : team@fjmcaana.org | In the name of God, the beneficent, the merciful. Preamble We the graduates of Fatima Jinnah Medical College, out of our conviction for our profession, motherland, and alma mater d | THE CONSTITUTION | Article I: NAME The name of this organization shall be Fatima Jinnah Medical College Alumni Association of North America (FJMC Alumni Association). Hereafter it will be referred to
+  articleFingerprint: Constitution & ByLaws - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time M
+
+contact_.html
+  title: Contact - fjmcaana.org
+  h1: Contact
+  introParagraphs: Call Us : team@fjmcaana.org | Don't hesitate to reach out with the contact information below, or send a message using the form. | Email (required) Phone Number Message (required) Submit | &#916;
+  articleFingerprint: Contact - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Members Alumni 
+
+donations_.html
+  title: Donations - fjmcaana.org
+  h1: Donations
+  introParagraphs: Call Us : team@fjmcaana.org | FJMCAA committee members appreciate and applaud your generous contributions. | Your donations are an integral part of our alumni association. 100% of your money is used to support various projects in Pakistan relative to your Alma Mater. | The most consistent project we all have been able to sustain is the SCHOLARSHIP FUND distributed to deserving students at FJMC, Lahore. We have been supporting 15 scholarships per 
+  articleFingerprint: Donations - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Members Alumn
+
+executive-committee-2024_.html
+  title: Executive Committee 2024 - fjmcaana.org
+  h1: Executive Committee 2024
+  introParagraphs: Call Us : team@fjmcaana.org | Dr. Azra Khan | President FJMCAANA 2024 | Read More
+  articleFingerprint: Executive Committee 2024 - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Tim
+
+fjmcaana-annual-report-2022_.html
+  title: FJMCAANA Annual Report 2022 - fjmcaana.org
+  h1: News
+  introParagraphs: Call Us : team@fjmcaana.org | Sorry, no events matched your criteria. | December 31, 2022 | December 31, 2022
+  articleFingerprint: FJMCAANA Annual Report 2022 - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life 
+
+fjmcaana-health-channel_.html
+  title: FJMCAANA Health Channel - fjmcaana.org
+  h1: FJMCAANA Health Channel
+  introParagraphs: Call Us : team@fjmcaana.org | This is an initiative taken by FJMCAANA to provide free online Medical education and awareness on various topics to the general public in Pakistan, in collaboration with Dr Samina  | Our sessions will be on various topics every | Sunday LIVE @ 8:00pm PST on 
+  articleFingerprint: FJMCAANA Health Channel - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time
+
+gallery_annual-scientific-conference-2019_.html
+  title: Annual Scientific Conference 2019 - fjmcaana.org
+  h1: Annual Scientific Conference 2019
+  introParagraphs: Call Us : team@fjmcaana.org | Annual Scientific Conference FJMU 2019 | Email: te&#097;&#109;&#064;&#102;jm&#099;&#097;&#097;na&#046;&#111;r&#103; | Copyright © 2019. Designed by WPlook Studio
+  articleFingerprint: Annual Scientific Conference 2019 - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024
+
+gallery_fjmcaa-at-2016-summer-convention-in-washington-dc_.html
+  title: FJMCAA at 2016 Summer Convention in Washington, DC - fjmcaana.org
+  h1: FJMCAA at 2016 Summer Convention in Washington, DC
+  introParagraphs: Call Us : team@fjmcaana.org | Email: t&#101;&#097;&#109;&#064;fj&#109;&#099;a&#097;n&#097;&#046;o&#114;&#103; | Copyright © 2019. Designed by WPlook Studio
+  articleFingerprint: FJMCAA at 2016 Summer Convention in Washington, DC - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executi
+
+gallery_fjmcaana-winter-meeting-dec-22-24-2021_.html
+  title: FJMCAANA Winter Meeting-Dec 22-24, 2021 - fjmcaana.org
+  h1: FJMCAANA Winter Meeting-Dec 22-24, 2021
+  introParagraphs: Call Us : team@fjmcaana.org | Email: t&#101;&#097;&#109;&#064;&#102;&#106;&#109;c&#097;an&#097;.&#111;rg | Copyright © 2019. Designed by WPlook Studio
+  articleFingerprint: FJMCAANA Winter Meeting-Dec 22-24, 2021 - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committe
+
+gallery_helping-babies-breathe_.html
+  title: Helping Babies Breathe - fjmcaana.org
+  h1: Helping Babies Breathe
+  introParagraphs: Call Us : team@fjmcaana.org | Email: tea&#109;&#064;fj&#109;c&#097;&#097;na.o&#114;&#103; | Copyright © 2019. Designed by WPlook Studio
+  articleFingerprint: Helping Babies Breathe - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time 
+
+gallery_mother-and-child-hospital-fundraiser-2019_.html
+  title: Mother and Child Hospital Fundraiser 2019 - fjmcaana.org
+  h1: Mother and Child Hospital Fundraiser 2019
+  introParagraphs: Call Us : team@fjmcaana.org | Email: &#116;&#101;&#097;&#109;&#064;f&#106;m&#099;&#097;&#097;&#110;&#097;.&#111;&#114;g | Copyright © 2019. Designed by WPlook Studio
+  articleFingerprint: Mother and Child Hospital Fundraiser 2019 - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Commit
+
+gallery_sponsor-a-child-2_.html
+  title: FJMCAA at 2017 Summer Convention in Orlando, Florida - fjmcaana.org
+  h1: FJMCAA at 2017 Summer Convention in Orlando, Florida
+  introParagraphs: Call Us : team@fjmcaana.org | Email: team&#064;&#102;jmc&#097;ana.&#111;rg | Copyright © 2019. Designed by WPlook Studio
+  articleFingerprint: FJMCAA at 2017 Summer Convention in Orlando, Florida - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Execu
+
+gallery_sponsor-a-child_.html
+  title: APPNA Health Care Day - fjmcaana.org
+  h1: APPNA Health Care Day
+  introParagraphs: Call Us : team@fjmcaana.org | Email: t&#101;am&#064;&#102;&#106;mca&#097;&#110;a.o&#114;g | Copyright © 2019. Designed by WPlook Studio
+  articleFingerprint: APPNA Health Care Day - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time M
+
+gallery_sponsor-a-girl_.html
+  title: Visit to the Fatima Jinnah Medical University - fjmcaana.org
+  h1: Visit to the Fatima Jinnah Medical University
+  introParagraphs: Call Us : team@fjmcaana.org | Lahore - December 2015 | Email: t&#101;a&#109;&#064;fjm&#099;&#097;&#097;&#110;&#097;&#046;o&#114;&#103; | Copyright © 2019. Designed by WPlook Studio
+  articleFingerprint: Visit to the Fatima Jinnah Medical University - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Co
+
+index.html.html
+  title: fjmcaana.org
+  h1: FJMCAANA Pakistan Flood Relief Activities
+  introParagraphs: Call Us : team@fjmcaana.org | Dr. Umbreen Chaudhary | Ladies of Fjmcaana, It is an honor to serve as the president of this remarkable organization, which is dedicated to celebrating women in medicine and supporting the next generation | Our association was founded with a vision to connect, inspire, and empower women who have dedicated their lives to medicine. Through our collective experiences, we continue to shap
+  articleFingerprint: fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Members Alumni Presidents
+
+life-time-members_.html
+  title: Life Time Members - fjmcaana.org
+  h1: Life Time Members
+  introParagraphs: Call Us : team@fjmcaana.org | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC
+  articleFingerprint: Life Time Members - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Membe
+
+make-a-donation-donate_.html
+  title: Make a donation - fjmcaana.org
+  h1: Make a donation
+  introParagraphs: Call Us : team@fjmcaana.org | Donate with Confidence! | FJMCAANA provides unmatched transparency and accountability to all of our donors by publishing frequent updates on how we use donations. For check payments, contact: team@fjmcaana. | For PayPal donations, click below:
+  articleFingerprint: Make a donation - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Members
+
+membership_.html
+  title: Membership - fjmcaana.org
+  h1: Membership
+  introParagraphs: Call Us : team@fjmcaana.org | Membership of Fatima Jinnah Medical College Alumni Association of North America (FJMCAA) is open to alumni of FJMC residing in the United States and Canada. | Membership Dues Annual Membership - US$50.00 Lifetime Membership - US$500.00 | To become a member of Fatima Jinnah Medical College Alumni Association of North America, please fill membership form below and please pay for the membership via Paypal or Credit Ca
+  articleFingerprint: Membership - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Members Alum
+
+mission-statement_.html
+  title: Mission Statement - fjmcaana.org
+  h1: Mission Statement
+  introParagraphs: Call Us : team@fjmcaana.org | Email: t&#101;a&#109;&#064;f&#106;&#109;&#099;a&#097;n&#097;&#046;or&#103; | Copyright © 2019. Designed by WPlook Studio
+  articleFingerprint: Mission Statement - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Membe
+
+past-events_.html
+  title: Past Events - fjmcaana.org
+  h1: Past Events
+  introParagraphs: Call Us : team@fjmcaana.org | 2021 3rd Annual Scientific Conference | FJMU Alumni North America Annual Online Zoom Fundraiser | We are approaching towards the end of Ramadan now. Ramadan is a month of blessings and charity. We all have to give sadqa and...
+  articleFingerprint: Past Events - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Members Alu
+
+post_type_post_causes_.html
+  title: Causes - fjmcaana.org
+  h1: 
+  introParagraphs: Call Us : team@fjmcaana.org | In 2022, the collaborative effort of FJMCAANA, the Zafar & Mir Foundation, and the Ophthalmology Department of SGRH launched the Cornea Transplants Project for those in need. Since | Severe floods have devastated communities across Pakistan, leaving thousands of families without shelter, food, and clean water. A sudden and unprecedented cloudburst unleashed dev | In 2022, the collaborative effort of FJMCAANA, the Zafar & Mir Foundation, and the Ophthalmology Department of SGRH launched the Cornea Transplants Project for those in need. Since
+  articleFingerprint: Causes - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Members Alumni P
+
+projects-news_.html
+  title: Projects & News - fjmcaana.org
+  h1: Projects & News
+  introParagraphs: Call Us : team@fjmcaana.org | Projects & News | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC
+  articleFingerprint: Projects & News - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Members
+
+project_fjmu-annual-symposium-2022_.html
+  title: FJMU Annual Symposium 2022 - fjmcaana.org
+  h1: FJMU Annual Symposium 2022
+  introParagraphs: Call Us : team@fjmcaana.org | We have also supported AFJOG in the past especially for the Hepatitis Initiative and plan to continue supporting them in coming years. | FJMCAANA in collaboration with FJMU and Health Channel by Dr Samina Toufeeq has started this initiative to provide health awareness sessions on various topics to the general public | In 2021, FJMCAANA and Teach a Kid Make Individual Life (TAKMIL) joined hands to support the education of children deprived of education in rural and underprivileged communities of 
+  articleFingerprint: FJMU Annual Symposium 2022 - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life T
+
+project_medical-camp-and-inauguration-of-29-houses-in-kashani-basti-fazal-pur-south-punjab_.html
+  title: Medical Camp and Inauguration of 29 houses in Kashani Basti, Fazal Pur, South Punjab - fjmcaana.org
+  h1: Medical Camp and Inauguration of 29 houses in Kashani Basti, Fazal Pur, South Punjab
+  introParagraphs: Call Us : team@fjmcaana.org | On Sep 27 2022, a team of senior faculty members and young doctors accompanied Dr Fizza Zahid Rafiq (President, FJMCAANA) under the leadership of VC Professor Dr Khalid M Gondal an | The team arrived at Kashani Basti, Fazal Pur in South Punjab after seven hours of driving. The devastation caused by floods was heartbreaking. All houses were destroyed, people are | The team inaugurated 29 houses in that Basti that will be adopted by FJMU / FJMCAANA. Professor Dr Rashid Latif has sponsored to build of a school in that area and qualified teache
+  articleFingerprint: Medical Camp and Inauguration of 29 houses in Kashani Basti, Fazal Pur, South Punjab - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Sta
+
+project_mehmood-afzal-cornea-transplant-success-story_.html
+  title: Mehmood Afzal- Cornea Transplant Success Story - fjmcaana.org
+  h1: Mehmood Afzal- Cornea Transplant Success Story
+  introParagraphs: Call Us : team@fjmcaana.org | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant of Mehmood Afzal supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In R | We have also supported AFJOG in the past especially for the Hepatitis Initiative and plan to continue supporting them in coming years. | FJMCAANA in collaboration with FJMU and Health Channel by Dr Samina Toufeeq has started this initiative to provide health awareness sessions on various topics to the general public
+  articleFingerprint: Mehmood Afzal- Cornea Transplant Success Story - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive C
+
+project_misbah-shaukat-cornea-transplant-success-story_.html
+  title: Misbah Shaukat- Cornea Transplant Success Story - fjmcaana.org
+  h1: Misbah Shaukat- Cornea Transplant Success Story
+  introParagraphs: Call Us : team@fjmcaana.org | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC | We have also supported AFJOG in the past especially for the Hepatitis Initiative and plan to continue supporting them in coming years. | FJMCAANA in collaboration with FJMU and Health Channel by Dr Samina Toufeeq has started this initiative to provide health awareness sessions on various topics to the general public
+  articleFingerprint: Misbah Shaukat- Cornea Transplant Success Story - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive 
+
+project_project-review-cornea-transplants_.html
+  title: Project Review: Cornea Transplants - fjmcaana.org
+  h1: Project Review: Cornea Transplants
+  introParagraphs: Call Us : team@fjmcaana.org | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC | We have also supported AFJOG in the past especially for the Hepatitis Initiative and plan to continue supporting them in coming years. | FJMCAANA in collaboration with FJMU and Health Channel by Dr Samina Toufeeq has started this initiative to provide health awareness sessions on various topics to the general public
+  articleFingerprint: Project Review: Cornea Transplants - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 202
+
+project_rana-muhammad-cornea-transplant-success-story_.html
+  title: Rana Muhammad- Cornea Transplant Success Story - fjmcaana.org
+  h1: Rana Muhammad- Cornea Transplant Success Story
+  introParagraphs: Call Us : team@fjmcaana.org | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC | We have also supported AFJOG in the past especially for the Hepatitis Initiative and plan to continue supporting them in coming years. | FJMCAANA in collaboration with FJMU and Health Channel by Dr Samina Toufeeq has started this initiative to provide health awareness sessions on various topics to the general public
+  articleFingerprint: Rana Muhammad- Cornea Transplant Success Story - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive C
+
+project_sajid-mehmood-cornea-transplant-success-story_.html
+  title: Sajid Mehmood- Cornea Transplant Success Story - fjmcaana.org
+  h1: Sajid Mehmood- Cornea Transplant Success Story
+  introParagraphs: Call Us : team@fjmcaana.org | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC | We have also supported AFJOG in the past especially for the Hepatitis Initiative and plan to continue supporting them in coming years. | FJMCAANA in collaboration with FJMU and Health Channel by Dr Samina Toufeeq has started this initiative to provide health awareness sessions on various topics to the general public
+  articleFingerprint: Sajid Mehmood- Cornea Transplant Success Story - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive C
+
+reports_.html
+  title: Reports - fjmcaana.org
+  h1: Reports
+  introParagraphs: Call Us : team@fjmcaana.org | Email: team&#064;fjmca&#097;n&#097;.&#111;&#114;g | Copyright © 2019. Designed by WPlook Studio
+  articleFingerprint: Reports - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Members Alumni 
+
+staff_azra-khan_.html
+  title: Dr. Sumra Rathore - fjmcaana.org
+  h1: Dr. Sumra Rathore
+  introParagraphs: Call Us : team@fjmcaana.org | Sumra Rathore, MD, MPH, class of 1987 is board board-certified pathologist. She is the Medical Director of Sonic Health Laboratory third largest commercial referral laboratory in t | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC
+  articleFingerprint: Dr. Sumra Rathore - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Membe
+
+staff_dr-amnah-andrabi_.html
+  title: Dr. Amnah Andrabi - fjmcaana.org
+  h1: Dr. Amnah Andrabi
+  introParagraphs: Call Us : team@fjmcaana.org | I am Dr. Amnah Andrabi and I am Assistant Professor of Internal Medicine at the University of North Texas Health Science Center and I practice inpatient medicine at Medical City Ar | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC
+  articleFingerprint: Dr. Amnah Andrabi - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Membe
+
+staff_dr-azra-khan-2_.html
+  title: Dr. Azra Khan - fjmcaana.org
+  h1: Dr. Azra Khan
+  introParagraphs: Call Us : team@fjmcaana.org | Dr. Azra Khan MBBS graduated from FJMU Lahore in 1984. She did her residency training in Internal Medicine and OB/ GYN at SGRH Lahore . Dr. Khan served as Medical Officer in Corona | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC
+  articleFingerprint: Dr. Azra Khan - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Members A
+
+staff_dr-fauzia-anwar_.html
+  title: Dr. Fauzia Anwar - fjmcaana.org
+  h1: Dr. Fauzia Anwar
+  introParagraphs: Call Us : team@fjmcaana.org | Dr. Fauzia Anwar-MD, FFPM, is a distinguished graduate of Fatima Jinnah Medical University (Class of 1986). She trained in General Surgery and later served as an Attending Physicia | Currently based in New Jersey, USA, Dr. Anwar completed a Research Fellowship in Infectious Diseases at the University of Medicine and Dentistry of New Jersey (UMDNJ) and subsequen | Dr. Anwar is a Fellow of the Faculty of Pharmaceutical Medicine (FFPM), Royal College of Physicians (UK), and an active mentor for the Rutgers Fellowship in Pharmaceutical Medicine
+  articleFingerprint: Dr. Fauzia Anwar - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Member
+
+staff_dr-hibba-haider-2_.html
+  title: Dr Umbreen Chaudhary - fjmcaana.org
+  h1: Dr Umbreen Chaudhary
+  introParagraphs: Call Us : team@fjmcaana.org | Graduated from Fatima Jinnah Medical University Lahore, Pakistan- 1997 Internal Medicine and Aesthetics | I am originally from the USA and moved to Pakistan for my medical education at FJMC. I graduated from FJMC in 1997 and went on to do an Internal Medicine residency at Overlook Hosp | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC
+  articleFingerprint: Dr Umbreen Chaudhary - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Me
+
+staff_dr-hina-iqbal_.html
+  title: Dr. Hina Iqbal - fjmcaana.org
+  h1: Dr. Hina Iqbal
+  introParagraphs: Call Us : team@fjmcaana.org | I am a family physician in Calgary with a background in OBGYN, women’s health, clinical and qualitative research. I have previously worked as a research coordinator in Respirology  | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC
+  articleFingerprint: Dr. Hina Iqbal - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Members 
+
+staff_dr-naghmana-bajwa_.html
+  title: Dr. Naghmana Bajwa - fjmcaana.org
+  h1: Dr. Naghmana Bajwa
+  introParagraphs: Call Us : team@fjmcaana.org | I am Dr. Naghmana Bajwa, General Surgeon turned biopharma leader, currently Global Safety Head at AstraZeneca. Work spans drugs, devices and biologics development with contribution | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC
+  articleFingerprint: Dr. Naghmana Bajwa - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Memb
+
+staff_dr-sahrish-mahmood_.html
+  title: Dr. Sahrish Mahmood - fjmcaana.org
+  h1: Dr. Sahrish Mahmood
+  introParagraphs: Call Us : team@fjmcaana.org | I am Dr. Sahrish Mahmood. I am a 2011 graduate of FJMC, currently living in Virginia and working in peer review and utilization review. I have extensive volunteer experience with n | During my first year of medical school, I also won a beauty contest in the FMJC hostel and was crowned for that achievement. Outside of work, I love traveling and am deeply in love | FJMCAANA is pleased to share the stories of the success of the Cornea Transplant supported by a collaboration between FJMCAANA and the Zafar & Mir Foundation. In Ramadan 2022, FJMC
+  articleFingerprint: Dr. Sahrish Mahmood - fjmcaana.org Call Us : team@fjmcaana.org Donate HOME About Us Mission Statement President’s Message Executive Committee 2024 Life Time Mem
+
