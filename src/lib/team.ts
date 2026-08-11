@@ -96,7 +96,7 @@ Dr. Khan is a supporter of better maternal and family health through preventive 
     slug: "sumra-rathore",
     name: "Sumra Rathore, MD, MPH",
     role: "Secretary",
-    image: "/team/Sumra_Rathore.png",
+    image: "/team/Sumra_Rathore.jpeg",
     highlight:
       "Board-certified pathologist and Medical Director of Sonic Health Laboratory, the third largest commercial referral laboratory in the United States.",
     message: `Sumra Rathore, MD, MPH, class of 1987 is board-certified pathologist. She is the Medical Director of Sonic Health Laboratory, third largest commercial referral laboratory in the United States. She served as treasurer of FJ alumni a decade ago and is excited to serve in the same capacity with a much-renewed interest. She is an avid animal lover and loves nature and the outdoors. Her husband is a physician, her elder son and his wife work for the US government, and her younger son is a third-year resident.`,

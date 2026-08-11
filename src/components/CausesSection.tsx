@@ -11,7 +11,7 @@ function CauseCard({ cause }: { cause: Cause }) {
         <div className="bar-fill h-full bg-pine" style={{ width: `${cause.percentFunded}%` }} />
       </div>
       <div className="text-xs text-ink-soft">{cause.amountRaised} raised</div>
-      <Link href="/donate" className="mt-4 inline-block rounded-md border border-pine px-3 py-1.5 text-xs font-semibold text-pine transition hover:bg-pine hover:text-white">Donate</Link>
+      <a href="https://www.paypal.com/us/fundraiser/charity/1554217" className="mt-4 inline-block rounded-md border border-pine px-3 py-1.5 text-xs font-semibold text-pine transition hover:bg-pine hover:text-white" target="_blank" rel="noopener noreferrer">Donate</a>
     </div>
   );
 }
