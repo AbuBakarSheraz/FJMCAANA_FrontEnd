@@ -7,6 +7,8 @@ import Navbar from "@/components/Navbar";
 import PageHeader from "@/components/PageHeader";
 import { CONTENT_PAGES, FEATURED_CAUSES, LIFETIME_MEMBERS, getContentPage } from "@/lib/siteContent";
 import { TEAM_MEMBERS } from "@/lib/team";
+import MembershipTiers from "@/components/MembershipTiers";
+import ZeffyEmbed from "@/components/ZeffyEmbed";
 
 export function generateStaticParams() {
   return [
@@ -29,9 +31,40 @@ export default async function SitePage({ params }: PageProps<"/[...slug]">) {
   if (key === "get-involved/lifetime-members") {
     return <><Navbar /><PageHeader eyebrow="Get Involved" title="Lifetime Members" description="Alumnae who have made an enduring commitment to FJMCAANA." /><main className="max-w-6xl mx-auto px-6 py-12 sm:py-16"><div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{LIFETIME_MEMBERS.map(([name, year]) => <div className="rounded-xl border border-pine/10 bg-white p-5" key={name}><h2 className="font-display text-lg font-semibold text-pine-dark">{name}</h2>{year && <p className="mt-1 text-sm text-ink-soft">Class of {year}</p>}</div>)}</div></main><Footer /></>;
   }
+if (key === "get-involved/membership") {
+  return (
+    <>
+      <Navbar />
+      <PageHeader
+        eyebrow="Get Involved"
+        title="Membership"
+        description="Membership of FJMCAANA is open to FJMC alumni residing in the United States and Canada."
+      />
+      <MembershipTiers />
+      <ZeffyEmbed />
+      <Footer />
+    </>
+  );
+}
 
   if (key === "donate") {
-    return <><Navbar /><PageHeader eyebrow="Give" title="Support a cause" description="Your gift supports healthcare, education, emergency relief, and the next generation of women physicians." /><CausesSection causes={FEATURED_CAUSES} expanded /><section className="max-w-6xl mx-auto px-6 py-12 sm:py-16"><div className="max-w-3xl"><h2 className="font-display text-2xl font-semibold text-pine-dark">Giving with purpose</h2><p className="mt-4 leading-relaxed text-ink-soft">FJMCAANA states that donations support projects in Pakistan related to its alma mater, including scholarships, the FJMU E-Library, and health initiatives. For check payments and cause-specific giving, contact the FJMCAANA team.</p><a className="mt-6 inline-flex rounded-lg bg-pine px-5 py-3 text-sm font-semibold text-white transition hover:bg-pine-dark" href="mailto:team@fjmcaana.org?subject=Donation%20inquiry">Contact about giving</a></div></section><Footer /></>;
+    return <>
+    <Navbar />
+    <PageHeader eyebrow="Give" title="Support a cause" description="Your gift supports healthcare, 
+    education, emergency relief, and the next generation of women physicians." />
+    <CausesSection causes={FEATURED_CAUSES} expanded />
+    <section className="max-w-6xl mx-auto px-6 py-12 sm:py-16">
+      <div className="max-w-3xl">
+        <h2 className="font-display text-2xl font-semibold text-pine-dark">Giving with purpose</h2>
+        <p className="mt-4 leading-relaxed text-ink-soft">FJMCAANA states that donations support projects in Pakistan related to its alma mater,
+           including scholarships, the FJMU E-Library, and health initiatives. For check payments and cause-specific giving, 
+           contact the FJMCAANA team.</p>
+           <a className="mt-6 inline-flex rounded-lg bg-pine px-5 py-3 text-sm font-semibold text-white transition hover:bg-pine-dark"
+            href="mailto:team@fjmcaana.org?subject=Donation%20inquiry">Contact about giving</a>
+            </div>
+     </section>
+    <Footer />
+    </>;
   }
 
   const page = getContentPage(path);

@@ -30,12 +30,14 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <Link
-            href="/donate"
+          <a
+            href="https://www.paypal.com/us/fundraiser/charity/1554217"
             className="hidden sm:inline-block bg-gold text-pine-dark text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gold-light transition"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Donate
-          </Link>
+          </a>
           <button
             onClick={() => setOpen((v) => !v)}
             className="md:hidden text-pine-dark"
@@ -56,13 +58,13 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/donate"
+          <a
+            href="https://www.paypal.com/us/fundraiser/charity/1554217"
             onClick={() => setOpen(false)}
             className="bg-gold text-pine-dark font-semibold px-4 py-2 rounded-lg text-center"
           >
             Donate
-          </Link>
+          </a>
         </div>
       )}
     </nav>
