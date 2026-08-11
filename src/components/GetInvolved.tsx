@@ -5,19 +5,19 @@ const CARDS = [
     title: "Membership",
     body: "Join fellow FJMU alumnae — mentorship, events, and a lifelong professional network.",
     cta: "Join now",
-    href: "#membership-form",
+    href: "/get-involved/membership",
   },
   {
     title: "Health Channel",
     body: "Educational health content from our physician members, for the community.",
     cta: "Watch now",
-    href: "#",
+    href: "/get-involved/health-channel",
   },
   {
     title: "Volunteer",
     body: "Support ongoing projects with your time, skills, or professional network.",
     cta: "Get started",
-    href: "#",
+    href: "/get-involved/volunteer",
   },
 ];
 

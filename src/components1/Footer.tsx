@@ -1,23 +1,13 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
-    <footer id="donate" className="bg-pine-dark text-[#EDE6D3]">
-      <div className="max-w-6xl mx-auto px-6 py-16 flex flex-col sm:flex-row items-center justify-between gap-6">
-        <p className="font-display italic text-xl sm:text-2xl text-white text-center sm:text-left">
-          Change their world. Change yours.
-        </p>
-        <a
-          href="/donate"
-          className="bg-gold text-pine-dark font-semibold text-sm px-6 py-3 rounded-lg hover:bg-gold-light transition"
-        >
-          Donate Now
-        </a>
+    <footer id="donate" className="bg-pine-dark text-cream">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-6 py-16 sm:flex-row">
+        <p className="text-center font-display text-xl italic text-white sm:text-left sm:text-2xl">Change their world. Change yours.</p>
+        <Link href="/donate" className="rounded-lg bg-gold px-6 py-3 text-sm font-semibold text-pine-dark transition hover:bg-gold-light">Donate Now</Link>
       </div>
-      <div id="contact" className="border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#B7C4BB]">
-          <div>© {new Date().getFullYear()} FJMCAANA — Fatima Jinnah Medical College Alumnae Association of North America</div>
-          <div>Email: team@fjmcaana.org</div>
-        </div>
-      </div>
+      <div id="contact" className="border-t border-white/10"><div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-6 py-8 text-xs text-cream/70 sm:flex-row"><div>© {new Date().getFullYear()} FJMCAANA</div><a href="mailto:team@fjmcaana.org">team@fjmcaana.org</a></div></div>
     </footer>
   );
 }

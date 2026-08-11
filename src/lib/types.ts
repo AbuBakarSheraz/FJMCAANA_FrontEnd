@@ -9,7 +9,8 @@ export interface Cause {
   slug: string;
   title: string;
   amountRaised: string;
-  percentFunded: number; // 0–100
+  percentFunded: number;
+  description?: string;
 }
 
 export interface NewsItem {

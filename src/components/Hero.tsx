@@ -1,57 +1,20 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
-    <header className="relative overflow-hidden min-h-[600px] text-cream bg-pine-dark">
-      {/* Background video — hidden for users who prefer reduced motion */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover motion-reduce:hidden"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        poster="/videos/hero-poster.jpg"
-        aria-hidden="true"
-      >
+    <header className="relative min-h-[600px] overflow-hidden bg-pine-dark text-cream">
+      <video className="absolute inset-0 h-full w-full object-cover motion-reduce:hidden" autoPlay muted loop playsInline preload="auto" poster="/videos/hero-poster.jpg" aria-hidden="true">
         <source src="/videos/hero.mp4" type="video/mp4" />
       </video>
-
-      {/* Single gradient overlay for text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-pine-dark/80 via-pine/60 to-pine-dark/90" />
-
-      {/* Decorative circle */}
-      <div className="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-gold/10 blur-2xl" />
-
-      {/* Content */}
-      <div className="max-w-6xl mx-auto px-6 pt-20 pb-24 relative z-10">
-        <span className="font-mono text-xs tracking-widest uppercase text-gold-light">
-          FJMCAANA
-        </span>
-
-        <h1 className="font-display font-semibold text-4xl sm:text-5xl leading-tight max-w-2xl mt-3 text-white">
-          Sisters in Medicine. Partners in Change.
-        </h1>
-
-        <p className="max-w-xl mt-4 text-[#EBD9DC] text-lg">
-          Connecting women physicians of Fatima Jinnah Medical University
-          worldwide — and channeling that strength into healthcare projects
-          across Pakistan.
-        </p>
-
-        <div className="flex flex-wrap gap-3 mt-8">
-          <a
-            href="#involved"
-            className="bg-gold text-pine-dark font-semibold text-sm px-6 py-3 rounded-lg hover:bg-gold-light transition"
-       >
-            Become a Member
-          </a>
-          <a
-
-          
-            href="#donate"
-            className="border border-white/40 text-white font-semibold text-sm px-6 py-3 rounded-lg hover:bg-white/10 transition"
-          >
-            Support a Cause
-          </a>
+      <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-gold/10 blur-2xl" />
+      <div className="relative z-10 mx-auto max-w-6xl px-6 pb-24 pt-20">
+        <span className="font-mono text-xs uppercase tracking-widest text-gold-light">FJMCAANA</span>
+        <h1 className="mt-3 max-w-2xl font-display text-4xl font-semibold leading-tight text-white sm:text-5xl">Sisters in Medicine. Partners in Change.</h1>
+        <p className="mt-4 max-w-xl text-lg text-cream/85">Connecting women physicians of Fatima Jinnah Medical University worldwide and channeling that strength into healthcare projects across Pakistan.</p>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Link href="/get-involved/membership" className="rounded-lg bg-gold px-6 py-3 text-sm font-semibold text-pine-dark transition hover:bg-gold-light">Become a Member</Link>
+          <Link href="/donate" className="rounded-lg border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">Support a Cause</Link>
         </div>
       </div>
     </header>

@@ -27,8 +27,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
     message: `I am a family physician in Calgary with a background in OBGYN, women's health, clinical and qualitative research. I have previously worked as a research coordinator in Respirology at the university of Calgary, with CDC's TBTC Consortium and a local NGO in Calgary. I have experience working with multicultural and underserved communities through my community practice and nonprofit organizations. I greatly value health equity, education and patient centred care. I look forward to working together and contributing to our community as a Council Member.`,
   },
   {
-    slug: "sehrish-mehmood",
-    name: "Dr. Sehrish Mehmood",
+    slug: "sahrish-mahmood",
+    name: "Dr. Sahrish Mahmood",
     role: "Councilor",
     image: "/team/Sehrish_Mehmood.png",
     highlight:
