@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { href: "/about", label: "About" },
@@ -16,9 +17,10 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-pine/10">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="font-display font-semibold text-lg text-pine-dark">
-          FJMCAANA
+      <div className="max-w-6xl mx-auto px-4 py-2 sm:px-6 sm:py-3 flex items-center justify-between">
+        <Link href="/" className="flex min-w-0 items-center gap-3 font-display font-semibold text-lg text-pine-dark">
+          <Image src="/images/Logo.png" alt="FJMCAANA logo" width={64} height={64} priority className="h-14 w-14 flex-none object-contain sm:h-16 sm:w-16" />
+          <span className="hidden leading-tight md:block">FJMCAANA</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-ink-soft">

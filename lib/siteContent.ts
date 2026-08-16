@@ -167,7 +167,10 @@ export const CONTENT_PAGES: ContentPage[] = [
     path: ["news"], eyebrow: "News", title: "Reports & updates", description: "The latest published FJMCAANA annual updates.",
     sections: [{ items: NEWS_ITEMS.map((item) => ({ title: item.title, detail: item.date })) }],
   },
-
+  {
+    path: ["contact"], eyebrow: "Contact", title: "Stay connected", description: "Reach the FJMCAANA team with questions about membership, projects, events, or support.",
+    sections: [{ title: "Get in touch", paragraphs: ["team@fjmcaana.org"] }],
+  },
 ];
 
 

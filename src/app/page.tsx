@@ -8,6 +8,7 @@ import GetInvolved from "@/components/GetInvolved";
 import TeamSlider from "@/components/TeamSlider";
 import NewsSection from "@/components/NewsSection";
 import Footer from "@/components/Footer";
+import { getRecords } from "@/lib/content-store";
 
 // --- Server-side data fetching from your NestJS API -----------------------
 // This page is a Server Component, so you can fetch directly here at request
@@ -24,7 +25,10 @@ import Footer from "@/components/Footer";
 // renders correctly even before the API is wired up — just pass props once
 // it's ready:  <StatsBar stats={stats} /> / <CausesSection causes={causes} /> / <NewsSection items={news} />
 
-export default function HomePage() {
+export const dynamic = "force-dynamic";
+
+export default async function HomePage() {
+  const [projects, news] = await Promise.all([getRecords("projects"), getRecords("news")]);
   return (
     <>
       <Navbar />
@@ -34,11 +38,11 @@ export default function HomePage() {
       <Leadership />
       <SealDivider />
       <TeamSlider />
-      <CausesSection />
+      <CausesSection causes={projects.filter((project) => project.featured).slice(0, 3)} />
       <SealDivider />
       <GetInvolved />
       <SealDivider />
-      <NewsSection />
+      <NewsSection items={news.filter((item) => item.featured).slice(0, 3)} />
       <Footer />
     </>
   );

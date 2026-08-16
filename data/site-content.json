@@ -1,0 +1,86 @@
+{
+  "records": [
+    {
+      "id": "news-annual-projects-2022",
+      "collection": "news",
+      "title": "Annual Projects/Activities Video Highlights 2022",
+      "summary": "Annual projects and activities video highlights.",
+      "date": "December 31, 2022",
+      "featured": true,
+      "createdAt": "2022-12-31"
+    },
+    {
+      "id": "news-president-report-2022",
+      "collection": "news",
+      "title": "Annual President Report 2022",
+      "summary": "FJMCAANA President's annual report.",
+      "date": "December 31, 2022",
+      "featured": true,
+      "createdAt": "2022-12-31"
+    },
+    {
+      "id": "news-annual-report-2022",
+      "collection": "news",
+      "title": "FJMCAANA Annual Report 2022",
+      "summary": "FJMCAANA annual report.",
+      "date": "December 31, 2022",
+      "featured": true,
+      "createdAt": "2022-12-31"
+    },
+    {
+      "id": "event-conference-2022",
+      "collection": "events",
+      "title": "4th Annual Scientific Conference",
+      "summary": "",
+      "date": "December 16, 2022",
+      "createdAt": "2022-12-16"
+    },
+    {
+      "id": "event-spring-2022",
+      "collection": "events",
+      "title": "FJMCAANA Annual Spring Meeting",
+      "summary": "Omni Hotel & Resort",
+      "date": "March 24, 2022",
+      "createdAt": "2022-03-24"
+    },
+    {
+      "id": "project-cornea",
+      "collection": "projects",
+      "title": "Cornea Transplants",
+      "summary": "US$15,000 raised in Ramadan 2022 to support 60 transplants at Sir Ganga Ram Hospital.",
+      "featured": true,
+      "createdAt": "2022-01-01"
+    },
+    {
+      "id": "project-flood-relief",
+      "collection": "projects",
+      "title": "Kashani Basti Flood Relief",
+      "summary": "FJMCAANA and FJMU supported construction and inauguration of 29 houses in Fazal Pur, South Punjab.",
+      "featured": true,
+      "createdAt": "2022-01-01"
+    },
+    {
+      "id": "project-scholarship",
+      "collection": "projects",
+      "title": "Student Scholarship",
+      "summary": "15 scholarships per year for deserving FJMC students.",
+      "featured": true,
+      "createdAt": "2022-01-01"
+    },
+    {
+      "id": "gallery-winter-meeting",
+      "collection": "gallery",
+      "title": "FJMCAANA Winter Meeting",
+      "summary": "December 22–24, 2021",
+      "createdAt": "2021-12-24"
+    },
+    {
+      "id": "event-winter-2021",
+      "collection": "events",
+      "title": "FJMU Winter Meeting",
+      "summary": "Lahore",
+      "date": "December 21, 2021",
+      "createdAt": "2021-12-21"
+    }
+  ]
+}
