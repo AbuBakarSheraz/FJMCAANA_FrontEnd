@@ -9,8 +9,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-pine-dark/80 via-pine/60 to-pine-dark/90" />
       <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-gold/10 blur-2xl" />
       <div className="relative z-10 mx-auto max-w-6xl px-6 pb-24 pt-20">
-        <span className="font-mono text-xs uppercase tracking-widest text-gold-light animate-fade-in">Fatima Jinnah Medical College Alumnae Association of North America</span>
-        <h1 className="mt-3 max-w-2xl font-display text-4xl font-semibold leading-tight text-white sm:text-5xl animate-slide-in-left">Empowering Women Physicians. Transforming Healthcare in Pakistan.</h1>
+        <span className="font-mono text-xs uppercase tracking-widest text-gold-light animate-fade-in">Fatima Jinnah Medical College Alumni Association of North America</span>
+        <h1 className="mt-3 max-w-2xl font-display text-4xl font-semibold leading-tight text-white sm:text-5xl animate-slide-in-left">Transforming Healthcare in Pakistan.</h1>
         <p className="mt-4 max-w-xl text-lg text-cream/85 animate-slide-in-right">For 48 years, FJMCAANA has connected distinguished women physicians across USA and Canada, channeling expertise and resources into impactful healthcare projects throughout Pakistan.</p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link href="/get-involved/membership" className="rounded-lg bg-gold px-6 py-3 text-sm font-semibold text-pine-dark transition hover:bg-gold-light">Become a Member</Link>

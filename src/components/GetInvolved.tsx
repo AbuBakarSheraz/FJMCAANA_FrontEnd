@@ -3,7 +3,7 @@ import MembershipForm from "./MembershipForm";
 const CARDS = [
   {
     title: "Membership",
-    body: "Join fellow FJMU alumnae — mentorship, events, and a lifelong professional network.",
+    body: "Join fellow FJMU Alumni — mentorship, events, and a lifelong professional network.",
     cta: "Join now",
     href: "/get-involved/membership",
   },

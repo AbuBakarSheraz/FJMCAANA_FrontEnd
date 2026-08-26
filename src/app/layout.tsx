@@ -22,7 +22,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "FJMCAANA — Fatima Jinnah Medical College Alumnae Association of North America",
+  title: "FJMCAANA — Fatima Jinnah Medical College Alumni Association of North America",
   description:
     "Connecting women physicians of Fatima Jinnah Medical University worldwide, and funding healthcare projects across Pakistan.",
 };

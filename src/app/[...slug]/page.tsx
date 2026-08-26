@@ -60,7 +60,7 @@ if (key === "contact") {
       <PageHeader
         eyebrow="Get Involved"
         title="Lifetime Members"
-        description="Celebrating the alumnae who have made an enduring commitment to FJMCAANA."
+        description="Celebrating the alumni who have made an enduring commitment to FJMCAANA."
       />
 
       <main className="mx-auto max-w-7xl px-6 py-14 sm:px-8 sm:py-20">

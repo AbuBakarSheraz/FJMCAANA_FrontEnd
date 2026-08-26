@@ -49,7 +49,7 @@ export const NEWS_ITEMS: NewsItem[] = [
 
 export const CONTENT_PAGES: ContentPage[] = [
   {
-    path: ["about"], eyebrow: "About FJMCAANA", title: "A network built by women in medicine", description: "FJMCAANA brings together Fatima Jinnah Medical College and University alumnae in North America and beyond.",
+    path: ["about"], eyebrow: "About FJMCAANA", title: "A network built by women in medicine", description: "FJMCAANA brings together Fatima Jinnah Medical College and University Alumni in North America and beyond.",
     sections: [
       { title: "Our purpose", paragraphs: ["FJMCAANA is a not-for-profit component society of the Association of Physicians of Pakistani Descent of North America. It supports educational, scientific, social, and charitable work for FJMC/FJMU alumnae and their alma mater." ] },
       { items: [
@@ -87,7 +87,7 @@ export const CONTENT_PAGES: ContentPage[] = [
   },
   {
     path: ["get-involved"], eyebrow: "Get Involved", title: "Build the future with us", description: "Join a professional community that supports its members, alma mater, and communities in Pakistan.",
-    sections: [{ items: [{ title: "Membership", detail: "Annual and lifetime membership for FJMC alumni in the United States and Canada.", href: "/get-involved/membership" }, { title: "Lifetime Members", detail: "Acknowledge the alumnae who have made an enduring commitment.", href: "/get-involved/lifetime-members" }, { title: "Health Channel", detail: "Public health education with physician experts.", href: "/get-involved/health-channel" }, { title: "Volunteer", detail: "Connect with the association to offer your time, skills, or professional network.", href: "/get-involved/volunteer" }] }],
+    sections: [{ items: [{ title: "Membership", detail: "Annual and lifetime membership for FJMC alumni in the United States and Canada.", href: "/get-involved/membership" }, { title: "Lifetime Members", detail: "Acknowledge the Alumni who have made an enduring commitment.", href: "/get-involved/lifetime-members" }, { title: "Health Channel", detail: "Public health education with physician experts.", href: "/get-involved/health-channel" }, { title: "Volunteer", detail: "Connect with the association to offer your time, skills, or professional network.", href: "/get-involved/volunteer" }] }],
   },
   {
     path: ["get-involved", "membership"], eyebrow: "Get Involved", title: "Membership", description: "Membership of FJMCAANA is open to FJMC alumni residing in the United States and Canada.",
