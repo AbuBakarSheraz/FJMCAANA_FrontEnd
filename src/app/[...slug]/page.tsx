@@ -12,6 +12,7 @@ import LifetimeMemberCard from "@/components/LifetimeMemberCard";
 import HealthChannelPage from "@/components/HealthChannelPage";
 import { getRecords } from "@/lib/content-store";
 import ContactPage from "@/components/ContactPage";
+import MembershipTiers from "@/components/MembershipTiers";
 export const dynamic = "force-dynamic";
 
 export default async function SitePage({ params }: PageProps<"/[...slug]">) {
@@ -28,6 +29,15 @@ export default async function SitePage({ params }: PageProps<"/[...slug]">) {
     <>
       <Navbar />
       <HealthChannelPage />
+      <Footer />
+    </>
+  );
+  }
+  if (key === "get-involved/membership") {
+  return (
+    <>
+      <Navbar />
+      <MembershipTiers />
       <Footer />
     </>
   );

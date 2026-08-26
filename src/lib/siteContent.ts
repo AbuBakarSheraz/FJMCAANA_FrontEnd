@@ -128,12 +128,12 @@ export const CONTENT_PAGES: ContentPage[] = [
         {
           title: "Sexually Transmitted Diseases",
           detail: "Dr. Shamsa Hamayun",
-          image: "/channel/shamsa-Hamayun.webp",
+          image: "/channel/shamsa-humayon.webp",
         },
         {
           title: "Hypertension",
           detail: "Dr. Zaurez Khan",
-          image: "/channel/zaurez-Khan.webp",
+          image: "/channel/zaurez.webp",
         },
       ],
     },
