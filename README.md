@@ -1,112 +1,276 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FJMCAANA Website
 
-## Getting Started
+**Fatima Jinnah Medical College Alumnae Association of North America**
 
-First, run the development server:
+A modern, professional website for connecting women physicians and supporting healthcare initiatives in Pakistan. Built with Next.js 16, React 19, and TypeScript.
 
-```bash
-npm run d# FJMCAANA Landing Page — Next.js Components
+## 🌟 Features
 
-Built for the Next.js **App Router** with TypeScript + Tailwind. Drop these
-into an existing project (or `npx create-next-app@latest --typescript --tailwind --app`
-and copy them in).
+- **Professional Branding**: Full organization name, 48-year heritage badge, and mission-driven content
+- **Modern Design**: Clean, accessible interface with smooth animations
+- **Comprehensive Pages**: Projects, Reports, Loan Program, Resources, and more
+- **Responsive Layout**: Optimized for mobile, tablet, and desktop
+- **Server-Side Rendering**: Fast page loads and SEO-friendly
+- **Image Optimization**: Automatic responsive images with Next.js Image component
 
-## File map
+## 📚 Documentation
 
-```
-tailwind.config.ts        # pine green/gold/cream design tokens
-app/layout.tsx             # loads Fraunces / Public Sans / Space Grotesk via next/font
-app/globals.css            # base styles + .seal-divider utility
-app/page.tsx                # composes all sections, server-fetch pattern commented in
-lib/types.ts                 # SiteStats / Cause / NewsItem — shapes your NestJS API should return
-components/
-  Navbar.tsx                 # client component (mobile menu state)
-  Hero.tsx
-  StatsBar.tsx                # accepts stats prop, has fallback data
-  SealDivider.tsx
-  Leadership.tsx
-  CausesSection.tsx          # accepts causes prop, has fallback data
-  GetInvolved.tsx
-  MembershipForm.tsx         # client component, POSTs to `${API_BASE}/leads`
-  NewsSection.tsx             # accepts items prop, has fallback data
-  Footer.tsx
-```
+- **[REDESIGN_SUMMARY.md](./REDESIGN_SUMMARY.md)** - Complete overview of all changes and features
+- **[IMAGE_GUIDE.md](./IMAGE_GUIDE.md)** - Detailed guide for adding and managing images
+- **[DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md)** - Step-by-step deployment instructions
 
-## Wiring up your NestJS + Prisma + MySQL API
+## 🚀 Getting Started
 
-Every dynamic section takes props with a fallback so the page always renders,
-even before the backend exists.
+### Prerequisites
+- Node.js 20+ 
+- npm or yarn
 
-1. **Read-only data (stats, causes, news):** fetch server-side in `app/page.tsx`
-   since it's a Server Component — see the commented block at the top of that
-   file. Set `API_BASE_URL` in `.env.local`.
+### Installation
 
-2. **Form submission (membership leads):** `MembershipForm.tsx` already does a
-   real `fetch()` POST to `${NEXT_PUBLIC_API_BASE_URL}/leads`. Set
-   `NEXT_PUBLIC_API_BASE_URL` in `.env.local` (must be prefixed `NEXT_PUBLIC_`
-   since it runs in the browser) and make sure your NestJS controller accepts
-   `{ fullName: string, email: string }` and has CORS enabled for your
-   frontend's origin.
+```powershell
+# Install dependencies
+npm install
 
-3. Suggested `.env.local`:
-   ```
-   API_BASE_URL=https://api.fjmcaana.org
-   NEXT_PUBLIC_API_BASE_URL=https://api.fjmcaana.org
-   ```
+# Run development server
+npm run dev
 
-## Team slider + team page
-
-- `lib/team.ts` — single source of truth for all team members (name, role,
-  image path, a short slider `highlight`, and the full `message`). Add or
-  edit members here only; both the homepage slider and `/team` page read
-  from this file.
-- `components/TeamSlider.tsx` — autoplaying slider on the homepage (5.5s
-  interval, pauses on hover, prev/next arrows, dot navigation). Its "See
-  more" button links to `/team#<slug>`.
-- `app/team/page.tsx` — full team page. Every member has a `<section
-  id={slug}>`, so linking to `/team#amnah-andrabi` lands the visitor exactly
-  on that person's profile (the `scroll-mt-24` class keeps it clear of the
-  sticky nav).
-- **Images:** drop the seven photos into `public/team/` using the exact
-  filenames listed in `public/team/README.txt` (they match what's already
-  referenced in `lib/team.ts`).
-- Once you're pulling council members from Prisma/MySQL instead of hardcoding
-  them, replace the `TEAM_MEMBERS` array with a server-fetched array of the
-  same `TeamMember` shape — no component changes needed.
-
-## Notes
-
-- All colors/fonts are Tailwind tokens (`bg-pine`, `text-gold`, `font-display`,
-  etc.) — change them once in `tailwind.config.ts` to restyle the whole site.
-- `CausesSection` and `NewsSection` map arrays into cards — extend the `Cause`
-  / `NewsItem` types in `lib/types.ts` as your Prisma schema grows (e.g. add
-  `imageUrl` and swap the gradient placeholder for a real `<Image>`).
-ev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Open browser to http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Build for Production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```powershell
+# Create production build
+npm run build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Start production server
+npm run start
+```
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+client/
+├── src/
+│   ├── app/                    # Next.js app router pages
+│   │   ├── page.tsx           # Homepage
+│   │   ├── projects/          # Projects page
+│   │   ├── reports/           # Reports page
+│   │   ├── loan/              # Loan program page
+│   │   ├── help/              # Help & resources page
+│   │   ├── team/              # Team page
+│   │   ├── admin/             # Admin panel
+│   │   └── [...slug]/         # Dynamic content pages
+│   ├── components/            # React components
+│   │   ├── HeritageBadge.tsx # 48 years badge
+│   │   ├── LeadersSection.tsx# Executive leadership
+│   │   ├── Hero.tsx          # Hero section
+│   │   ├── Navbar.tsx        # Navigation
+│   │   └── ...
+│   └── lib/                   # Utilities and data
+│       ├── siteContent.ts    # Content data
+│       ├── team.ts           # Team member data
+│       └── types.ts          # TypeScript types
+├── public/                    # Static assets
+│   ├── images/               # Logos, photos
+│   ├── team/                 # Team member photos
+│   ├── projects/             # Project images
+│   ├── reports/              # PDF reports
+│   ├── flyers/               # Program flyers
+│   ├── gallery/              # Event photos
+│   └── videos/               # Video assets
+├── data/                     # JSON data files
+└── legacy-source/            # Old website reference
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design System
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Colors
+- **Pine** (`#0e3b2e`) - Primary brand color
+- **Gold** (`#c99a44`) - Accent color
+- **Cream** (`#faf6ef`) - Background
+- **Sage** (`#e6ede7`) - Secondary background
 
-## Deploy on Vercel
+### Typography
+- **Display**: Fraunces (serif) - Headings
+- **Body**: Public Sans (sans-serif) - Body text
+- **Mono**: Space Grotesk - Labels, badges
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔧 Key Technologies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Framework**: Next.js 16.3.0
+- **React**: 19.2.8
+- **TypeScript**: 5.x
+- **Styling**: Tailwind CSS 4.0
+- **Email**: Resend API
+- **Deployment**: Vercel-ready
+
+## 📄 Main Pages
+
+| Page | Route | Description |
+|------|-------|-------------|
+| Home | `/` | Hero, stats, leaders, team, causes |
+| About | `/about` | Mission, president message, committee |
+| Projects | `/projects` | Annual and regular projects |
+| Reports | `/reports` | Annual, project, and financial reports |
+| Loan | `/loan` | Interest-free loan program |
+| Help | `/help` | Student and professional resources |
+| Get Involved | `/get-involved` | Membership, volunteer opportunities |
+| Our Impact | `/impact` | Projects, success stories, gallery |
+| Team | `/team` | Full team member profiles |
+| Contact | `/contact` | Contact form |
+
+## 🖼️ Adding Images
+
+See **[IMAGE_GUIDE.md](./IMAGE_GUIDE.md)** for complete instructions.
+
+Quick reference:
+- Team photos → `/public/team/`
+- Project images → `/public/projects/`
+- Reports (PDFs) → `/public/reports/`
+- Flyers → `/public/flyers/`
+
+Each folder has a README.md with specific requirements.
+
+## 🌐 Deployment
+
+### Vercel (Recommended)
+```powershell
+npm i -g vercel
+vercel
+vercel --prod
+```
+
+### Other Platforms
+See **[DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md)** for detailed instructions.
+
+## 📝 Content Updates
+
+### Updating Team Members
+Edit `lib/team.ts`:
+```typescript
+{
+  slug: "member-name",
+  name: "Dr. Name",
+  role: "Position",
+  image: "/team/Photo.png",
+  highlight: "Brief bio...",
+  message: "Full bio..."
+}
+```
+
+### Updating Projects
+Edit `src/app/projects/page.tsx`:
+```typescript
+const ANNUAL_PROJECTS = [
+  {
+    slug: "project-name",
+    title: "Project Title",
+    description: "Description...",
+    image: "/projects/image.jpg",
+    status: "Ongoing",
+    impact: "Impact statement"
+  }
+];
+```
+
+### Updating Site Content
+Edit `lib/siteContent.ts` for:
+- Lifetime members
+- Alumni presidents
+- Health channel videos
+- Content pages
+
+## 🧪 Testing
+
+```powershell
+# Run development server with hot reload
+npm run dev
+
+# Build and test production version locally
+npm run build
+npm run start
+```
+
+Test checklist:
+- [ ] All pages load without errors
+- [ ] Images display correctly
+- [ ] Navigation works on mobile and desktop
+- [ ] Forms submit successfully
+- [ ] Links are functional
+
+## 🔒 Environment Variables
+
+Create `.env.local` for local development:
+```
+ADMIN_PASSWORD=your_admin_password
+RESEND_API_KEY=your_resend_api_key
+```
+
+## 📈 Analytics & Monitoring
+
+Configure analytics in `src/app/layout.tsx` or add tracking scripts as needed.
+
+## 🤝 Contributing
+
+1. Create a feature branch
+2. Make your changes
+3. Test thoroughly
+4. Submit a pull request
+
+## 📞 Support
+
+- **Email**: team@fjmcaana.org
+- **Issues**: Check documentation first, then contact development team
+
+## 📜 License
+
+© 2026 FJMCAANA. All rights reserved.
+
+---
+
+## Quick Commands Reference
+
+```powershell
+# Development
+npm run dev              # Start dev server
+npm run build            # Build for production
+npm run start            # Start production server
+npm run lint             # Run linter
+
+# Image Organization
+# Place images in appropriate public/ subfolders
+# See IMAGE_GUIDE.md for details
+
+# Deployment
+vercel                   # Deploy to Vercel
+vercel --prod            # Deploy to production
+```
+
+## 🎯 Recent Updates
+
+**August 24, 2026** - Complete redesign
+- ✅ Professional hero section with full organization name
+- ✅ 48-year heritage badge component
+- ✅ Separate Leaders section (President + Executive team)
+- ✅ New Projects page (Annual vs Regular)
+- ✅ Comprehensive Reports page
+- ✅ Interest-Free Loan program page
+- ✅ Help & Resources page for students/professionals
+- ✅ Modern animations and visual enhancements
+- ✅ Reorganized navigation structure
+- ✅ Complete image handling documentation
+
+## ✨ What Makes This Special
+
+- **48 Years of Legacy**: Prominent display of organization's history
+- **Professional Identity**: Full name and mission-driven messaging
+- **Comprehensive Resources**: Dedicated pages for every program
+- **Modern UX**: Smooth animations, responsive design, intuitive navigation
+- **Easy Maintenance**: Well-documented, organized structure
+- **Accessibility First**: WCAG compliant, keyboard navigable
+- **Performance Optimized**: Server-side rendering, image optimization
+
+---
+
+**Built with ❤️ for women physicians making a difference**

@@ -9,6 +9,25 @@ export interface TeamMember {
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
+    slug: "umbreen-chaudhary",
+    name: "Dr. Umbreen Chaudhary",
+    role: "President",
+    image: "/images/president.png",
+    highlight:
+      "President of FJMCAANA 2025 & 2026, Class of '97. Dedicated to celebrating women in medicine and supporting the next generation of female physicians.",
+    message: `Ladies of FJMCAANA,
+
+It is an honor to serve as the president of this remarkable organization, which is dedicated to celebrating women in medicine and supporting the next generation of female physicians.
+
+Our association was founded with a vision to connect, inspire, and empower women who have dedicated their lives to medicine. Through our collective experiences, we continue to shape the future of healthcare while addressing the unique challenges that women face in the profession.
+
+As we move forward, our focus remains on creating opportunities for mentorship, professional growth, and supporting our alma mater. Whether you are a seasoned physician or just beginning your medical journey, we are here to provide a supportive community.
+
+I invite you to join me in supporting our many philanthropic projects for 2025 and look forward to connecting with each of you.
+
+Umbreen Chaudhary MD`,
+  },
+  {
     slug: "amnah-andrabi",
     name: "Dr. Amnah Andrabi",
     role: "Councilor",

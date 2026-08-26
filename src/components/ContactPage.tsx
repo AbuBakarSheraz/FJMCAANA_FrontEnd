@@ -62,7 +62,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="border-b border-pine/10 bg-sage/20">
+      <section className="border-b border-pine/10 bg-sage">
         <div className="mx-auto max-w-6xl px-6 py-14 sm:px-8 sm:py-20">
           <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold">
             Contact

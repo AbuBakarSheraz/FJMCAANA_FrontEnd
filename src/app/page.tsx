@@ -3,11 +3,13 @@ import Hero from "@/components/Hero";
 import StatsBar from "@/components/StatsBar";
 import SealDivider from "@/components/SealDivider";
 import Leadership from "@/components/Leadership";
+import LeadersSection from "@/components/LeadersSection";
 import CausesSection from "@/components/CausesSection";
 import GetInvolved from "@/components/GetInvolved";
 import TeamSlider from "@/components/TeamSlider";
 import NewsSection from "@/components/NewsSection";
 import Footer from "@/components/Footer";
+import HeritageBadge from "@/components/HeritageBadge";
 import { getRecords } from "@/lib/content-store";
 
 // --- Server-side data fetching from your NestJS API -----------------------
@@ -33,9 +35,12 @@ export default async function HomePage() {
     <>
       <Navbar />
       <Hero />
+      <HeritageBadge />
       <StatsBar />
       <SealDivider />
       <Leadership />
+      <SealDivider />
+      <LeadersSection />
       <SealDivider />
       <TeamSlider />
       <CausesSection causes={projects.filter((project) => project.featured).slice(0, 3)} />

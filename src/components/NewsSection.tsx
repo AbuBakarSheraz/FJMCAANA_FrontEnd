@@ -4,7 +4,7 @@ import type { ContentRecord } from "@/lib/content-store";
 
 export default function NewsSection({ items }: { items: ContentRecord[] }) {
   return (
-    <section id="news" className="bg-card/60">
+    <section id="news" className="bg-sage">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <span className="font-mono text-xs uppercase tracking-widest text-gold">Reports &amp; News</span>
         <h2 className="mb-10 mt-2 font-display text-3xl font-semibold text-pine-dark">Stay in the loop</h2>
