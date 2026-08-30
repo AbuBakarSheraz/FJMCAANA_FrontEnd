@@ -21,7 +21,7 @@ export default async function SitePage({ params }: PageProps<"/[...slug]">) {
   const key = path.join("/");
 
   if (key === "about/executive-committee") {
-    return <><Navbar /><PageHeader eyebrow="Leadership" title="Executive Committee" description="The council and executive members leading FJMCAANA's mission, projects, and community." /><main className="max-w-6xl mx-auto px-6 py-12 sm:py-16"><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{TEAM_MEMBERS.map((member) => <Link href={`/team#${member.slug}`} key={member.slug} className="rounded-xl border border-pine/10 bg-white p-5 transition hover:-translate-y-0.5 hover:border-pine/25 hover:shadow-sm"><p className="font-mono text-[11px] uppercase tracking-widest text-gold">{member.role}</p><h2 className="mt-2 font-display text-xl font-semibold text-pine-dark">{member.name}</h2><p className="mt-3 text-sm leading-relaxed text-ink-soft">{member.highlight}</p><span className="mt-4 inline-block text-sm font-semibold text-pine">Read biography <span aria-hidden="true">→</span></span></Link>)}</div></main><Footer /></>;
+    return <><Navbar /><PageHeader eyebrow="Leadership" title="Executive Committee" description="The council and executive members leading FJMCAANA's mission, projects, and community." /><main className="max-w-7xl mx-auto px-8 sm:px-2 py-12 sm:py-16"><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{TEAM_MEMBERS.map((member) => <Link href={`/team#${member.slug}`} key={member.slug} className="rounded-xl border border-pine/10 bg-white p-5 transition hover:-translate-y-0.5 hover:border-pine/25 hover:shadow-sm"><p className="font-mono text-[11px] uppercase tracking-widest text-gold">{member.role}</p><h2 className="mt-2 font-display text-xl font-semibold text-pine-dark">{member.name}</h2><p className="mt-3 text-sm leading-relaxed text-ink-soft">{member.highlight}</p><span className="mt-4 inline-block text-sm font-semibold text-pine">Read biography <span aria-hidden="true">→</span></span></Link>)}</div></main><Footer /></>;
   }
 
   if (key === "get-involved/health-channel") {
@@ -111,7 +111,7 @@ if (key === "get-involved/lifetime-members") {
     <PageHeader eyebrow="Give" title="Support a cause" description="Your gift supports healthcare, 
     education, emergency relief, and the next generation of women physicians." />
     <CausesSection causes={projects} expanded />
-    <section className="max-w-6xl mx-auto px-6 py-12 sm:py-16">
+    <section className="max-w-7xl mx-auto px-8 py-12 sm:px-2 sm:py-16">
       <div className="max-w-3xl">
         <h2 className="font-display text-2xl font-semibold text-pine-dark">Giving with purpose</h2>
         <p className="mt-4 leading-relaxed text-ink-soft">FJMCAANA states that donations support projects in Pakistan related to its alma mater,
@@ -135,7 +135,7 @@ if (key === "get-involved/lifetime-members") {
         description="Dr. Umbreen Chaudhary, President FJMCAANA 2025 & 2026, Class of '97."
       />
 
-      <main className="mx-auto max-w-6xl px-6 py-14 sm:px-8 sm:py-20">
+      <main className="mx-auto max-w-7xl px-8 py-14 sm:px-2 sm:py-20">
         <section className="grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           
           {/* President Image */}

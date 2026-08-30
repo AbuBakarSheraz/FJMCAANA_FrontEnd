@@ -18,7 +18,7 @@ export default async function DonatePage() {
         description="Your gift supports healthcare, education, emergency relief, and the next generation of women physicians." 
       />
       <CausesSection causes={projects} expanded />
-      <section className="mx-auto max-w-6xl px-6 py-12 sm:py-16">
+      <section className="mx-auto max-w-7xl px-8 py-12 sm:px-2 sm:py-16">
         <div className="max-w-3xl">
           <h2 className="font-display text-2xl font-semibold text-pine-dark">Giving with Purpose</h2>
           <p className="mt-4 leading-relaxed text-ink-soft">

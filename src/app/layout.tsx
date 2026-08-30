@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Public_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import BottomNav from "@/components/BottomNav";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -30,7 +31,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${fraunces.variable} ${publicSans.variable} ${spaceGrotesk.variable}`}>
-      <body className="font-body text-ink bg-cream">{children}</body>
+      <body className="font-body text-ink bg-cream">{children}
+        <BottomNav />
+      </body>
+      
     </html>
   );
 }

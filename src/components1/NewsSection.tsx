@@ -9,7 +9,7 @@ const FALLBACK_NEWS: NewsItem[] = [
 export default function NewsSection({ items = FALLBACK_NEWS }: { items?: NewsItem[] }) {
   return (
     <section id="news" className="bg-card/60">
-      <div className="max-w-6xl mx-auto px-6 py-20">
+      <div className="max-w-7xl mx-auto px-8 sm:px-2 py-20">
         <span className="font-mono text-xs tracking-widest uppercase text-gold">Events &amp; News</span>
         <h2 className="font-display font-semibold text-3xl text-pine-dark mt-2 mb-10">
           Stay in the loop

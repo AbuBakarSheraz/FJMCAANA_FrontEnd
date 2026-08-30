@@ -16,12 +16,16 @@ export default function StatsBar({ stats = FALLBACK_STATS }: { stats?: SiteStats
   ];
 
   return (
-    <section className="border-b border-pine/10">
-      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 divide-x divide-pine/10">
-        {items.map((item) => (
-          <div key={item.label} className="px-4 py-8 text-center">
-            <div className="font-display font-semibold text-2xl text-pine-dark">{item.value}</div>
-            <div className="font-mono text-[11px] uppercase tracking-wide text-ink-soft mt-1">
+    <section className="border-b border-pine/10 bg-cream">
+      <div className="mx-auto grid max-w-7xl grid-cols-2 sm:grid-cols-4">
+        {items.map((item, i) => (
+          <div
+            key={item.label}
+            className={`px-4 py-10 text-center ${i !== 0 ? "border-l border-dotted border-pine/15" : ""}`}
+          >
+            <div className="mx-auto mb-3 h-px w-6 bg-gold" />
+            <div className="font-display text-3xl font-semibold text-pine-dark">{item.value}</div>
+            <div className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-ink-soft">
               {item.label}
             </div>
           </div>

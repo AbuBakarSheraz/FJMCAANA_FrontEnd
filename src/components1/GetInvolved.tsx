@@ -3,7 +3,7 @@ import MembershipForm from "./MembershipForm";
 const CARDS = [
   {
     title: "Membership",
-    body: "Join fellow FJMU alumnae — mentorship, events, and a lifelong professional network.",
+    body: "Join fellow FJMU Alumni — mentorship, events, and a lifelong professional network.",
     cta: "Join now",
     href: "#membership-form",
   },
@@ -23,7 +23,7 @@ const CARDS = [
 
 export default function GetInvolved() {
   return (
-    <section id="involved" className="max-w-6xl mx-auto px-6 py-20">
+    <section id="involved" className="max-w-7xl mx-auto px-8 sm:px-2 py-20">
       <span className="font-mono text-xs tracking-widest uppercase text-gold">Get Involved</span>
       <h2 className="font-display font-semibold text-3xl text-pine-dark mt-2 mb-10">
         Join a lifelong community

@@ -21,7 +21,7 @@ export default function TeamPage() {
   description="The council and executive members who lead FJMCAANA's mission, projects, and community."
 />
 
-      <main className="max-w-6xl mx-auto px-6 py-16 flex flex-col gap-16">
+      <main className="max-w-7xl mx-auto px-8 sm:px-2 py-16 flex flex-col gap-16">
         {TEAM_MEMBERS.map((member, i) => {
           const imageFirst = i % 2 === 0;
           return (

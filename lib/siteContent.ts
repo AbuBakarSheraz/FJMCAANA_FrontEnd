@@ -49,7 +49,7 @@ export const NEWS_ITEMS: NewsItem[] = [
 
 export const CONTENT_PAGES: ContentPage[] = [
   {
-    path: ["about"], eyebrow: "About FJMCAANA", title: "A network built by women in medicine", description: "FJMCAANA brings together Fatima Jinnah Medical College and University alumnae in North America and beyond.",
+    path: ["about"], eyebrow: "About FJMCAANA", title: "A network built by women in medicine", description: "FJMCAANA brings together Fatima Jinnah Medical College and University alumni in North America and beyond.",
     sections: [
       { title: "Our purpose", paragraphs: ["FJMCAANA is a not-for-profit component society of the Association of Physicians of Pakistani Descent of North America. It supports educational, scientific, social, and charitable work for FJMC/FJMU alumnae and their alma mater." ] },
       { items: [

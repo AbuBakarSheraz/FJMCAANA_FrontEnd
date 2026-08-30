@@ -27,7 +27,7 @@ function CauseCard({ cause }: { cause: Cause }) {
 export default function CausesSection({ causes = FALLBACK_CAUSES }: { causes?: Cause[] }) {
   return (
     <section id="impact" className="bg-card/60">
-      <div className="max-w-6xl mx-auto px-6 py-20">
+      <div className="max-w-7xl mx-auto px-8 sm:px-2 py-20">
         <span className="font-mono text-xs tracking-widest uppercase text-gold">Featured Causes</span>
         <h2 className="font-display font-semibold text-3xl text-pine-dark mt-2 mb-10">
           Where your gift goes right now

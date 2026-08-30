@@ -52,7 +52,7 @@ export default function ContentPage({ page }: { page: ContentPageData }) {
     <>
       <PageHeader eyebrow={page.eyebrow} title={page.title} description={page.description} />
 
-      <main className="max-w-6xl mx-auto px-6 py-12 sm:py-16">
+      <main className="max-w-7xl mx-auto px-8 py-12 sm:px-2 sm:py-16">
         <div className="space-y-14 sm:space-y-16">
           {page.sections.map((section, sectionIndex) => {
             const isFirst = sectionIndex === 0;

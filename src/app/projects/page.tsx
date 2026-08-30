@@ -102,7 +102,7 @@ export default function ProjectsPage() {
 
       <div className="bg-cream">
         {/* Annual Projects Section */}
-        <section className="mx-auto max-w-6xl px-6 py-16">
+        <section className="mx-auto max-w-7xl px-8 sm:px-2 py-16">
           <div className="flex items-center gap-3 mb-8">
             <div className="h-1 w-12 bg-gold rounded-full" />
             <h2 className="font-display text-3xl font-semibold text-pine-dark">
@@ -154,7 +154,7 @@ export default function ProjectsPage() {
 
         {/* Regular Projects Section */}
         <section className="bg-sage/20 py-16">
-          <div className="mx-auto max-w-6xl px-6">
+          <div className="mx-auto max-w-7xl px-8 sm:px-2">
             <div className="flex items-center gap-3 mb-8">
               <div className="h-1 w-12 bg-gold rounded-full" />
               <h2 className="font-display text-3xl font-semibold text-pine-dark">
@@ -203,7 +203,7 @@ export default function ProjectsPage() {
         </section>
 
         {/* Call to Action */}
-        <section className="mx-auto max-w-6xl px-6 py-20">
+        <section className="mx-auto max-w-7xl px-8 sm:px-2 py-20">
           <div className="rounded-2xl bg-gradient-to-br from-pine-dark to-pine p-12 text-center shadow-xl">
             <h2 className="font-display text-3xl font-semibold text-white">
               Support Our Mission

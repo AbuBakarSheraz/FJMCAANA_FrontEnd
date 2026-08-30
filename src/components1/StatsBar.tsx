@@ -17,7 +17,7 @@ export default function StatsBar({ stats = FALLBACK_STATS }: { stats?: SiteStats
 
   return (
     <section className="border-b border-pine/10">
-      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 divide-x divide-pine/10">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-4 divide-x divide-pine/10">
         {items.map((item) => (
           <div key={item.label} className="px-4 py-8 text-center">
             <div className="font-display font-semibold text-2xl text-pine-dark">{item.value}</div>

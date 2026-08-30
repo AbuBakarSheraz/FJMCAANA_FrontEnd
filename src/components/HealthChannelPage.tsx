@@ -1,74 +1,56 @@
 import Image from "next/image";
-import {
-  CONTENT_PAGES,
-  HEALTH_CHANNEL_VIDEOS,
-} from "@/lib/siteContent";
+import { CONTENT_PAGES, HEALTH_CHANNEL_VIDEOS } from "@/lib/siteContent";
+import SealEmblem from "@/components/SealEmblem";
 
 function getYouTubeEmbedUrl(videoId: string) {
   return `https://www.youtube.com/embed/${videoId}`;
 }
 
 export default function HealthChannelPage() {
-  const page = CONTENT_PAGES.find(
-    (item) => item.path.join("/") === "get-involved/health-channel"
-  );
-
+  const page = CONTENT_PAGES.find((item) => item.path.join("/") === "get-involved/health-channel");
   const section = page?.sections?.[0];
-
   const sessions = section?.items ?? [];
 
   return (
     <main className="bg-white">
-      {/* -------------------------------------------------
-          HERO
-      -------------------------------------------------- */}
-      <section className="relative overflow-hidden bg-pine-dark text-white">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-gold blur-3xl" />
-          <div className="absolute -bottom-40 -left-32 h-96 w-96 rounded-full bg-pine blur-3xl" />
-        </div>
+      {/* HERO */}
+      <section className="grain relative overflow-hidden bg-pine-dark text-white">
+        <SealEmblem className="pointer-events-none absolute -right-16 top-1/2 hidden h-[360px] w-[360px] -translate-y-1/2 text-gold opacity-[0.07] sm:block" />
 
-        <div className="relative mx-auto max-w-7xl px-6 py-20 sm:px-8 sm:py-28">
+        <div className="relative z-10 mx-auto max-w-7xl px-6 py-20 sm:px-8 sm:py-28">
           <div className="max-w-4xl">
-            <p className="font-mono text-xs uppercase tracking-[0.25em] text-gold">
-              {page?.eyebrow ?? "Community Health"}
-            </p>
+            <div className="flex items-center gap-3">
+              <span className="h-px w-8 bg-gold/60" />
+              <p className="font-mono text-xs uppercase tracking-[0.2em] text-gold-light">
+                {page?.eyebrow ?? "Community Health"}
+              </p>
+            </div>
 
             <h1 className="mt-5 max-w-3xl font-display text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
               {page?.title ?? "FJMCAANA Health Channel"}
             </h1>
 
-            <p className="mt-6 max-w-2xl text-base leading-8 text-white/75 sm:text-lg">
-              {page?.description}
-            </p>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-cream/80 sm:text-lg">{page?.description}</p>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <span className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/85 backdrop-blur">
-                Free Medical Education
-              </span>
-
-              <span className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/85 backdrop-blur">
-                Physician Led
-              </span>
-
-              <span className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/85 backdrop-blur">
-                FJMU Collaboration
-              </span>
+              {["Free Medical Education", "Physician Led", "FJMU Collaboration"].map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border border-cream/20 bg-white/5 px-4 py-2 text-sm text-cream/85 backdrop-blur"
+                >
+                  {tag}
+                </span>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* -------------------------------------------------
-          INTRODUCTION
-      -------------------------------------------------- */}
+      {/* INTRODUCTION */}
       <section className="mx-auto max-w-7xl px-6 py-16 sm:px-8 sm:py-20">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-gold">
-              The Program
-            </p>
-
+            <p className="font-mono text-xs uppercase tracking-[0.18em] text-gold">The Program</p>
             <h2 className="mt-3 font-display text-3xl font-semibold text-pine-dark sm:text-4xl">
               Prevention is Our Passion
             </h2>
@@ -76,45 +58,35 @@ export default function HealthChannelPage() {
 
           <div className="max-w-3xl">
             <p className="text-lg leading-8 text-ink-soft">
-              FJMCAANA Health Channel was created to make medical education
-              and health awareness accessible to the public in Pakistan.
+              FJMCAANA Health Channel was created to make medical education and health awareness
+              accessible to the public in Pakistan.
             </p>
-
             <p className="mt-5 leading-8 text-ink-soft">
-              The initiative was developed in collaboration with Fatima Jinnah
-              Medical University and the Health Channel, bringing physician
-              experts together to discuss important health topics with the
-              community.
+              The initiative was developed in collaboration with Fatima Jinnah Medical University
+              and the Health Channel, bringing physician experts together to discuss important
+              health topics with the community.
             </p>
-
             <p className="mt-5 leading-8 text-ink-soft">
-              The original program featured live educational sessions covering
-              diabetes, childhood asthma, healthy living, sexually transmitted
-              diseases, and hypertension.
+              The original program featured live educational sessions covering diabetes, childhood
+              asthma, healthy living, sexually transmitted diseases, and hypertension.
             </p>
           </div>
         </div>
       </section>
 
-      {/* -------------------------------------------------
-          PHYSICIAN SESSIONS
-      -------------------------------------------------- */}
-      <section className="bg-sage/20">
+      {/* PHYSICIAN SESSIONS */}
+      <section className="bg-blush">
         <div className="mx-auto max-w-7xl px-6 py-16 sm:px-8 sm:py-20">
           <div className="mb-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
             <div>
-              <p className="font-mono text-xs uppercase tracking-[0.2em] text-gold">
-                Featured Physicians
-              </p>
-
+              <p className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Featured Physicians</p>
               <h2 className="mt-3 font-display text-3xl font-semibold text-pine-dark sm:text-4xl">
                 Health education from our experts
               </h2>
             </div>
-
             <p className="max-w-md text-sm leading-6 text-ink-soft">
-              Physician-led sessions covering some of the most important
-              health and wellness topics for our communities.
+              Physician-led sessions covering some of the most important health and wellness topics
+              for our communities.
             </p>
           </div>
 
@@ -122,12 +94,9 @@ export default function HealthChannelPage() {
             {sessions.map((session, index) => (
               <article
                 key={session.title}
-                className={`group overflow-hidden rounded-2xl border border-pine/10 bg-white ${
-                  index === 0 ? "lg:col-span-1" : ""
-                }`}
+                className="group overflow-hidden rounded-xl border border-pine/10 bg-white transition-shadow duration-300 hover:shadow-lg"
               >
-                {/* Doctor Image */}
-                <div className="relative aspect-[4/5] overflow-hidden bg-sage/30">
+                <div className="relative aspect-[4/5] overflow-hidden bg-sage">
                   {session.image ? (
                     <Image
                       src={session.image}
@@ -137,12 +106,10 @@ export default function HealthChannelPage() {
                       className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                     />
                   ) : (
-                    <div className="flex h-full items-center justify-center text-sm text-ink-soft">
-                      Physician
-                    </div>
+                    <div className="flex h-full items-center justify-center text-sm text-ink-soft">Physician</div>
                   )}
 
-                  <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/40 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-pine-dark/60 to-transparent" />
 
                   <div className="absolute bottom-5 left-5">
                     <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-pine-dark backdrop-blur">
@@ -151,23 +118,15 @@ export default function HealthChannelPage() {
                   </div>
                 </div>
 
-                {/* Content */}
                 <div className="p-6">
-                  <p className="text-xs font-medium uppercase tracking-[0.15em] text-gold">
+                  <p className="font-mono text-xs font-medium uppercase tracking-[0.15em] text-gold">
                     Health Channel
                   </p>
-
                   <h3 className="mt-2 font-display text-xl font-semibold leading-snug text-pine-dark">
                     {session.title}
                   </h3>
-
-                  {session.detail && (
-                    <p className="mt-3 text-sm font-medium text-ink-soft">
-                      {session.detail}
-                    </p>
-                  )}
-
-                  <div className="mt-5 h-px w-10 bg-pine/20 transition-all duration-300 group-hover:w-16" />
+                  {session.detail && <p className="mt-3 text-sm font-medium text-ink-soft">{session.detail}</p>}
+                  <div className="mt-5 h-px w-10 bg-gold/40 transition-all duration-300 group-hover:w-16" />
                 </div>
               </article>
             ))}
@@ -175,32 +134,22 @@ export default function HealthChannelPage() {
         </div>
       </section>
 
-      {/* -------------------------------------------------
-          VIDEO LIBRARY
-      -------------------------------------------------- */}
+      {/* VIDEO LIBRARY */}
       <section className="mx-auto max-w-7xl px-6 py-16 sm:px-8 sm:py-24">
         <div className="max-w-3xl">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-gold">
-            Watch & Learn
-          </p>
-
+          <p className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Watch & Learn</p>
           <h2 className="mt-3 font-display text-3xl font-semibold text-pine-dark sm:text-4xl">
             Health Channel Videos
           </h2>
-
           <p className="mt-5 leading-8 text-ink-soft">
-            Explore educational sessions and conversations from the FJMCAANA
-            Health Channel.
+            Explore educational sessions and conversations from the FJMCAANA Health Channel.
           </p>
         </div>
 
         <div className="mt-10 grid gap-8 md:grid-cols-2">
           {HEALTH_CHANNEL_VIDEOS.map((video) => (
-            <article
-              key={video.videoId}
-              className="overflow-hidden rounded-2xl border border-pine/10 bg-white shadow-sm"
-            >
-              <div className="relative aspect-video bg-black">
+            <article key={video.videoId} className="overflow-hidden rounded-xl border border-pine/10 bg-white">
+              <div className="relative aspect-video bg-pine-dark">
                 <iframe
                   src={getYouTubeEmbedUrl(video.videoId)}
                   title={video.title}
@@ -210,40 +159,30 @@ export default function HealthChannelPage() {
                   allowFullScreen
                 />
               </div>
-
               <div className="p-5 sm:p-6">
-                <h3 className="font-display text-lg font-semibold leading-snug text-pine-dark">
-                  {video.title}
-                </h3>
+                <h3 className="font-display text-lg font-semibold leading-snug text-pine-dark">{video.title}</h3>
               </div>
             </article>
           ))}
         </div>
       </section>
 
-      {/* -------------------------------------------------
-          COLLABORATION
-      -------------------------------------------------- */}
-      <section className="border-y border-pine/10 bg-pine-dark text-white">
-        <div className="mx-auto max-w-7xl px-6 py-14 sm:px-8 sm:py-16">
+      {/* COLLABORATION */}
+      <section className="grain relative border-y border-white/10 bg-pine-dark text-white">
+        <div className="relative z-10 mx-auto max-w-7xl px-6 py-14 sm:px-8 sm:py-16">
           <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
             <div>
-              <p className="font-mono text-xs uppercase tracking-[0.2em] text-gold">
-                In Collaboration With
-              </p>
-
+              <p className="font-mono text-xs uppercase tracking-[0.18em] text-gold-light">In Collaboration With</p>
               <h2 className="mt-3 font-display text-2xl font-semibold sm:text-3xl">
                 Fatima Jinnah Medical University
               </h2>
-
-              <p className="mt-3 max-w-2xl leading-7 text-white/65">
-                FJMCAANA's Health Channel brings together medical expertise,
-                education, and community outreach in partnership with FJMU
-                and health education collaborators.
+              <p className="mt-3 max-w-2xl leading-7 text-cream/70">
+                FJMCAANA&apos;s Health Channel brings together medical expertise, education, and
+                community outreach in partnership with FJMU and health education collaborators.
               </p>
             </div>
 
-            <div className="rounded-full border border-white/10 bg-white/5 px-6 py-4 text-sm text-white/75">
+            <div className="rounded-full border border-gold/30 bg-white/5 px-6 py-4 text-sm italic text-gold-light">
               Prevention is Our Passion
             </div>
           </div>

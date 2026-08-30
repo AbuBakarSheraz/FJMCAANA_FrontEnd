@@ -63,7 +63,7 @@ export default function ContactPage() {
   return (
     <>
       <section className="border-b border-pine/10 bg-sage">
-        <div className="mx-auto max-w-6xl px-6 py-14 sm:px-8 sm:py-20">
+        <div className="mx-auto max-w-7xl px-8 py-8 sm:px-2 sm:py-10">
           <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold">
             Contact
           </p>
@@ -79,7 +79,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <main className="mx-auto max-w-6xl px-6 py-14 sm:px-8 sm:py-20">
+      <main className="mx-auto max-w-7xl px-8 py-8 sm:px-2 sm:py-10">
         <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
 
           {/* Contact information */}

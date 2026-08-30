@@ -6,19 +6,22 @@
 
 @theme inline {
   /* Colors */
-  --color-pine: #0e3b2e;
-  --color-pine-dark: #092b21;
-  --color-pine-light: #1c5943;
+  --color-pine: #134A39;
+  --color-pine-dark: #0B2E24;
+  --color-pine-light: #1F6B52;
 
-  --color-gold: #c99a44;
-  --color-gold-light: #e4c387;
+  --color-gold: #B98A3E;
+  --color-gold-light: #D9B876;
 
-  --color-cream: #faf6ef;
-  --color-card: #f0eadb;
-  --color-sage: #e6ede7;
+  --color-rose: #AD5F73;
+--color-rose-light: #D9AFBB;
 
-  --color-ink: #202a24;
-  --color-ink-soft: #4c574f;
+  --color-cream: #FBF7F0;
+  --color-card: #F1E7D3;
+  --color-sage: #E8EFE9;
+
+  --color-ink: #1B241E;
+  --color-ink-soft: #5A655C;
 
   /* Fonts */
   --font-display: var(--font-fraunces), serif;
@@ -26,13 +29,45 @@
   --font-mono: var(--font-space-grotesk), monospace;
 }
 
+/* Faint paper grain — used sparingly on dark/hero surfaces for warmth */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+/* Signature emblem divider */
+.seal-divider {
+  position: relative;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seal-divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(14, 59, 46, 0.16) 18%,
+    rgba(14, 59, 46, 0.16) 82%,
+    transparent
+  );
+}
+
 /* ========================================
    Base
    ======================================== */
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   background: #faf6ef;

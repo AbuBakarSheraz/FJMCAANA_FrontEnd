@@ -15,7 +15,7 @@ export default function LoanPage() {
 
       <div className="bg-cream">
         {/* Hero Section with Flyer */}
-        <section className="mx-auto max-w-6xl px-6 py-16">
+        <section className="mx-auto max-w-7xl px-8 sm:px-2 py-16">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Flyer Image */}
             <div className="relative overflow-hidden rounded-2xl border-2 border-gold/30 bg-white shadow-xl">
@@ -91,7 +91,7 @@ export default function LoanPage() {
 
         {/* Eligibility Section */}
         <section className="bg-sage/20 py-16">
-          <div className="mx-auto max-w-6xl px-6">
+          <div className="mx-auto max-w-7xl px-8 sm:px-2">
             <div className="flex items-center gap-3 mb-8">
               <div className="h-1 w-12 bg-gold rounded-full" />
               <h2 className="font-display text-3xl font-semibold text-pine-dark">
@@ -160,7 +160,7 @@ export default function LoanPage() {
         </section>
 
         {/* Application Process */}
-        <section className="mx-auto max-w-6xl px-6 py-16">
+        <section className="mx-auto max-w-7xl px-8 sm:px-2 py-16">
           <div className="flex items-center gap-3 mb-8">
             <div className="h-1 w-12 bg-gold rounded-full" />
             <h2 className="font-display text-3xl font-semibold text-pine-dark">

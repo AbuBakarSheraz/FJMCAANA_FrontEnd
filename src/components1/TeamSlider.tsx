@@ -26,7 +26,7 @@ export default function TeamSlider() {
   const member = TEAM_MEMBERS[index];
 
   return (
-    <section id="team" className="max-w-6xl mx-auto px-6 py-20">
+    <section id="team" className="max-w-7xl mx-auto px-8 sm:px-2  py-20">
       <span className="font-mono text-xs tracking-widest uppercase text-gold">Our Team</span>
       <h2 className="font-display font-semibold text-3xl text-pine-dark mt-2 mb-10">
         The people behind FJMCAANA

@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-pine/10">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-8 sm:px-2 py-4 flex items-center justify-between">
         <Link href="/" className="font-display font-semibold text-lg text-pine-dark">
           FJMCAANA
         </Link>

@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-gold/10 blur-2xl" />
 
       {/* Content */}
-      <div className="max-w-6xl mx-auto px-6 pt-20 pb-24 relative z-10">
+      <div className="max-w-7xl mx-auto px-8 sm:px-2 pt-20 pb-24 relative z-10">
         <span className="font-mono text-xs tracking-widest uppercase text-gold-light">
           FJMCAANA
         </span>
