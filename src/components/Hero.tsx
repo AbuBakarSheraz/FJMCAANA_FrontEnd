@@ -8,7 +8,7 @@ export default function Hero() {
       </video>
       <div className="absolute inset-0 bg-gradient-to-b from-pine-dark/80 via-pine/60 to-pine-dark/90" />
       <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-gold/10 blur-2xl" />
-      <div className="relative z-10 mx-auto max-w-7xl px-8 sm:px-2 pb-24 pt-20">
+      <div className="relative z-10 mx-auto max-w-7xl px-8 md:px-4 md:py-4 sm:px-2 pb-24 pt-20">
         <span className="font-mono text-xs uppercase tracking-widest text-gold-light animate-fade-in">Fatima Jinnah Medical College Alumni Association of North America</span>
         <h1 className="mt-3 max-w-2xl font-display text-4xl font-semibold leading-tight text-white sm:text-6xl animate-slide-in-left">
           Connect.

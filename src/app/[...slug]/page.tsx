@@ -63,7 +63,7 @@ if (key === "contact") {
         description="Celebrating the alumni who have made an enduring commitment to FJMCAANA."
       />
 
-      <main className="mx-auto max-w-7xl px-6 py-14 sm:px-8 sm:py-20">
+      <main className="mx-auto max-w-7xl px-6 py-10 md:px-6 md:py-8 sm:px-1 sm:py-4">
         <div className="grid grid-cols-2 gap-x-5 gap-y-10 sm:grid-cols-2 sm:gap-x-7 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-14">
           {ALUMNI_PRESIDENTS.map((member) => (
             <LifetimeMemberCard
@@ -89,7 +89,7 @@ if (key === "get-involved/lifetime-members") {
         description="Celebrating the alumnae who have made an enduring commitment to FJMCAANA."
       />
 
-      <main className="mx-auto max-w-7xl px-6 py-14 sm:px-8 sm:py-20">
+      <main className="mx-auto max-w-7xl px-6 py-10 md:px-4 md:py-8 sm:px-2 sm:py-6">
         <div className="grid grid-cols-2 gap-x-5 gap-y-10 sm:grid-cols-2 sm:gap-x-7 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-14">
           {LIFETIME_MEMBERS.map((member) => (
             <LifetimeMemberCard
@@ -111,7 +111,7 @@ if (key === "get-involved/lifetime-members") {
     <PageHeader eyebrow="Give" title="Support a cause" description="Your gift supports healthcare, 
     education, emergency relief, and the next generation of women physicians." />
     <CausesSection causes={projects} expanded />
-    <section className="max-w-7xl mx-auto px-8 py-12 sm:px-2 sm:py-16">
+    <section className="max-w-7xl mx-auto px-8 py-10 md:px-4 md:py-8 sm:px-2 sm:py-6">
       <div className="max-w-3xl">
         <h2 className="font-display text-2xl font-semibold text-pine-dark">Giving with purpose</h2>
         <p className="mt-4 leading-relaxed text-ink-soft">FJMCAANA states that donations support projects in Pakistan related to its alma mater,
@@ -135,7 +135,7 @@ if (key === "get-involved/lifetime-members") {
         description="Dr. Umbreen Chaudhary, President FJMCAANA 2025 & 2026, Class of '97."
       />
 
-      <main className="mx-auto max-w-7xl px-8 py-14 sm:px-2 sm:py-20">
+      <main className="mx-auto max-w-7xl px-8 py-10 md:px-4 md:py-8 sm:px-2 sm:py-6">
         <section className="grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           
           {/* President Image */}
