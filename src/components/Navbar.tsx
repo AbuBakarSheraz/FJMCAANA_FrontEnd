@@ -16,19 +16,16 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-pine/10 bg-cream/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-2 py-2.5 md:px-4 md:py-3 sm:px-6 sm:py-3 ">
-        <Link href="/" className="flex min-w-0 items-center gap-3">
-          <Image
-            src="/images/Your paragraph text.png"
-            alt="FJMCAANA logo"
-            width={56}
-            height={56}
-            priority
-            className="h-12 w-12 flex-none object-contain sm:h-14 sm:w-14"
-          />
-          <span className="font-display text-lg font-semibold leading-tight text-pine-dark">
-            FJMCAANA
-          </span>
-        </Link>
+       <Link href="/" className="flex items-center">
+  <Image
+    src="/images/Final_Logo.png"
+    alt="FJMCAANA logo"
+    width={248}
+    height={92}
+    priority
+    className="h-auto w-[180px] sm:w-[210px] lg:w-[240px]"
+  />
+</Link>
 
         {/* Full nav — only from lg up, where there's actually room */}
         <div className="hidden items-center gap-6 lg:flex">
