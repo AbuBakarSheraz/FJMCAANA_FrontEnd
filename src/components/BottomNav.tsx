@@ -21,8 +21,8 @@ const TABS = [
   },
   null, // reserved for the raised Donate button
   {
-    href: "/impact",
-    label: "Impact",
+    href: "/projects",
+    label: "Projects",
     icon: (
       <>
         <circle cx="12" cy="12" r="8" />
@@ -59,9 +59,9 @@ const MORE_LINKS = [
   { href: "/contact", label: "Contact" },
 ];
 
-function TabIcon({ children, className = "h-6 w-6" }: { children: React.ReactNode; className?: string }) {
+function TabIcon({ children, className = "h-5 w-5" }: { children: React.ReactNode; className?: string }) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={className}>
       {children}
     </svg>
   );
@@ -79,7 +79,7 @@ export default function BottomNav() {
         className="fixed inset-x-0 bottom-0 z-40 border-t border-pine/10 bg-cream/95 pb-[env(safe-area-inset-bottom)] backdrop-blur md:hidden"
         aria-label="Primary"
       >
-        <div className="relative mx-auto grid max-w-md grid-cols-5 items-end px-2 pb-1.5 pt-2">
+        <div className="relative mx-auto grid max-w-md grid-cols-5 items-center px-2 py-1.5">
           {TABS.map((tab, i) => {
             if (tab === null) {
               // Raised Donate button
@@ -89,10 +89,10 @@ export default function BottomNav() {
                     href="https://www.paypal.com/us/fundraiser/charity/1554217"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="-mt-7 flex h-14 w-14 flex-none items-center justify-center rounded-full border-4 border-cream bg-gold text-pine-dark shadow-lg shadow-pine-dark/20 transition active:scale-95"
+                    className="-mt-6 flex h-12 w-12 flex-none items-center justify-center rounded-full border-4 border-cream bg-gold text-pine-dark shadow-md shadow-pine-dark/20 transition active:scale-95"
                     aria-label="Donate"
                   >
-                    <TabIcon className="h-6 w-6">
+                    <TabIcon className="h-5 w-5">
                       <path d="M12 20s-7-4.4-7-9.5A4.5 4.5 0 0 1 12 8a4.5 4.5 0 0 1 7 2.5C19 15.6 12 20 12 20Z" />
                     </TabIcon>
                   </a>
@@ -106,12 +106,22 @@ export default function BottomNav() {
                 <button
                   key="more"
                   onClick={() => setMoreOpen(true)}
-                  className="flex flex-col items-center gap-1 py-1.5"
+                  className="flex flex-col items-center gap-0.5 py-1"
                   aria-label="More"
                   aria-expanded={moreOpen}
                 >
-                  <TabIcon className={`h-6 w-6 ${active ? "text-gold" : "text-ink-soft"}`}>{tab.icon}</TabIcon>
-                  <span className={`font-mono text-[10px] uppercase tracking-wide ${active ? "text-gold" : "text-ink-soft"}`}>
+                  <span
+                    className={`flex h-7 w-9 items-center justify-center rounded-full transition-colors ${
+                      active ? "bg-gold/15 text-gold" : "text-ink-soft"
+                    }`}
+                  >
+                    <TabIcon>{tab.icon}</TabIcon>
+                  </span>
+                  <span
+                    className={`font-mono text-[9.5px] uppercase tracking-wide transition-colors ${
+                      active ? "text-gold" : "text-ink-soft"
+                    }`}
+                  >
                     {tab.label}
                   </span>
                 </button>
@@ -123,13 +133,22 @@ export default function BottomNav() {
               <Link
                 key={tab.href}
                 href={tab.href}
-                className="flex flex-col items-center gap-1 py-1.5"
+                className="flex flex-col items-center gap-0.5 py-1"
               >
-                <TabIcon className={`h-6 w-6 ${active ? "text-pine" : "text-ink-soft"}`}>{tab.icon}</TabIcon>
-                <span className={`font-mono text-[10px] uppercase tracking-wide ${active ? "text-pine" : "text-ink-soft"}`}>
+                <span
+                  className={`flex h-7 w-9 items-center justify-center rounded-full transition-colors ${
+                    active ? "bg-pine/10 text-pine" : "text-ink-soft"
+                  }`}
+                >
+                  <TabIcon>{tab.icon}</TabIcon>
+                </span>
+                <span
+                  className={`font-mono text-[9.5px] uppercase tracking-wide transition-colors ${
+                    active ? "text-pine font-semibold" : "text-ink-soft"
+                  }`}
+                >
                   {tab.label}
                 </span>
-                {active && <span className="mt-0.5 h-1 w-1 rounded-full bg-gold" aria-hidden="true" />}
               </Link>
             );
           })}

@@ -8,6 +8,27 @@ export interface TeamMember {
 }
 
 export const TEAM_MEMBERS: TeamMember[] = [
+   {
+    slug: "umbreen-chaudhary",
+    name: "Umbreen Chaudhary, MD, MPH",
+    role: "Secretary",
+    image: "/images/president.png",
+    highlight:
+      "Board-certified internist and geriatrician, founder of Rejuvenation MD and Vein Center, with a passion for philanthropy, mentorship, and empowering young women to pursue meaningful careers.",
+    message: `Graduated from Fatima Jinnah Medical University Lahore, Pakistan- 1997 Internal Medicine and Aesthetics
+
+I am originally from the USA and moved to Pakistan for my medical education at FJMC. I graduated from FJMC in 1997 and went on to do an Internal Medicine residency at Overlook Hospital in NJ followed by a geriatric fellowship at Winthrop University Hospital in NY. My husband and I moved to NC in 2003 with two children. I established my private practice, Rejuvenation MD and Vein Center in 2004. I became involved with FJMCAANA because of their philanthropic efforts. I could see the momentum that the alumni were garnishing and I wanted to support their many projects. My personal passion is mentoring young women and encouraging them to pursue careers.`,
+  },
+   {
+    slug: "sumra-rathore",
+    name: "Sumra Rathore, MD, MPH",
+    role: "Secretary",
+    image: "/team/Sumra_Rathore.jpeg",
+    highlight:
+      "Board-certified pathologist and Medical Director of Sonic Health Laboratory, the third largest commercial referral laboratory in the United States.",
+    message: `Sumra Rathore, MD, MPH, class of 1987 is board-certified pathologist. She is the Medical Director of Sonic Health Laboratory, third largest commercial referral laboratory in the United States. She served as treasurer of FJ alumni a decade ago and is excited to serve in the same capacity with a much-renewed interest. She is an avid animal lover and loves nature and the outdoors. Her husband is a physician, her elder son and his wife work for the US government, and her younger son is a third-year resident.`,
+  },
+  
   {
     slug: "amnah-andrabi",
     name: "Dr. Amnah Andrabi",
@@ -33,10 +54,12 @@ export const TEAM_MEMBERS: TeamMember[] = [
     image: "/team/Sehrish_Mehmood.png",
     highlight:
       "2011 graduate of FJMC, currently living in Virginia and working in peer review and utilization review.",
-    message: `I am Dr. Sahrish Mahmood. I am a 2011 graduate of FJMC, currently living in Virginia and working in peer review and utilization review. I have extensive volunteer experience with nonprofit organizations across the DMV area, including a Korean organization and the Fairfax County Health Department, among others. I have been recognized with an award for community health services in Fairfax County.
+    message: `Dr. Sahrish Mahmood, a proud graduate of Fatima Jinnah Medical University (FJMU), Lahore, is a healthcare professional and dedicated community leader with a strong commitment to quality healthcare, public health, health equity, and service.
+In the United States, she has built expertise in Utilization and Peer Review, supporting high-quality, appropriate, and patient-centered care. Her passion for service extends beyond medicine through her work with nonprofits, free clinics, public health programs, and South Asian community initiatives across the DMV.
 
-During my first year of medical school, I also won a beauty contest in the FMJC hostel and was crowned for that achievement. Outside of work, I love traveling and am deeply in love with fashion.`,
-  },
+Her dedication to community service, volunteerism, and leadership has earned her multiple awards and honors. She continues to advocate for culturally responsive healthcare and empower underserved communities through education, outreach, and meaningful engagement.
+
+Inspired by the values of FJMU, Dr. Mahmood believes that true leadership is about serving others, creating connections, and making a lasting difference.`  },
   {
     slug: "naghmna-bajwa",
     name: "Dr. Naghmana Bajwa",
@@ -63,13 +86,5 @@ Currently based in New Jersey, USA, Dr. Anwar completed a Research Fellowship in
 
 Dr. Anwar is a Fellow of the Faculty of Pharmaceutical Medicine (FFPM), Royal College of Physicians (UK), and an active mentor for the Rutgers Fellowship in Pharmaceutical Medicine as well as within her organization. She also holds a leadership role with the APPNA New Jersey Chapter, contributing to education, mentorship, and professional development within the medical community.`,
   },
-  {
-    slug: "sumra-rathore",
-    name: "Sumra Rathore, MD, MPH",
-    role: "Secretary",
-    image: "/team/Sumra_Rathore.jpeg",
-    highlight:
-      "Board-certified pathologist and Medical Director of Sonic Health Laboratory, the third largest commercial referral laboratory in the United States.",
-    message: `Sumra Rathore, MD, MPH, class of 1987 is board-certified pathologist. She is the Medical Director of Sonic Health Laboratory, third largest commercial referral laboratory in the United States. She served as treasurer of FJ alumni a decade ago and is excited to serve in the same capacity with a much-renewed interest. She is an avid animal lover and loves nature and the outdoors. Her husband is a physician, her elder son and his wife work for the US government, and her younger son is a third-year resident.`,
-  },
+ 
 ];

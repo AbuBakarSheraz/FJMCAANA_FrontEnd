@@ -29,16 +29,16 @@ export default function LeadersSection() {
               key={leader.slug}
               className="group relative overflow-hidden rounded-xl border border-pine/10 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="relative h-64 overflow-hidden bg-sage">
-                <Image
-                  src={leader.image}
-                  alt={leader.name}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-pine-dark/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-              </div>
+             <div className="relative h-64 overflow-hidden bg-sage">
+  <Image
+    src={leader.image}
+    alt={leader.name}
+    fill
+    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+    className="object-contain transition-transform duration-300 group-hover:scale-105"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-pine-dark/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+</div>
               <div className="p-6">
                 <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-gold">
                   {leader.role}

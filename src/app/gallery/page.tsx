@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 export const metadata = {
   title: "Gallery | FJMCAANA Memories & Events",
   description:
-    "Explore FJMCAANA's gallery showcasing professional, cultural, and community events. Relive memorable gatherings, celebrations, and milestones from our sisterhood of physicians.",
+    "Explore FJMCAANA's gallery showcasing professional, cultural, and community events. Relive memorable gatherings, celebrations, and milestones from our alumni of physicians.",
 };
 
 const galleryYears = [

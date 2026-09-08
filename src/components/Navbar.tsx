@@ -4,10 +4,10 @@ import Image from "next/image";
 const NAV_LINKS = [
   { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
-  { href: "/get-involved", label: "Get Involved" },
-  { href: "/impact", label: "Our Impact" },
+  { href: "/events", label: "Events" },
   { href: "/reports", label: "Reports" },
   { href: "/gallery", label: "Gallery" },
+  { href: "/get-involved", label: "Get Involved" },
   { href: "/help", label: "Help & Resources" },
   { href: "/contact", label: "Contact" },
 ];
@@ -15,7 +15,7 @@ const NAV_LINKS = [
 export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-pine/10 bg-cream/95 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-2 py-2.5 md:px-4 md:py-3 sm:px-6 sm:py-3 ">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-2 py-2 md:px-4 md:py-2 sm:px-6 sm:py-2 ">
        <Link href="/" className="flex items-center">
   <Image
     src="/images/Final_Logo.png"

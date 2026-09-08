@@ -144,23 +144,15 @@ export const CONTENT_PAGES: ContentPage[] = [
     sections: [{ paragraphs: ["The previous site did not publish a standalone volunteer program or application. To explore ways to help, contact the FJMCAANA team directly."] }],
   },
   {
-    path: ["impact"], eyebrow: "Our Impact", title: "Care that reaches further", description: "Healthcare, education, emergency relief, and support for the next generation.",
-    sections: [{ items: [{ title: "Projects", detail: "Long-standing work with FJMU and community partners.", href: "/impact/projects" }, { title: "Success Stories", detail: "Cornea transplant stories and project results.", href: "/impact/success-stories" }, { title: "Gallery", detail: "A record of events, partnerships, and service.", href: "/impact/gallery" }, { title: "Events", detail: "Past meetings, conferences, and fundraisers.", href: "/impact/events" }] }],
+    path: ["events"], eyebrow: "Our Impact", title: "Care that reaches further", description: "Healthcare, education, emergency relief, and support for the next generation.",
+    sections: [{ items: [{ title: "Past Events", detail: "The happiness moments we lived together.", href: "/events/past-events" }, { title: "Upcoming Events", detail: "Lets meet again.", href: "/events/upcoming-events" }] }],
+  }, 
+  {
+    path: ["events", "past-events"], eyebrow: "Community", title: "Past Events", description: "Conferences, meetings, and fundraisers that bring the association together.",
+    sections: [{ items: [{ title: "4th Annual Scientific Conference", detail: "December 16, 2022" }, { title: "FJMCAANA Annual Spring Meeting", detail: "March 24, 2022 · Omni Hotel & Resort" }, { title: "FJMU Winter Meeting", detail: "December 21, 2021 · Lahore" }, { title: "FJMU Alumni North America Annual Online Zoom Fundraiser", detail: "April 24, 2021" }, { title: "AOA Dear FJ Family", detail: "May 31, 2020 · Montreal" }] }],
   },
   {
-    path: ["impact", "projects"], eyebrow: "Our Impact", title: "Projects", description: "Programs that connect FJMCAANA's resources with local expertise and need.",
-    sections: [{ items: [{ title: "Cornea Transplants", detail: "US$15,000 raised in Ramadan 2022 to support 60 transplants at Sir Ganga Ram Hospital." }, { title: "Kashani Basti Flood Relief", detail: "FJMCAANA and FJMU supported construction and inauguration of 29 houses in Fazal Pur, South Punjab." }, { title: "Student Scholarship", detail: "15 scholarships per year for deserving FJMC students." }, { title: "FJMU E-Library", detail: "21 laptops and a connected library established in 2009." }, { title: "FJMCAANA & TAKMIL", detail: "Education support for children in rural and under-resourced communities." }, { title: "Mother and Child Hospital", detail: "Compassionate, holistic care for women at every stage of life." }, { title: "AFJOG Projects", detail: "Past support for the Hepatitis Initiative." }] }],
-  },
-  {
-    path: ["impact", "success-stories"], eyebrow: "Our Impact", title: "Success Stories", description: "The Cornea Transplant Project has helped people regain their vision.",
-    sections: [{ paragraphs: ["In 2022, FJMCAANA, the Zafar & Mir Foundation, and the Ophthalmology Department of Sir Ganga Ram Hospital launched the Cornea Transplants Project. The site reports that over 60 transplants have been completed."], items: [{ title: "Sajid Mehmood", detail: "Cornea transplant success story" }, { title: "Rana Muhammad", detail: "Cornea transplant success story" }, { title: "Misbah Shaukat", detail: "Cornea transplant success story" }, { title: "Mehmood Afzal", detail: "Cornea transplant success story" }, { title: "Hasnain Mirja", detail: "Cornea transplant success story" }, { title: "Salamat Ali", detail: "Cornea transplant success story" }] }],
-  },
-  {
-    path: ["impact", "gallery"], eyebrow: "Our Impact", title: "Gallery", description: "A visual record of FJMCAANA's community, service, and gatherings.",
-    sections: [{ items: [{ title: "FJMCAANA Winter Meeting", detail: "December 22-24, 2021" }, { title: "Annual Scientific Conference", detail: "2019" }, { title: "Helping Babies Breathe" }, { title: "Mother and Child Hospital Fundraiser", detail: "2019" }, { title: "SGRH ICU Fund" }, { title: "FJMCAA at Summer Convention", detail: "2017" }, { title: "APPNA Health Care Day", detail: "2016" }, { title: "Visit to Fatima Jinnah Medical University", detail: "2015" }, { title: "FJMCAA at Summer Convention", detail: "2016" }] }],
-  },
-  {
-    path: ["impact", "events"], eyebrow: "Community", title: "Past Events", description: "Conferences, meetings, and fundraisers that bring the association together.",
+    path: ["events", "upcoming-events"], eyebrow: "Community", title: "Upcoming Events", description: "Conferences, meetings, and fundraisers that bring the association together.",
     sections: [{ items: [{ title: "4th Annual Scientific Conference", detail: "December 16, 2022" }, { title: "FJMCAANA Annual Spring Meeting", detail: "March 24, 2022 · Omni Hotel & Resort" }, { title: "FJMU Winter Meeting", detail: "December 21, 2021 · Lahore" }, { title: "FJMU Alumni North America Annual Online Zoom Fundraiser", detail: "April 24, 2021" }, { title: "AOA Dear FJ Family", detail: "May 31, 2020 · Montreal" }] }],
   },
   {

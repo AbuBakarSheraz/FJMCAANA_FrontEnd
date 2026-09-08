@@ -5,7 +5,7 @@ import { getContentPage } from "@/lib/siteContent";
 import { notFound } from "next/navigation";
 
 export default function ImpactPage() {
-  const page = getContentPage(["impact"]);
+  const page = getContentPage(["events"]);
   if (!page) notFound();
   
   return (

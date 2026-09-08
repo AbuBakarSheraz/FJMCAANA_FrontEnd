@@ -8,9 +8,15 @@ export default function Leadership() {
         <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">President&apos;s Message</span>
 
         <div className="mt-8 grid gap-10 sm:grid-cols-[220px_1fr] sm:items-start">
-          <div className="relative h-64 w-full flex-none overflow-hidden rounded-2xl border-2 border-gold-light bg-card shadow-sm sm:h-72 sm:w-56">
-            <Image src="/images/president.png" alt="Dr. Umbreen Chaudhary" fill sizes="224px" className="object-cover" />
-          </div>
+         <div className="relative h-72 w-full flex-none overflow-hidden rounded-2xl border-2 border-gold-light bg-card shadow-sm sm:h-72 sm:w-56">
+  <Image
+    src="/images/president.png"
+    alt="Dr. Umbreen Chaudhary"
+    fill
+    sizes="(max-width: 640px) 100vw, 224px"
+    className="object-contain"
+  />
+</div>
 
           <div className="relative">
             <span
