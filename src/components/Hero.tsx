@@ -13,18 +13,18 @@ export default function Hero() {
         <h1 className="mt-3 max-w-2xl font-display text-4xl font-semibold leading-tight text-white sm:text-6xl animate-slide-in-left">
           Connect.
           <br />
-          Learn.
+          Empower.
           <br />
           Elevate.
         </h1>
         <div className="mt-6 h-px w-24 bg-gold/50" />
-        <p className="mt-6 max-w-xl text-lg text-cream/85 animate-slide-in-right">A dynamic network of physicians empowering each other to grow, lead, and make a lasting impact.</p>
+        <p className="mt-6 max-w-xl text-lg text-cream/85 animate-slide-in-right">A community of FJMU physicians united by a shared legacy. Empowering one another to lead, serve, and create lasting impact across generations in the US & Canada.</p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link href="/get-involved/membership" className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-pine-dark transition hover:bg-gold-light">
-            Get Involved
+            Get Membership
             <span aria-hidden="true">→</span>
           </Link>
-          <Link href="/loan" className="rounded-lg border-2 border-gold bg-gold/10 px-6 py-3 text-sm font-semibold text-gold-light transition hover:bg-gold hover:text-pine-dark">Interest-Free Loans</Link>
+          <Link href="/loan" className="rounded-lg border-2 border-gold bg-gold/10 px-6 py-3 text-sm font-semibold text-gold-light transition hover:bg-gold hover:text-pine-dark">Postgraduate Loans</Link>
           <Link href="/donate" className="rounded-lg border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">Support a Cause</Link>
        
         </div>

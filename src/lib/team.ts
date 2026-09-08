@@ -64,35 +64,6 @@ Currently based in New Jersey, USA, Dr. Anwar completed a Research Fellowship in
 Dr. Anwar is a Fellow of the Faculty of Pharmaceutical Medicine (FFPM), Royal College of Physicians (UK), and an active mentor for the Rutgers Fellowship in Pharmaceutical Medicine as well as within her organization. She also holds a leadership role with the APPNA New Jersey Chapter, contributing to education, mentorship, and professional development within the medical community.`,
   },
   {
-    slug: "azra-khan",
-    name: "Dr. Azra Khan",
-    role: "Past President 2025",
-    image: "/team/Azra_Khan.png",
-    highlight:
-      "MBBS, FJMU Lahore 1984 — anesthesiologist in South Florida and a longtime advocate for medical education across borders.",
-    message: `Dr. Azra Khan MBBS graduated from FJMU Lahore in 1984.
-
-She did her residency training in Internal Medicine and OB/GYN at SGRH Lahore.
-
-Dr. Khan served as Medical Officer in Coronary Care Unit and Emergency Department at SGRH where she was responsible for education and training of medical and nursing students as well as mentoring of the interns and residents.
-
-She later served as Resident Staff medical officer in OB/GYN Dept. at a tertiary care hospital in Rawalpindi where her duties were clinical as well as academic teaching and mentoring.
-
-Dr. Khan emigrated to the United States in 1991 and did her residency training in Anesthesiology at Jackson Memorial Hospital, Miami, FL.
-
-Her special interest is Ambulatory Anesthesia services. She is on staff in a very busy and thriving surgical center in south Florida.
-
-Dr. Khan is a very proud member of local APPNA chapter and participates in all activities related to community health education, youth debate programs, Pakistani cultural activities, free clinic, health fairs, project downtown and food banks. She is a physician at PAKAM free clinic.
-
-Dr. Khan is keenly aware of the responsibilities of the Expatriate Alumni towards their Alma-maters and mother countries. She has been a strong proponent for disseminating medical knowledge and skills to medical schools and physicians in Pakistan via Telemedicine, Tele-seminars and Telementoring.
-
-She is representing her FJMCAANA as member of APPNA scholarship committee to financially help the deserving medical students at FJMU complete their medical education. She will be helping to raise funds for her Alumni projects.
-
-Dr. Khan loves reading, hiking, globe trotting. She is very successfully cultivating a variety of mango trees in south FL.
-
-Dr. Khan is a supporter of better maternal and family health through preventive health education, optimum nutrition and exercise.`,
-  },
-  {
     slug: "sumra-rathore",
     name: "Sumra Rathore, MD, MPH",
     role: "Secretary",
