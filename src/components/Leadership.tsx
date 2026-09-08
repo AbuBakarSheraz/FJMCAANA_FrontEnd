@@ -19,7 +19,7 @@ export default function Leadership() {
             >
               &ldquo;
             </span>
-            <p className="relative max-w-2xl font-display text-2xl italic leading-snug text-pine-dark sm:text-3xl">
+            <p className="relative max-w-5xl font-display text-2xl italic leading-snug text-pine-dark sm:text-3xl">
               Our focus remains on creating opportunities for mentorship, professional growth, and
               supporting our alma mater.
             </p>

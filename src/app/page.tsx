@@ -42,7 +42,6 @@ export default async function HomePage() {
       <SealDivider />
       <LeadersSection />
       <SealDivider />
-      <TeamSlider />
       <CausesSection causes={projects.filter((project) => project.featured).slice(0, 3)} />
       <SealDivider />
       <GetInvolved />
