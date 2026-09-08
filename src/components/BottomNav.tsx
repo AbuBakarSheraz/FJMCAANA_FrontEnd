@@ -53,6 +53,7 @@ const MORE_LINKS = [
   { href: "/about", label: "About" },
   { href: "/team", label: "Our Team" },
   { href: "/projects", label: "Projects" },
+  { href: "/events", label: "Events" },
   { href: "/gallery", label: "Gallery" },
   { href: "/reports", label: "Reports & Financials" },
   { href: "/help", label: "Help & Resources" },
