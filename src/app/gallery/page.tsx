@@ -9,6 +9,18 @@ export const metadata = {
 };
 
 const galleryYears = [
+   {
+    year: "Fjmcaana at FJMU December 2025",
+    date: "2025",
+    description: "Memories from the FJMCAANA visit in 2025.",
+    link: "/gallery/FJMCAANA-at-FJMU-December-2025",
+  },
+   {
+    year: "Fjmcaana Appna BOD victory lunch 2025",
+    date: "2025",
+    description: "Memories from the FJMCAANA Appna BOD victory lunch in 2025.",
+    link: "/gallery/FJMCAANA-Appna-BOD-victory-lunch-2025",
+  },
   {
     year: "FJMCAANA Summer Convention",
     date: "2016",

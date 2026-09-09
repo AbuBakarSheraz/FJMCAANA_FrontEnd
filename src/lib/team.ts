@@ -10,11 +10,11 @@ export interface TeamMember {
 export const TEAM_MEMBERS: TeamMember[] = [
    {
     slug: "umbreen-chaudhary",
-    name: "Umbreen Chaudhary, MD, MPH",
-    role: "Secretary",
+    name: "Umbreen Chaudhary, MD",
+    role: "President",
     image: "/images/president.png",
     highlight:
-      "Board-certified internist and geriatrician, founder of Rejuvenation MD and Vein Center, with a passion for philanthropy, mentorship, and empowering young women to pursue meaningful careers.",
+      "Founder of Rejuvenation MD and Vein Center, with a passion for philanthropy, mentorship, and empowering young women to pursue meaningful careers.",
     message: `Graduated from Fatima Jinnah Medical University Lahore, Pakistan- 1997 Internal Medicine and Aesthetics
 
 I am originally from the USA and moved to Pakistan for my medical education at FJMC. I graduated from FJMC in 1997 and went on to do an Internal Medicine residency at Overlook Hospital in NJ followed by a geriatric fellowship at Winthrop University Hospital in NY. My husband and I moved to NC in 2003 with two children. I established my private practice, Rejuvenation MD and Vein Center in 2004. I became involved with FJMCAANA because of their philanthropic efforts. I could see the momentum that the alumni were garnishing and I wanted to support their many projects. My personal passion is mentoring young women and encouraging them to pursue careers.`,

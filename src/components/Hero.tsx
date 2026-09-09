@@ -26,7 +26,7 @@ export default function Hero() {
         <p className="mt-6 max-w-xl text-lg text-cream/85 animate-slide-in-right">A community of FJMU physicians united by a shared legacy. Empowering one another to lead, serve, and create lasting impact across generations in the US & Canada.</p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link href="/get-involved/membership" className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-pine-dark transition hover:bg-gold-light">
-            Get Membership
+            Join Membership
             <span aria-hidden="true">→</span>
           </Link>
           <Link href="/loan" className="rounded-lg border-2 border-gold bg-gold/10 px-6 py-3 text-sm font-semibold text-gold-light transition hover:bg-gold hover:text-pine-dark">Postgraduate Loans</Link>

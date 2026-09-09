@@ -47,7 +47,7 @@
       "id": "project-cornea",
       "collection": "projects",
       "title": "Cornea Transplants",
-      "summary": "US$15,000 raised in Ramadan 2022 to support 60 transplants at Sir Ganga Ram Hospital.",
+      "summary": "Providing 60 cornea transplants annually at Sir Ganga Ram Hospital, with each transplant costing $350. Our annual fundraising goal is $21,000.",
       "featured": true,
       "createdAt": "2022-01-01"
     },
@@ -55,7 +55,7 @@
       "id": "project-flood-relief",
       "collection": "projects",
       "title": "Kashani Basti Flood Relief",
-      "summary": "FJMCAANA and FJMU supported construction and inauguration of 29 houses in Fazal Pur, South Punjab.",
+      "summary": "Supporting the flood-affected Kashani Basti through home reconstruction, clean water, school rehabilitation, Ramadan food hampers, and support for local businesses.",
       "featured": true,
       "createdAt": "2022-01-01"
     },
@@ -63,7 +63,7 @@
       "id": "project-scholarship",
       "collection": "projects",
       "title": "Student Scholarship",
-      "summary": "15 scholarships per year for deserving FJMC students.",
+      "summary": "Supporting FJMU students facing financial hardship through $10,000 in annual scholarships and long-term contributions to the FJMU scholarship endowment.",
       "featured": true,
       "createdAt": "2022-01-01"
     },

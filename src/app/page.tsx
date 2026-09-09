@@ -36,7 +36,7 @@ export default async function HomePage() {
       <Navbar />
       <Hero />
       <HeritageBadge />
-      <StatsBar />
+      {/* <StatsBar /> */}
       <SealDivider />
       <Leadership />
       <SealDivider />
