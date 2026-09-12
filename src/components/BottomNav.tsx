@@ -1,5 +1,6 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -81,7 +82,7 @@ export default function BottomNav() {
         aria-label="Primary"
       >
         <div className="relative mx-auto grid max-w-md grid-cols-5 items-center px-2 py-1.5">
-          {TABS.map((tab, i) => {
+          {TABS.map((tab) => {
             if (tab === null) {
               // Raised Donate button
               return (
@@ -157,18 +158,29 @@ export default function BottomNav() {
       </nav>
 
       {/* More sheet */}
+      <AnimatePresence>
       {moreOpen && (
-        <div
+        <motion.div
           className="fixed inset-0 z-50 md:hidden"
           role="dialog"
           aria-modal="true"
           aria-label="More links"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
         >
           <div
             className="absolute inset-0 bg-pine-dark/50 backdrop-blur-sm"
             onClick={() => setMoreOpen(false)}
           />
-          <div className="absolute inset-x-0 bottom-0 animate-slide-in-right rounded-t-2xl border-t border-pine/10 bg-cream pb-[env(safe-area-inset-bottom)] shadow-2xl">
+          <motion.div
+            className="absolute inset-x-0 bottom-0 rounded-t-2xl border-t border-pine/10 bg-cream pb-[env(safe-area-inset-bottom)] shadow-2xl"
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 16 }}
+            transition={{ duration: 0.48, ease: [0.22, 1, 0.36, 1] }}
+          >
             <div className="mx-auto mt-3 h-1 w-10 rounded-full bg-pine/15" />
 
             <div className="px-6 pb-3 pt-4">
@@ -194,9 +206,10 @@ export default function BottomNav() {
                 FJMCAANA · Established 1978
               </p>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       )}
+      </AnimatePresence>
     </>
   );
 }

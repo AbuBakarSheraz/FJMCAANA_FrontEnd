@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { ContentRecord } from "@/lib/content-store";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 type Cause = ContentRecord & {
   percentFunded?: number;
@@ -19,7 +20,8 @@ function ProgressBar({ percent }: { percent: number }) {
 
 function CauseCard({ cause, featured = false }: { cause: Cause; featured?: boolean }) {
   return (
-    <div
+    <StaggerItem
+      interactive
       className={`flex flex-col rounded-xl border border-pine/10 bg-card p-5 ${featured ? "sm:p-7" : ""}`}
       data-cause-id={cause.id}
     >
@@ -56,7 +58,7 @@ function CauseCard({ cause, featured = false }: { cause: Cause; featured?: boole
       >
         Learn more
       </a>
-    </div>
+    </StaggerItem>
   );
 }
 
@@ -66,19 +68,19 @@ export default function CausesSection({ causes, expanded = false }: { causes: Ca
   return (
     <section id="impact" className="bg-sage">
       <div className="mx-auto max-w-7xl px-4 py-10">
-        <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Featured Causes</span>
-        <h2 className="mt-2 font-display text-3xl font-semibold text-pine-dark">
-          Where your gift goes right now
-        </h2>
+        <Reveal>
+          <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Featured Causes</span>
+          <h2 className="mt-2 font-display text-3xl font-semibold text-pine-dark">Where your gift goes right now</h2>
+        </Reveal>
 
         {expanded || !first ? (
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <Stagger className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {causes.map((cause) => (
               <CauseCard key={cause.id} cause={cause} />
             ))}
-          </div>
+          </Stagger>
         ) : (
-          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+          <Stagger className="mt-10 grid gap-5 lg:grid-cols-3">
             <div className="lg:col-span-2">
               <CauseCard cause={first} featured />
             </div>
@@ -87,7 +89,7 @@ export default function CausesSection({ causes, expanded = false }: { causes: Ca
                 <CauseCard key={cause.id} cause={cause} />
               ))}
             </div>
-          </div>
+          </Stagger>
         )}
       </div>
     </section>

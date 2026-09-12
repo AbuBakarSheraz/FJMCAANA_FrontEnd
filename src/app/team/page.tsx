@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { TEAM_MEMBERS } from "@/lib/team";
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+import { Reveal } from "@/components/motion/Reveal";
 
 export const metadata: Metadata = {
   title: "Our Team — FJMCAANA",
@@ -25,7 +26,7 @@ export default function TeamPage() {
         {TEAM_MEMBERS.map((member, i) => {
           const imageFirst = i % 2 === 0;
           return (
-            <section
+            <Reveal
               key={member.slug}
               id={member.slug}
               className={`scroll-mt-24 flex flex-col gap-6 items-start sm:gap-12 ${
@@ -57,7 +58,7 @@ export default function TeamPage() {
                   ))}
                 </div>
               </div>
-            </section>
+            </Reveal>
           );
         })}
       </main>

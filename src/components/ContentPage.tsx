@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { ContentPage as ContentPageData, ContentSection } from "@/lib/siteContent";
 import PageHeader from "@/components/PageHeader";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 function SectionEyebrow({ children }: { children: string }) {
   return (
@@ -33,17 +34,15 @@ function ItemCard({ item }: { item: NonNullable<ContentSection["items"]>[number]
   const className =
     "group flex h-full flex-col rounded-xl border border-pine/10 bg-white p-5 transition hover:-translate-y-0.5 hover:border-pine/25 hover:shadow-sm";
 
-  return item.href ? (
-    <Link className={className} href={item.href} key={item.title}>
-      {content}
-      <span className="mt-4 inline-block text-sm font-semibold text-pine">
-        Explore <span aria-hidden="true">→</span>
-      </span>
-    </Link>
-  ) : (
-    <div className={className} key={item.title}>
-      {content}
-    </div>
+  return (
+    <StaggerItem interactive={Boolean(item.href)}>
+      {item.href ? (
+        <Link className={className} href={item.href}>
+          {content}
+          <span className="mt-4 inline-block text-sm font-semibold text-pine">Explore <span aria-hidden="true">→</span></span>
+        </Link>
+      ) : <div className={className}>{content}</div>}
+    </StaggerItem>
   );
 }
 
@@ -59,7 +58,7 @@ export default function ContentPage({ page }: { page: ContentPageData }) {
             const isProseOnly = !section.items && !section.bullets;
 
             return (
-              <section
+              <Reveal
                 key={`${section.title ?? "section"}-${sectionIndex}`}
                 className={sectionIndex > 0 ? "border-t border-pine/10 pt-14 sm:pt-16" : undefined}
               >
@@ -150,16 +149,16 @@ export default function ContentPage({ page }: { page: ContentPageData }) {
                             ))}
                           </div>
                         )}
-                        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                        <Stagger className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                           {section.items.map((item) => (
                             <ItemCard item={item} key={item.title} />
                           ))}
-                        </div>
+                        </Stagger>
                       </div>
                     )}
                   </>
                 )}
-              </section>
+              </Reveal>
             );
           })}
         </div>

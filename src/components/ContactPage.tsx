@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { Reveal } from "@/components/motion/Reveal";
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false);
@@ -63,7 +64,7 @@ export default function ContactPage() {
   return (
     <>
       <section className="border-b border-pine/10 bg-sage">
-        <div className="mx-auto max-w-7xl px-8 py-8 sm:px-2 sm:py-10">
+        <Reveal className="mx-auto max-w-7xl px-8 py-8 sm:px-2 sm:py-10">
           <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold">
             Contact
           </p>
@@ -76,14 +77,14 @@ export default function ContactPage() {
             Reach the FJMCAANA team with questions about membership,
             projects, events, or support.
           </p>
-        </div>
+        </Reveal>
       </section>
 
       <main className="mx-auto max-w-7xl px-8 py-8 sm:px-2 sm:py-10">
         <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
 
           {/* Contact information */}
-          <div>
+          <Reveal>
             <h2 className="font-display text-2xl font-semibold text-pine-dark">
               Get in touch
             </h2>
@@ -106,10 +107,10 @@ export default function ContactPage() {
                 team@fjmcaana.org
               </a>
             </div>
-          </div>
+          </Reveal>
 
           {/* Contact form */}
-          <div className="rounded-2xl border border-pine/10 bg-white p-6 shadow-sm sm:p-8">
+          <Reveal className="rounded-2xl border border-pine/10 bg-white p-6 shadow-sm sm:p-8">
             <form
               onSubmit={handleSubmit}
               className="space-y-6"
@@ -236,7 +237,7 @@ export default function ContactPage() {
                 {loading ? "Sending..." : "Send message"}
               </button>
             </form>
-          </div>
+          </Reveal>
         </div>
       </main>
     </>

@@ -1,4 +1,5 @@
 import MembershipForm from "./MembershipForm";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const CARDS = [
   {
@@ -29,15 +30,16 @@ const CARDS = [
 export default function GetInvolved() {
   return (
     <section id="involved" className="mx-auto max-w-7xl px-8 sm:px-2 py-20">
-      <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Get Involved</span>
-      <h2 className="mb-10 mt-2 font-display text-3xl font-semibold text-pine-dark">
-        Join a lifelong community
-      </h2>
+      <Reveal>
+        <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Get Involved</span>
+        <h2 className="mb-10 mt-2 font-display text-3xl font-semibold text-pine-dark">Join a lifelong community</h2>
+      </Reveal>
 
-      <div className="grid gap-5 sm:grid-cols-3">
+      <Stagger className="grid gap-5 sm:grid-cols-3">
         {CARDS.map((card) => (
-          <div
+          <StaggerItem
             key={card.title}
+            interactive
             className="rounded-xl border border-pine/10 bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-sm"
           >
             <svg
@@ -56,9 +58,9 @@ export default function GetInvolved() {
             <a href={card.href} className="mt-4 inline-block text-sm font-semibold text-pine">
               {card.cta} →
             </a>
-          </div>
+          </StaggerItem>
         ))}
-      </div>
+      </Stagger>
 
       <MembershipForm />
     </section>

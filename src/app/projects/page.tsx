@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
 import Image from "next/image";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const ANNUAL_PROJECTS = [
   {
@@ -103,6 +104,7 @@ export default function ProjectsPage() {
       <div className="bg-cream">
         {/* Annual Projects Section */}
         <section className="mx-auto max-w-7xl px-8 sm:px-2 py-16">
+          <Reveal>
           <div className="flex items-center gap-3 mb-8">
             <div className="h-1 w-12 bg-gold rounded-full" />
             <h2 className="font-display text-3xl font-semibold text-pine-dark">
@@ -112,11 +114,13 @@ export default function ProjectsPage() {
           <p className="mb-12 max-w-3xl text-lg text-ink-soft">
             These cornerstone initiatives run year after year, providing consistent support and measurable impact to communities in Pakistan.
           </p>
+          </Reveal>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <Stagger className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {ANNUAL_PROJECTS.map((project) => (
-              <div
+              <StaggerItem
                 key={project.slug}
+                interactive
                 className="group relative overflow-hidden rounded-xl border border-pine/10 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
               >
                 <div className="relative h-48 overflow-hidden bg-sage">
@@ -147,14 +151,15 @@ export default function ProjectsPage() {
                     {project.impact}
                   </div>
                 </div>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </section>
 
         {/* Regular Projects Section */}
         <section className="bg-sage/20 py-16">
           <div className="mx-auto max-w-7xl px-8 sm:px-2">
+            <Reveal>
             <div className="flex items-center gap-3 mb-8">
               <div className="h-1 w-12 bg-gold rounded-full" />
               <h2 className="font-display text-3xl font-semibold text-pine-dark">
@@ -164,11 +169,13 @@ export default function ProjectsPage() {
             <p className="mb-12 max-w-3xl text-lg text-ink-soft">
               Ongoing and completed initiatives addressing specific healthcare, education, and community needs across Pakistan.
             </p>
+            </Reveal>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <Stagger className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {REGULAR_PROJECTS.map((project) => (
-                <div
+                <StaggerItem
                   key={project.slug}
+                  interactive
                   className="group relative overflow-hidden rounded-xl border border-pine/10 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                 >
                   <div className="relative h-40 overflow-hidden bg-sage">
@@ -196,15 +203,15 @@ export default function ProjectsPage() {
                       {project.impact}
                     </div>
                   </div>
-                </div>
+                </StaggerItem>
               ))}
-            </div>
+            </Stagger>
           </div>
         </section>
 
         {/* Call to Action */}
         <section className="mx-auto max-w-7xl px-8 sm:px-2 py-20">
-          <div className="rounded-2xl bg-gradient-to-br from-pine-dark to-pine p-12 text-center shadow-xl">
+          <Reveal className="rounded-2xl bg-gradient-to-br from-pine-dark to-pine p-12 text-center shadow-xl">
             <h2 className="font-display text-3xl font-semibold text-white">
               Support Our Mission
             </h2>
@@ -227,7 +234,7 @@ export default function ProjectsPage() {
                 Become a Member
               </Link>
             </div>
-          </div>
+          </Reveal>
         </section>
       </div>
 

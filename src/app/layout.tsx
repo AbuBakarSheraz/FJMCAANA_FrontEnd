@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Fraunces, Public_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import BottomNav from "@/components/BottomNav";
+import MotionProvider from "@/components/MotionProvider";
+import PageTransition from "@/components/motion/PageTransition";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -31,8 +33,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${fraunces.variable} ${publicSans.variable} ${spaceGrotesk.variable}`}>
-      <body className="font-body text-ink bg-cream">{children}
-        <BottomNav />
+      <body className="font-body text-ink bg-cream">
+        <MotionProvider>
+          <PageTransition>{children}</PageTransition>
+          <BottomNav />
+        </MotionProvider>
       </body>
       
     </html>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SealEmblem from "@/components/SealEmblem";
 import Navbar from "@/components/Navbar";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 export const metadata = {
   title: "Gallery | FJMCAANA Memories & Events",
@@ -88,7 +89,7 @@ export default function GalleryPage() {
       <Navbar />
       <header className="grain relative overflow-hidden bg-pine-dark py-20 text-cream">
         <SealEmblem className="pointer-events-none absolute -right-10 -top-10 h-64 w-64 text-gold opacity-[0.07]" />
-        <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
+        <Reveal className="relative z-10 mx-auto max-w-6xl px-6 text-center">
           <div className="flex items-center justify-center gap-3">
             <span className="h-px w-8 bg-gold/60" />
             <span className="font-mono text-xs uppercase tracking-[0.2em] text-gold-light">
@@ -101,18 +102,19 @@ export default function GalleryPage() {
             Memories from our professional, cultural, and community events across the years — a
             record of the sisterhood in action.
           </p>
-        </div>
+        </Reveal>
       </header>
 
       {/* Years Grid */}
       <section className="bg-cream py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <Stagger className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {galleryYears.map((item, i) => (
+              <StaggerItem key={`${item.year}-${i}`} interactive>
               <Link
                 key={`${item.year}-${i}`}
                 href={item.link}
-                className="group flex flex-col rounded-xl border border-pine/10 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-gold/40"
+                className="group flex flex-col rounded-xl border border-pine/10 bg-white p-6 transition-all duration-300 hover:shadow-lg hover:border-gold/40"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold transition-colors group-hover:bg-gold group-hover:text-pine-dark">
                   <CalendarIcon className="h-6 w-6" />
@@ -127,8 +129,9 @@ export default function GalleryPage() {
                   <span aria-hidden="true">→</span>
                 </span>
               </Link>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </div>
       </section>
     </>

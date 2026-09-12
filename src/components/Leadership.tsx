@@ -1,24 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Reveal } from "@/components/motion/Reveal";
 
 export default function Leadership() {
   return (
     <section id="about" className="relative overflow-hidden bg-sage">
-      <div className="mx-auto max-w-7xl px-8 sm:px-2 py-24">
+      <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-24">
         <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">President&apos;s Message</span>
 
-        <div className="mt-8 grid gap-10 sm:grid-cols-[220px_1fr] sm:items-start">
-         <div className="relative h-72 w-full flex-none overflow-hidden rounded-2xl border-2 border-gold-light bg-card shadow-sm sm:h-72 sm:w-56">
+        <div className="mt-8 grid gap-8 sm:grid-cols-[220px_1fr] sm:items-start lg:gap-12">
+         <Reveal className="relative mx-auto aspect-square w-full max-w-sm flex-none overflow-hidden rounded-2xl border-2 border-gold-light bg-card shadow-sm sm:mx-0 sm:w-56">
   <Image
     src="/images/president.png"
     alt="Dr. Umbreen Chaudhary"
     fill
     sizes="(max-width: 640px) 100vw, 224px"
-    className="object-contain"
+    className="object-contain p-3"
   />
-</div>
+</Reveal>
 
-          <div className="relative">
+          <Reveal className="relative">
             <span
               className="pointer-events-none absolute -left-3 -top-10 select-none font-display text-[120px] italic leading-none text-pine/10"
               aria-hidden="true"
@@ -41,7 +42,7 @@ export default function Leadership() {
             >
               Read the full message <span aria-hidden="true">→</span>
             </Link>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

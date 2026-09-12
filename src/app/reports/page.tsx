@@ -6,6 +6,7 @@ import PageHeader from "@/components/PageHeader";
 import SealEmblem from "@/components/SealEmblem";
 import Image from "next/image";
 import Link from "next/link";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const ANNUAL_REPORTS = [
   {
@@ -149,7 +150,7 @@ export default function ReportsPage() {
       <div className="bg-cream">
         {/* Overview */}
         <section className="mx-auto max-w-7xl px-8 sm:px-2 py-16">
-          <div className="flex items-start gap-5 rounded-2xl border border-pine/10 bg-white p-8 md:p-12">
+          <Reveal className="flex items-start gap-5 rounded-2xl border border-pine/10 bg-white p-8 md:p-12">
             <SealEmblem className="hidden h-14 w-14 flex-none text-gold sm:block" />
             <div>
               <h2 className="font-display text-2xl font-semibold text-pine-dark">Financial Transparency</h2>
@@ -173,11 +174,12 @@ export default function ReportsPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </Reveal>
         </section>
 
         {/* Annual Reports */}
         <section id="annual" className="mx-auto max-w-7xl scroll-mt-32 px-8 sm:px-2 py-16">
+          <Reveal>
           <div className="mb-8 flex items-center gap-3">
             <div className="h-px w-10 bg-gold" />
             <h2 className="font-display text-3xl font-semibold text-pine-dark">Annual Reports</h2>
@@ -185,11 +187,13 @@ export default function ReportsPage() {
           <p className="mb-12 max-w-3xl text-lg text-ink-soft">
             Yearly reports documenting our organizational activities, financial stewardship, and community impact.
           </p>
+          </Reveal>
 
-          <div className="grid gap-6 lg:grid-cols-2">
+          <Stagger className="grid gap-6 lg:grid-cols-2">
             {ANNUAL_REPORTS.map((report, index) => (
-              <div
+              <StaggerItem
                 key={index}
+                interactive
                 className="group relative overflow-hidden rounded-xl border border-pine/10 bg-white p-8 transition-all duration-300 hover:shadow-lg hover:border-gold/40"
               >
                 <div className="flex items-start justify-between">
@@ -219,14 +223,15 @@ export default function ReportsPage() {
                   <DocIcon className="h-4 w-4" />
                   Download PDF
                 </a>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </section>
 
         {/* Project Reports */}
         <section id="projects" className="scroll-mt-32 bg-blush py-16">
           <div className="mx-auto max-w-7xl px-8 sm:px-2">
+            <Reveal>
             <div className="mb-8 flex items-center gap-3">
               <div className="h-px w-10 bg-gold" />
               <h2 className="font-display text-3xl font-semibold text-pine-dark">Project Reports</h2>
@@ -234,11 +239,13 @@ export default function ReportsPage() {
             <p className="mb-12 max-w-3xl text-lg text-ink-soft">
               Detailed documentation of individual project outcomes, impact metrics, and beneficiary stories.
             </p>
+            </Reveal>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <Stagger className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {PROJECT_REPORTS.map((report, index) => (
-                <div
+                <StaggerItem
                   key={index}
+                  interactive
                   className="group overflow-hidden rounded-xl border border-pine/10 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 >
                   <div className="border-b border-pine/10 bg-white p-6">
@@ -259,14 +266,15 @@ export default function ReportsPage() {
                       View Report →
                     </a>
                   </div>
-                </div>
+                </StaggerItem>
               ))}
-            </div>
+            </Stagger>
           </div>
         </section>
 
         {/* Financial Statements */}
         <section id="financials" className="mx-auto max-w-7xl scroll-mt-32 px-6 py-16">
+          <Reveal>
           <div className="mb-8 flex items-center gap-3">
             <div className="h-px w-10 bg-gold" />
             <h2 className="font-display text-3xl font-semibold text-pine-dark">Financial Statements</h2>
@@ -274,11 +282,13 @@ export default function ReportsPage() {
           <p className="mb-12 max-w-3xl text-lg text-ink-soft">
             Audited statements showing income, expenses, and fund allocation across recent fiscal years.
           </p>
+          </Reveal>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <Stagger className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {FINANCIAL_STATEMENTS.map((report, index) => (
-              <div
+              <StaggerItem
                 key={index}
+                interactive
                 className="group relative overflow-hidden rounded-xl border border-pine/10 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gold/40"
               >
                 <div className="absolute right-4 top-4 z-10">
@@ -324,24 +334,26 @@ export default function ReportsPage() {
                     </button>
                   </div>
                 </div>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </section>
 
         {/* Where funds go */}
         <section id="impact" className="scroll-mt-32 bg-sage py-16">
           <div className="mx-auto max-w-7xl px-8 sm:px-2">
+            <Reveal>
             <div className="mb-8 flex items-center gap-3">
               <div className="h-px w-10 bg-gold" />
               <h2 className="font-display text-3xl font-semibold text-pine-dark">
                 How Your Contributions Make an Impact
               </h2>
             </div>
+            </Reveal>
 
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <Stagger className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {IMPACT_AREAS.map((item) => (
-                <div key={item.title} className="rounded-xl border border-pine/10 bg-white p-6">
+                <StaggerItem key={item.title} className="rounded-xl border border-pine/10 bg-white p-6">
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
@@ -355,15 +367,15 @@ export default function ReportsPage() {
                   </svg>
                   <h3 className="mt-4 font-display text-lg font-semibold text-pine-dark">{item.title}</h3>
                   <p className="mt-2 text-sm text-ink-soft">{item.description}</p>
-                </div>
+                </StaggerItem>
               ))}
-            </div>
+            </Stagger>
           </div>
         </section>
 
         {/* Single closing CTA */}
         <section className="grain relative bg-pine-dark py-16">
-          <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
+          <Reveal className="relative z-10 mx-auto max-w-4xl px-6 text-center">
             <h2 className="font-display text-2xl font-semibold text-white sm:text-3xl">
               Questions About Our Reports or Finances?
             </h2>
@@ -386,7 +398,7 @@ export default function ReportsPage() {
                 General Contact
               </Link>
             </div>
-          </div>
+          </Reveal>
         </section>
       </div>
 

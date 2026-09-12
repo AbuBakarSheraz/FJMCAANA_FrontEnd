@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TEAM_MEMBERS } from "@/lib/team";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 export default function LeadersSection() {
   const leaders = TEAM_MEMBERS.filter(
@@ -8,36 +9,34 @@ export default function LeadersSection() {
       member.role.toLowerCase().includes("president") ||
       member.role.toLowerCase().includes("treasurer") ||
       member.role.toLowerCase().includes("secretary") ||
-      member.role.toLowerCase().includes("executive")
+      member.role.toLowerCase().includes("executive"),
   );
 
   return (
     <section id="leaders" className="bg-gradient-to-b from-cream to-sage/30">
-      <div className="mx-auto max-w-7xl px-8 sm:px-2 py-20">
-        <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Leadership</span>
-        <h2 className="mt-2 font-display text-3xl font-semibold text-pine-dark sm:text-4xl">
-          The Executive Committee
-        </h2>
-        <p className="mt-4 max-w-2xl text-lg text-ink-soft">
-          Distinguished physicians guiding our mission of service, education, and healthcare
-          transformation.
-        </p>
+      <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20 lg:px-10">
+        <Reveal>
+          <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Leadership</span>
+          <h2 className="mt-2 font-display text-3xl font-semibold text-pine-dark sm:text-4xl">The Executive Committee</h2>
+          <p className="mt-4 max-w-2xl text-lg text-ink-soft">Distinguished physicians guiding our mission of service, education, and healthcare transformation.</p>
+        </Reveal>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <Stagger className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {leaders.map((leader) => (
-            <div
+            <StaggerItem
               key={leader.slug}
-              className="group relative overflow-hidden rounded-xl border border-pine/10 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              interactive
+              className="group relative overflow-hidden rounded-2xl border border-pine/10 bg-white shadow-sm transition-all duration-500 hover:-translate-y-0.5 hover:shadow-lg"
             >
-             <div className="relative h-64 overflow-hidden bg-sage">
+             <div className="relative aspect-[4/3] overflow-hidden bg-sage/70 p-3 sm:aspect-square sm:p-4">
   <Image
     src={leader.image}
     alt={leader.name}
     fill
     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-    className="object-contain transition-transform duration-300 group-hover:scale-105"
+    className="object-contain transition-transform duration-700 ease-out group-hover:scale-[1.025]"
   />
-  <div className="absolute inset-0 bg-gradient-to-t from-pine-dark/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+  <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-pine-dark/10 to-transparent" />
 </div>
               <div className="p-6">
                 <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-gold">
@@ -52,9 +51,9 @@ export default function LeadersSection() {
                   Learn more →
                 </Link>
               </div>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </Stagger>
 
         <div className="mt-12 text-center">
           <Link
