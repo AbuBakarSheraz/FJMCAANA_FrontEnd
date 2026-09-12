@@ -18,10 +18,10 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-2 py-2 md:px-4 md:py-2 sm:px-6 sm:py-2 ">
        <Link href="/" className="flex items-center">
   <Image
-    src="/images/Final_Logo.png"
+    src="/images/new-logo.png"
     alt="FJMCAANA logo"
     width={248}
-    height={92}
+    height={0}
     priority
     className="h-auto w-[180px] sm:w-[210px] lg:w-[240px]"
   />
