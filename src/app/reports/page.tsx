@@ -27,62 +27,6 @@ const ANNUAL_REPORTS = [
   },
 ];
 
-const PROJECT_REPORTS = [
-  {
-    title: "Cornea Transplant Project Report 2022",
-    description: "Detailed report on the collaboration with Zafar & Mir Foundation and Sir Ganga Ram Hospital.",
-    pdfUrl: "/reports/cornea-transplant-report-2022.pdf",
-    date: "2022",
-    category: "Healthcare",
-  },
-  {
-    title: "Flood Relief Project — Kashani Basti",
-    description: "Documentation of housing construction project for flood-affected families in South Punjab.",
-    pdfUrl: "/reports/flood-relief-kashani-basti.pdf",
-    date: "2022",
-    category: "Emergency Relief",
-  },
-  {
-    title: "Scholarship Fund Impact Report",
-    description: "Annual assessment of student scholarship program outcomes and beneficiary testimonials.",
-    pdfUrl: "/reports/scholarship-impact-report.pdf",
-    date: "2022",
-    category: "Education",
-  },
-];
-
-const FINANCIAL_STATEMENTS = [
-  {
-    year: "2024–2025",
-    title: "Financial Statement FY 2024–2025",
-    image: "/reports/financial-report-1.jpg",
-    description: "Comprehensive financial statement showing income, expenses, and fund allocation for fiscal year 2024–2025.",
-  },
-  {
-    year: "2023–2024",
-    title: "Financial Statement FY 2023–2024",
-    image: "/reports/financial-report-2.jpg",
-    description: "Annual financial report detailing organizational revenue, expenditures, and project funding.",
-  },
-  {
-    year: "2022–2023",
-    title: "Financial Statement FY 2022–2023",
-    image: "/reports/financial-report-3.jpg",
-    description: "Transparent breakdown of donations received and their utilization across all programs.",
-  },
-  {
-    year: "2021–2022",
-    title: "Financial Statement FY 2021–2022",
-    image: "/reports/financial-report-4.jpg",
-    description: "Financial accountability report showing stewardship of member and donor contributions.",
-  },
-  {
-    year: "Summary",
-    title: "Multi-Year Financial Summary",
-    image: "/reports/financial-report-5.jpg",
-    description: "Consolidated financial overview showing trends and impact over multiple fiscal years.",
-  },
-];
 
 const IMPACT_AREAS = [
   {
@@ -109,8 +53,6 @@ const IMPACT_AREAS = [
 
 const SECTIONS = [
   { id: "annual", label: "Annual Reports" },
-  { id: "projects", label: "Project Reports" },
-  { id: "financials", label: "Financial Statements" },
   { id: "impact", label: "Where Funds Go" },
 ];
 
@@ -149,7 +91,7 @@ export default function ReportsPage() {
 
       <div className="bg-cream">
         {/* Overview */}
-        <section className="mx-auto max-w-7xl px-8 sm:px-2 py-16">
+        <section className="mx-auto max-w-7xl px-8 sm:px-2 py-8">
           <Reveal className="flex items-start gap-5 rounded-2xl border border-pine/10 bg-white p-8 md:p-12">
             <SealEmblem className="hidden h-14 w-14 flex-none text-gold sm:block" />
             <div>
@@ -178,7 +120,7 @@ export default function ReportsPage() {
         </section>
 
         {/* Annual Reports */}
-        <section id="annual" className="mx-auto max-w-7xl scroll-mt-32 px-8 sm:px-2 py-16">
+        <section id="annual" className="mx-auto max-w-7xl scroll-mt-32 px-8 sm:px-2 py-8">
           <Reveal>
           <div className="mb-8 flex items-center gap-3">
             <div className="h-px w-10 bg-gold" />
@@ -227,119 +169,6 @@ export default function ReportsPage() {
             ))}
           </Stagger>
         </section>
-
-        {/* Project Reports */}
-        <section id="projects" className="scroll-mt-32 bg-blush py-16">
-          <div className="mx-auto max-w-7xl px-8 sm:px-2">
-            <Reveal>
-            <div className="mb-8 flex items-center gap-3">
-              <div className="h-px w-10 bg-gold" />
-              <h2 className="font-display text-3xl font-semibold text-pine-dark">Project Reports</h2>
-            </div>
-            <p className="mb-12 max-w-3xl text-lg text-ink-soft">
-              Detailed documentation of individual project outcomes, impact metrics, and beneficiary stories.
-            </p>
-            </Reveal>
-
-            <Stagger className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {PROJECT_REPORTS.map((report, index) => (
-                <StaggerItem
-                  key={index}
-                  interactive
-                  className="group overflow-hidden rounded-xl border border-pine/10 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div className="border-b border-pine/10 bg-white p-6">
-                    <span className="inline-block rounded-full bg-sage px-3 py-1 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine-dark">
-                      {report.category}
-                    </span>
-                    <h3 className="mt-4 font-display text-lg font-semibold text-pine-dark">{report.title}</h3>
-                  </div>
-                  <div className="p-6">
-                    <p className="text-sm leading-relaxed text-ink-soft">{report.description}</p>
-                    <p className="mt-3 text-xs text-ink-soft/70">{report.date}</p>
-                    <a
-                      href={report.pdfUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-4 inline-flex items-center gap-2 border-b border-pine/40 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine transition-colors hover:border-pine"
-                    >
-                      View Report →
-                    </a>
-                  </div>
-                </StaggerItem>
-              ))}
-            </Stagger>
-          </div>
-        </section>
-
-        {/* Financial Statements */}
-        <section id="financials" className="mx-auto max-w-7xl scroll-mt-32 px-6 py-16">
-          <Reveal>
-          <div className="mb-8 flex items-center gap-3">
-            <div className="h-px w-10 bg-gold" />
-            <h2 className="font-display text-3xl font-semibold text-pine-dark">Financial Statements</h2>
-          </div>
-          <p className="mb-12 max-w-3xl text-lg text-ink-soft">
-            Audited statements showing income, expenses, and fund allocation across recent fiscal years.
-          </p>
-          </Reveal>
-
-          <Stagger className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {FINANCIAL_STATEMENTS.map((report, index) => (
-              <StaggerItem
-                key={index}
-                interactive
-                className="group relative overflow-hidden rounded-xl border border-pine/10 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gold/40"
-              >
-                <div className="absolute right-4 top-4 z-10">
-                  <span className="rounded-full bg-gold px-4 py-1.5 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine-dark shadow">
-                    {report.year}
-                  </span>
-                </div>
-
-                <div className="relative h-72 overflow-hidden bg-sage">
-                  <Image
-                    src={report.image}
-                    alt={report.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-contain p-4 transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-
-                <div className="p-6">
-                  <h3 className="font-display text-lg font-semibold text-pine-dark">{report.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-ink-soft">{report.description}</p>
-
-                  <div className="mt-6 flex items-center gap-3">
-                    <button
-                      onClick={() => window.open(report.image, "_blank")}
-                      className="flex-1 rounded-full bg-pine px-4 py-2.5 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-white transition hover:bg-pine-dark"
-                    >
-                      View Full Report
-                    </button>
-                    <button
-                      onClick={() => {
-                        const link = document.createElement("a");
-                        link.href = report.image;
-                        link.download = `${report.title.replace(/\s+/g, "-")}.jpg`;
-                        link.click();
-                      }}
-                      aria-label={`Download ${report.title}`}
-                      className="rounded-full border border-pine px-4 py-2.5 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine transition hover:bg-pine hover:text-white"
-                    >
-                      <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </StaggerItem>
-            ))}
-          </Stagger>
-        </section>
-
-        {/* Where funds go */}
         <section id="impact" className="scroll-mt-32 bg-sage py-16">
           <div className="mx-auto max-w-7xl px-8 sm:px-2">
             <Reveal>

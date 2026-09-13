@@ -5,31 +5,24 @@ import Link from "next/link";
 import Image from "next/image";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
-const ANNUAL_PROJECTS = [
+
+const YEARS = [
   {
-    slug: "cornea-transplant-project",
-    title: "Cornea Transplant Project",
-    description: "Annual collaboration with the Zafar & Mir Foundation and the Ophthalmology Department of Sir Ganga Ram Hospital. More than 60 transplants have been completed since 2022.",
-    image: "/projects/project-1.jpg",
-    status: "Ongoing",
-    impact: "60+ transplants completed"
+   year: 2026,
+   link: "projects/annual_projects/2026"
   },
   {
-    slug: "scholarship-fund",
-    title: "FJMCAANA Scholarship Fund",
-    description: "15 scholarships awarded annually to deserving FJMU students, supporting the next generation of women physicians.",
-    image: "/projects/project-2.jpg",
-    status: "Annual",
-    impact: "15 students per year"
+   year: 2025,
+   link: "projects/annual_projects/2025"
   },
   {
-    slug: "qurbani-project",
-    title: "FJMCAANA Qurbani Project",
-    description: "Annual distribution of meat to families in need during Eid-ul-Adha, providing nutritious food to underserved communities.",
-    image: "/projects/project-3.jpg",
-    status: "Annual",
-    impact: "Hundreds of families served"
-  }
+   year: 2024,
+   link: "projects/annual_projects/2024"
+  },
+  {
+   year: 2023,
+   link: "projects/annual_projects/2023"
+  },
 ];
 
 const REGULAR_PROJECTS = [
@@ -103,11 +96,11 @@ export default function ProjectsPage() {
 
       <div className="bg-cream">
         {/* Annual Projects Section */}
-        <section className="mx-auto max-w-7xl px-8 sm:px-2 py-16">
+        <section className="mx-auto max-w-7xl px-8 sm:px-2 py-8">
           <Reveal>
-          <div className="flex items-center gap-3 mb-8">
+          <div className="flex items-center gap-3 mb-4">
             <div className="h-1 w-12 bg-gold rounded-full" />
-            <h2 className="font-display text-3xl font-semibold text-pine-dark">
+            <h2 className="font-display text-3xl font-extrabold text-pine">
               Annual Projects
             </h2>
           </div>
@@ -116,53 +109,35 @@ export default function ProjectsPage() {
           </p>
           </Reveal>
 
-          <Stagger className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {ANNUAL_PROJECTS.map((project) => (
-              <StaggerItem
-                key={project.slug}
-                interactive
-                className="group relative overflow-hidden rounded-xl border border-pine/10 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
-              >
-                <div className="relative h-48 overflow-hidden bg-sage">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <span className="rounded-full bg-gold px-3 py-1 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine-dark shadow-lg">
-                      {project.status}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="font-display text-xl font-semibold text-pine-dark">
-                    {project.title}
-                  </h3>
-                  <p className="mt-3 text-sm text-ink-soft leading-relaxed">
-                    {project.description}
-                  </p>
-                  <div className="mt-4 flex items-center gap-2 text-xs font-semibold text-gold">
-                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    {project.impact}
-                  </div>
-                </div>
-              </StaggerItem>
-            ))}
-          </Stagger>
+         <Stagger className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+  {YEARS.map((year) => (
+    <StaggerItem
+      key={year.year}
+      interactive
+      className="group"
+    >
+      <Link
+        href={year.link}
+        className="relative block overflow-hidden rounded-xl border border-pine/10 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+      >
+        <div className="p-6 bg-sage">
+          <h1 className="text-lg font-semibold text-pine-dark">
+            {year.year}
+          </h1>
+        </div>
+      </Link>
+    </StaggerItem>
+  ))}
+</Stagger>
         </section>
 
         {/* Regular Projects Section */}
-        <section className="bg-sage/20 py-16">
+        <section className="bg-sage/20 py-8">
           <div className="mx-auto max-w-7xl px-8 sm:px-2">
             <Reveal>
-            <div className="flex items-center gap-3 mb-8">
+            <div className="flex items-center gap-3 mb-4">
               <div className="h-1 w-12 bg-gold rounded-full" />
-              <h2 className="font-display text-3xl font-semibold text-pine-dark">
+              <h2 className="font-display text-3xl font-extrabold text-pine">
                 Regular Projects
               </h2>
             </div>

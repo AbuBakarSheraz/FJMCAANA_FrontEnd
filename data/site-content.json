@@ -52,6 +52,22 @@
       "createdAt": "2022-01-01"
     },
     {
+      "id": "meethi-zindagi",
+      "collection": "projects",
+      "title": "Meethi ZINDAGI",
+      "summary": "Fjmcaana is committed to providing free insulin to underprivileged children diagnosed with diabetes. Fjmcaana currently provides support for over 40 children annually via the NGO, Meethi Zindagi.",
+      "featured": true,
+      "createdAt": "2022-01-01"
+    },
+    {
+      "id": "Postgraduate-loan",
+      "collection": "projects",
+      "title": "Postgraduate Loans",
+      "summary": "your donation can help a deserving graduate of FJMU in her process of seeking residency in the US or Canada. All candidates are chosen based on strict criteria.",
+      "featured": true,
+      "createdAt": "2022-01-01"
+    },
+    {
       "id": "project-flood-relief",
       "collection": "projects",
       "title": "Kashani Basti Flood Relief",

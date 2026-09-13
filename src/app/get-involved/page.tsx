@@ -11,7 +11,7 @@ export default function GetInvolvedPage() {
   return (
     <>
       <Navbar />
-      <ContentPage page={page} />
+      <ContentPage page={page}  />
       <Footer />
     </>
   );

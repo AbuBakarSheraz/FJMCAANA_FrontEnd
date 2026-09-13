@@ -14,10 +14,10 @@ export default function LeadersSection() {
 
   return (
     <section id="leaders" className="bg-gradient-to-b from-cream to-sage/30">
-      <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20 lg:px-10">
+      <div className="mx-auto max-w-7xl px-5 py-8 sm:px-8 sm:py-12 lg:px-10 lg:py-16">
         <Reveal>
           <span className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-pine-dark">Leadership</span>
-          <h2 className="mt-2 font-display text-3xl font-semibold text-pine-dark sm:text-4xl">The Executive Committee</h2>
+          <h2 className="mt-2 font-display text-3xl font-extrabold text-pine-dark sm:text-4xl">The Executive Committee</h2>
           <p className="mt-4 max-w-2xl text-lg text-ink-soft">Distinguished physicians guiding our mission of service, education, and healthcare transformation.</p>
         </Reveal>
 
@@ -55,10 +55,10 @@ export default function LeadersSection() {
           ))}
         </Stagger>
 
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <Link
             href="/team"
-            className="inline-block rounded-full border-2 border-pine px-8 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine transition-all hover:bg-pine hover:text-white"
+            className="inline-block rounded-full border-2 border-pine px-8 py-2 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine transition-all hover:bg-pine hover:text-white"
           >
             Meet Our Full Team
           </Link>

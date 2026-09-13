@@ -78,8 +78,7 @@ export default function BottomNav() {
   return (
     <>
       <nav
-        className="fixed inset-x-0 bottom-0 z-40 border-t border-pine/10 bg-cream/95 pb-[env(safe-area-inset-bottom)] backdrop-blur md:hidden"
-        aria-label="Primary"
+       className="fixed inset-x-0 bottom-0 z-40 border-t border-pine/10 bg-cream/95 pb-[env(safe-area-inset-bottom)] backdrop-blur lg:hidden"
       >
         <div className="relative mx-auto grid max-w-md grid-cols-5 items-center px-2 py-1.5">
           {TABS.map((tab) => {
@@ -95,7 +94,7 @@ export default function BottomNav() {
                     aria-label="Donate"
                   >
                     <TabIcon className="h-5 w-5">
-                      <path d="M12 20s-7-4.4-7-9.5A4.5 4.5 0 0 1 12 8a4.5 4.5 0 0 1 7 2.5C19 15.6 12 20 12 20Z" />
+<path d="M12 7c-1-2-3-3-5-2-2 1-2.5 3.5-1 5.3L12 17l6-6.7c1.5-1.8 1-4.3-1-5.3-2-1-4 0-5 2Z" />
                     </TabIcon>
                   </a>
                 </div>

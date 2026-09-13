@@ -59,7 +59,7 @@ if (key === "contact") {
 
       <PageHeader
         eyebrow="Get Involved"
-        title="Lifetime Members"
+        title="Alumni Presidents"
         description="Celebrating the alumni who have made an enduring commitment to FJMCAANA."
       />
 

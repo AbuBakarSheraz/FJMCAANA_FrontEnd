@@ -8,7 +8,7 @@ export default function NewsSection({ items }: { items: ContentRecord[] }) {
 
   return (
     <section id="news" className="overflow-hidden bg-sage">
-      <div className="mx-auto w-full max-w-7xl px-5 py-16 sm:px-8 sm:py-20">
+      <div className="mx-auto w-full max-w-7xl px-5 py-8 sm:px-8 sm:py-12 lg:px-10 lg:py-16">
         <Reveal>
           <span className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-pine-dark">Reports &amp; News</span>
           <h2 className="mb-10 mt-2 font-display text-3xl font-semibold text-pine-dark">Stay in the loop</h2>
@@ -42,7 +42,7 @@ export default function NewsSection({ items }: { items: ContentRecord[] }) {
             {rest.map((item) => (
               <StaggerItem key={item.id} interactive className="min-w-0">
                 <Link
-                  href={item.link || "/news"}
+                  href={item.link || "/reports"}
                   className="flex w-full min-w-0 items-center gap-4 rounded-xl border border-pine/10 bg-white p-4 transition hover:shadow-sm"
                 >
                   <div className="relative h-16 w-16 flex-none overflow-hidden rounded-lg bg-sage">

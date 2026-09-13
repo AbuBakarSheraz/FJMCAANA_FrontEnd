@@ -46,7 +46,8 @@ function ItemCard({ item }: { item: NonNullable<ContentSection["items"]>[number]
   );
 }
 
-export default function ContentPage({ page }: { page: ContentPageData }) {
+export default function 
+ContentPage({ page }: { page: ContentPageData }) {
   return (
     <>
       <PageHeader eyebrow={page.eyebrow} title={page.title} description={page.description} />

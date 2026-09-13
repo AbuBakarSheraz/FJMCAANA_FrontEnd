@@ -1,18 +1,10 @@
 import type { Metadata } from "next";
-import { Cormorant, Fraunces, Montserrat, Public_Sans, Space_Grotesk } from "next/font/google";
+import { Cormorant, DM_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import BottomNav from "@/components/BottomNav";
 import HeritageBadge from "@/components/HeritageBadge";
 import MotionProvider from "@/components/MotionProvider";
 import PageTransition from "@/components/motion/PageTransition";
-
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  variable: "--font-fraunces",
-  style: ["normal", "italic"],
-  weight: ["300", "500", "600"],
-});
-const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
 
 const cormorant = Cormorant({
   subsets: ["latin"],
@@ -20,10 +12,10 @@ const cormorant = Cormorant({
   weight: ["300", "400", "500", "600"],
 });
 
-const publicSans = Public_Sans({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-public-sans",
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-dm-sans",
+  weight: ["400", "500", "700"],
 });
 
 const spaceGrotesk = Space_Grotesk({
@@ -40,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${cormorant.variable} ${publicSans.variable} ${spaceGrotesk.variable} ${montserrat.variable}`}>
+    <html lang="en" className={`${cormorant.variable} ${dmSans.variable} ${spaceGrotesk.variable}`}>
       <body className="font-body text-ink bg-cream">
         <MotionProvider>
           <PageTransition>{children}</PageTransition>
@@ -48,7 +40,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <BottomNav />
         </MotionProvider>
       </body>
-      
     </html>
   );
 }

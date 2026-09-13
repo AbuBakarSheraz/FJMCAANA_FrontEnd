@@ -57,7 +57,6 @@ export const CONTENT_PAGES: ContentPage[] = [
         { title: "President's Message", detail: "A note from Dr. Umbreen Chaudhary.", href: "/about/presidents-message" },
         { title: "Executive Committee", detail: "Meet the current council and executive leadership.", href: "/about/executive-committee" },
         { title: "Constitution and Bylaws", detail: "Constitution, bylaws, and annual reporting.", href: "/about/constitution-bylaws" },
-        { title: "Reports", detail: "Constitution, bylaws, and annual reporting.", href: "/about/constitution-bylaws" },
         // { title: "Lifetime Members", detail: "Constitution, bylaws, and annual reporting.", href: "/about/constitution-bylaws" },
         { title: "Alumni Presidents", detail: "Meet with our previous leaders", href: "/about/alumni-presidents" },
       ] },
@@ -149,7 +148,7 @@ export const CONTENT_PAGES: ContentPage[] = [
   },
   {
     path: ["events", "upcoming-events"], eyebrow: "Community", title: "Upcoming Events", description: "Conferences, meetings, and fundraisers that bring the association together.",
-    sections: [{ items: [{ title: "4th Annual Scientific Conference", detail: "December 16, 2022" }, { title: "FJMCAANA Annual Spring Meeting", detail: "March 24, 2022 · Omni Hotel & Resort" }, { title: "FJMU Winter Meeting", detail: "December 21, 2021 · Lahore" }, { title: "FJMU Alumni North America Annual Online Zoom Fundraiser", detail: "April 24, 2021" }, { title: "AOA Dear FJ Family", detail: "May 31, 2020 · Montreal" }] }],
+    sections: [{ items: [] }],
   },
   {
     path: ["news"], eyebrow: "News", title: "Reports & updates", description: "The latest published FJMCAANA annual updates.",

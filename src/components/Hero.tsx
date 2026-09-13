@@ -20,7 +20,7 @@ export default function Hero() {
         animate={shouldReduceMotion ? undefined : { x: [0, -12, 0], y: [0, 8, 0], scale: [1, 1.035, 1] }}
         transition={{ duration: 20, ease: "easeInOut", repeat: Infinity }}
       />
-      <div className="relative z-10 mx-auto max-w-7xl px-5 pb-16 pt-14 sm:px-8 sm:pb-14 sm:pt-12 lg:px-10 lg:py-16">
+      <div className="relative z-10 mx-auto max-w-7xl px-5 pb-10 pt-14 sm:px-8 sm:pb-14 sm:pt-12 lg:px-10 lg:py-16">
       <motion.span
   initial={{ opacity: 0, y: 14 }}
   animate={{ opacity: 1, y: 0 }}
@@ -29,14 +29,17 @@ export default function Hero() {
 >
   Welcome to <br /> FJMCAANA
 </motion.span>    
-        <motion.h1 initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.95, delay: 0.22, ease: EASE_OUT_QUINT }} className="mt-3 max-w-2xl font-display-alt text-4xl font-semibold leading-tight text-white sm:text-6xl">
-          Connect.
-          <br />
-          Empower.
-          <br />
-          Elevate.
-        </motion.h1>
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.42, ease: EASE_OUT_QUINT }} className="mt-6 h-px w-24 bg-gold/50" />
+       <motion.h1
+  initial={{ opacity: 0, y: 18 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.95, delay: 0.22, ease: EASE_OUT_QUINT }}
+  className="max-w-2xl font-display text-4xl font-medium leading-[1.15] text-white sm:text-7xl"
+>
+  <span className="block">Connect.</span>
+  <span className="block">Empower.</span>
+  <span className="block">Elevate.</span>
+</motion.h1>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.42, ease: EASE_OUT_QUINT }} className="mt-2 h-px w-24 bg-gold/50" />
         <motion.p initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.48, ease: EASE_OUT_QUINT }} className="mt-6 max-w-xl text-lg text-cream/85">A community of FJMU physicians united by a shared legacy. Empowering one another to lead, serve, and create lasting impact across generations in the US & Canada.</motion.p>
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.62, ease: EASE_OUT_QUINT }} className="mt-8 flex flex-wrap gap-3">
           <Link href="/get-involved/membership" className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine-dark transition hover:bg-gold-light">
