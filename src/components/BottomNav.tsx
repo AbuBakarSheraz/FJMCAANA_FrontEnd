@@ -120,7 +120,7 @@ export default function BottomNav() {
                     <TabIcon>{tab.icon}</TabIcon>
                   </span>
                   <span
-                    className={`font-mono text-[9.5px] uppercase tracking-wide transition-colors ${
+                    className={`font-accent text-[9.5px] font-semibold uppercase tracking-wide transition-colors ${
                       active ? "text-gold" : "text-ink-soft"
                     }`}
                   >
@@ -145,7 +145,7 @@ export default function BottomNav() {
                   <TabIcon>{tab.icon}</TabIcon>
                 </span>
                 <span
-                  className={`font-mono text-[9.5px] uppercase tracking-wide transition-colors ${
+                  className={`font-accent text-[9.5px] font-semibold uppercase tracking-wide transition-colors ${
                     active ? "text-pine font-semibold" : "text-ink-soft"
                   }`}
                 >
@@ -184,7 +184,7 @@ export default function BottomNav() {
             <div className="mx-auto mt-3 h-1 w-10 rounded-full bg-pine/15" />
 
             <div className="px-6 pb-3 pt-4">
-              <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">More</span>
+              <span className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-pine-dark">More</span>
             </div>
 
             <div className="max-h-[60vh] overflow-y-auto px-2 pb-2">
@@ -193,7 +193,7 @@ export default function BottomNav() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMoreOpen(false)}
-                  className="flex items-center justify-between rounded-lg px-4 py-3.5 text-base font-medium text-pine-dark transition hover:bg-sage"
+                  className="flex items-center justify-between rounded-lg px-4 py-3 font-accent text-sm font-semibold uppercase tracking-[0.08em] text-pine-dark transition hover:bg-sage"
                 >
                   {link.label}
                   <span aria-hidden="true" className="text-ink-soft">→</span>
@@ -202,7 +202,7 @@ export default function BottomNav() {
             </div>
 
             <div className="border-t border-pine/10 px-6 py-4 text-center">
-              <p className="font-mono text-[11px] uppercase tracking-[0.1em] text-ink-soft">
+              <p className="font-accent text-[11px] font-semibold uppercase tracking-[0.1em] text-ink-soft">
                 FJMCAANA · Established 1978
               </p>
             </div>

@@ -6,7 +6,7 @@ export default function Leadership() {
   return (
     <section id="about" className="relative overflow-hidden bg-sage">
       <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-24">
-        <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">President&apos;s Message</span>
+        <span className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-pine-dark">President&apos;s Message</span>
 
         <div className="mt-8 grid gap-8 sm:grid-cols-[220px_1fr] sm:items-start lg:gap-12">
          <Reveal className="relative mx-auto aspect-square w-full max-w-sm flex-none overflow-hidden rounded-2xl border-2 border-gold-light bg-card shadow-sm sm:mx-0 sm:w-56">
@@ -38,7 +38,7 @@ export default function Leadership() {
             </div>
             <Link
               href="/about/presidents-message"
-              className="mt-5 inline-block border-b border-pine/40 text-sm font-semibold text-pine transition-all hover:translate-x-1 hover:border-pine"
+              className="mt-5 inline-block border-b border-pine/40 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine transition-all hover:translate-x-1 hover:border-pine"
             >
               Read the full message <span aria-hidden="true">→</span>
             </Link>

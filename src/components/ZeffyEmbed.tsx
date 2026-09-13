@@ -22,7 +22,7 @@ export default function ZeffyEmbed() {
         {!loaded ? (
           <button
             onClick={() => setLoaded(true)}
-            className="mt-6 inline-flex items-center gap-2 rounded-lg bg-pine px-5 py-3 text-sm font-semibold text-white transition hover:bg-pine-dark"
+            className="mt-6 inline-flex items-center gap-2 rounded-lg bg-pine px-5 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-white transition hover:bg-pine-dark"
           >
             Continue to secure membership form
           </button>

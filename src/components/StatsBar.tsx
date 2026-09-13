@@ -25,7 +25,7 @@ export default function StatsBar({ stats = FALLBACK_STATS }: { stats?: SiteStats
           >
             <div className="mx-auto mb-3 h-px w-6 bg-gold" />
             <div className="font-display text-3xl font-semibold text-pine-dark">{item.value}</div>
-            <div className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-ink-soft">
+            <div className="mt-1.5 font-accent text-[11px] font-semibold uppercase tracking-[0.1em] text-ink-soft">
               {item.label}
             </div>
           </div>

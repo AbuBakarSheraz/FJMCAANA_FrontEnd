@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Fraunces, Public_Sans, Space_Grotesk } from "next/font/google";
+import { Cormorant, Fraunces, Montserrat, Public_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import BottomNav from "@/components/BottomNav";
+import HeritageBadge from "@/components/HeritageBadge";
 import MotionProvider from "@/components/MotionProvider";
 import PageTransition from "@/components/motion/PageTransition";
 
@@ -10,6 +11,13 @@ const fraunces = Fraunces({
   variable: "--font-fraunces",
   style: ["normal", "italic"],
   weight: ["300", "500", "600"],
+});
+const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
+
+const cormorant = Cormorant({
+  subsets: ["latin"],
+  variable: "--font-cormorant",
+  weight: ["300", "400", "500", "600"],
 });
 
 const publicSans = Public_Sans({
@@ -32,10 +40,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${publicSans.variable} ${spaceGrotesk.variable}`}>
+    <html lang="en" className={`${fraunces.variable} ${cormorant.variable} ${publicSans.variable} ${spaceGrotesk.variable} ${montserrat.variable}`}>
       <body className="font-body text-ink bg-cream">
         <MotionProvider>
           <PageTransition>{children}</PageTransition>
+          <HeritageBadge />
           <BottomNav />
         </MotionProvider>
       </body>

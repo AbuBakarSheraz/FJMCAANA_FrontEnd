@@ -132,7 +132,7 @@ export default function ProjectsPage() {
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute top-4 right-4">
-                    <span className="rounded-full bg-gold px-3 py-1 text-xs font-semibold text-pine-dark shadow-lg">
+                    <span className="rounded-full bg-gold px-3 py-1 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine-dark shadow-lg">
                       {project.status}
                     </span>
                   </div>
@@ -187,7 +187,7 @@ export default function ProjectsPage() {
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute top-3 right-3">
-                      <span className="rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-semibold text-pine-dark shadow">
+                      <span className="rounded-full bg-white/95 px-2.5 py-1 font-accent text-[11px] font-semibold uppercase tracking-[0.1em] text-pine-dark shadow">
                         {project.status}
                       </span>
                     </div>
@@ -223,13 +223,13 @@ export default function ProjectsPage() {
                 href="https://www.paypal.com/us/fundraiser/charity/1554217"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-lg bg-gold px-8 py-3 font-semibold text-pine-dark transition hover:bg-gold-light"
+                className="rounded-lg bg-gold px-8 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine-dark transition hover:bg-gold-light"
               >
                 Donate Now
               </a>
               <Link
                 href="/get-involved/membership"
-                className="rounded-lg border-2 border-white px-8 py-3 font-semibold text-white transition hover:bg-white/10"
+                className="rounded-lg border-2 border-white px-8 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-white transition hover:bg-white/10"
               >
                 Become a Member
               </Link>

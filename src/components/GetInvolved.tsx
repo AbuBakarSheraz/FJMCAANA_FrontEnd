@@ -18,20 +18,14 @@ const CARDS = [
     href: "/get-involved/health-channel",
     icon: <path d="M4 5h16v11H4zM10 8.5v4l3.5-2Z" />,
   },
-  {
-    title: "Volunteer",
-    body: "Support ongoing projects with your time, skills, or professional network.",
-    cta: "Get started",
-    href: "/get-involved/volunteer",
-    icon: <path d="M12 20s-7-4.4-7-9.5A4.5 4.5 0 0 1 12 8a4.5 4.5 0 0 1 7 2.5C19 15.6 12 20 12 20Z" />,
-  },
+
 ];
 
 export default function GetInvolved() {
   return (
     <section id="involved" className="mx-auto max-w-7xl px-8 sm:px-2 py-20">
       <Reveal>
-        <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Get Involved</span>
+        <span className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-pine-dark">Get Involved</span>
         <h2 className="mb-10 mt-2 font-display text-3xl font-semibold text-pine-dark">Join a lifelong community</h2>
       </Reveal>
 
@@ -55,7 +49,7 @@ export default function GetInvolved() {
             </svg>
             <h3 className="mt-4 font-display text-lg font-semibold text-pine-dark">{card.title}</h3>
             <p className="mt-2 text-sm text-ink-soft">{card.body}</p>
-            <a href={card.href} className="mt-4 inline-block text-sm font-semibold text-pine">
+            <a href={card.href} className="mt-4 inline-block font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine">
               {card.cta} →
             </a>
           </StaggerItem>

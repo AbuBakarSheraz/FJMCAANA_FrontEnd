@@ -60,7 +60,7 @@ export default function MembershipForm() {
       <button
         type="submit"
         disabled={submitting}
-        className="mt-4 bg-pine text-white font-semibold text-sm px-6 py-2.5 rounded-lg hover:bg-pine-dark transition disabled:opacity-60"
+        className="mt-4 rounded-lg bg-pine px-6 py-2.5 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-white transition hover:bg-pine-dark disabled:opacity-60"
       >
         {submitting ? "Submitting…" : "Submit"}
       </button>

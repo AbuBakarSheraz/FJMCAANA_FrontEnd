@@ -6,7 +6,7 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 function SectionEyebrow({ children }: { children: string }) {
   return (
-    <span className="font-mono text-xs tracking-widest uppercase text-gold">
+    <span className="font-accent text-xs font-semibold tracking-widest uppercase text-pine-dark">
       {children}
     </span>
   );
@@ -39,7 +39,7 @@ function ItemCard({ item }: { item: NonNullable<ContentSection["items"]>[number]
       {item.href ? (
         <Link className={className} href={item.href}>
           {content}
-          <span className="mt-4 inline-block text-sm font-semibold text-pine">Explore <span aria-hidden="true">→</span></span>
+          <span className="mt-4 inline-block font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine">Explore <span aria-hidden="true">→</span></span>
         </Link>
       ) : <div className={className}>{content}</div>}
     </StaggerItem>

@@ -21,7 +21,7 @@ export default function MembershipTiers() {
         <div className="mb-10 text-center">
           <div className="flex items-center justify-center gap-3">
             <span className="h-px w-8 bg-gold/60" />
-            <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Membership</span>
+            <span className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-pine-dark">Membership</span>
             <span className="h-px w-8 bg-gold/60" />
           </div>
           <h2 className="mt-3 font-display text-3xl font-semibold text-pine-dark sm:text-4xl">
@@ -38,7 +38,7 @@ export default function MembershipTiers() {
               }`}
             >
               {tier.highlight && (
-                <span className="mb-3 w-fit rounded-full bg-gold px-3 py-1 font-mono text-[10px] font-semibold uppercase tracking-widest text-pine-dark">
+                <span className="mb-3 w-fit rounded-full bg-gold px-3 py-1 font-accent text-[10px] font-semibold uppercase tracking-widest text-pine-dark">
                   Best value
                 </span>
               )}
@@ -48,7 +48,7 @@ export default function MembershipTiers() {
               <div className="mt-3 flex items-baseline gap-2">
                 <span className="font-display text-3xl font-semibold">{tier.price}</span>
               </div>
-              <p className={`mt-1 font-mono text-xs uppercase tracking-wide ${tier.highlight ? "text-gold-light" : "text-ink-soft"}`}>
+              <p className={`mt-1 font-accent text-xs font-semibold uppercase tracking-wide ${tier.highlight ? "text-gold-light" : "text-ink-soft"}`}>
                 {tier.priceNote}
               </p>
               <ul className={`mt-5 flex-1 space-y-2 text-sm leading-relaxed ${tier.highlight ? "text-cream/90" : "text-ink-soft"}`}>
@@ -61,7 +61,7 @@ export default function MembershipTiers() {
               </ul>
               <button
                 onClick={scrollToForm}
-                className={`mt-6 inline-flex justify-center rounded-full px-4 py-2.5 text-sm font-semibold transition ${
+                className={`mt-6 inline-flex justify-center rounded-full px-4 py-2.5 font-accent text-sm font-semibold uppercase tracking-[0.1em] transition ${
                   tier.highlight ? "bg-gold text-pine-dark hover:bg-gold-light" : "bg-pine text-white hover:bg-pine-dark"
                 }`}
               >
@@ -96,7 +96,7 @@ export default function MembershipTiers() {
           <div className="mt-8 text-center text-sm text-ink-soft">
             <p>
               Having trouble with the form?{" "}
-              <a href="mailto:team@fjmcaana.org" className="font-semibold text-pine hover:underline">
+              <a href="mailto:team@fjmcaana.org" className="font-accent font-semibold uppercase tracking-[0.1em] text-pine hover:underline">
                 Contact us
               </a>{" "}
               for assistance.

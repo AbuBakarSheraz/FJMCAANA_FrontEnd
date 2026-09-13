@@ -21,12 +21,12 @@ export default function HealthChannelPage() {
           <div className="max-w-4xl">
             <div className="flex items-center gap-3">
               <span className="h-px w-8 bg-gold/60" />
-              <p className="font-mono text-xs uppercase tracking-[0.2em] text-gold-light">
+              <p className="font-accent text-xs font-semibold uppercase tracking-[0.2em] text-gold-light">
                 {page?.eyebrow ?? "Community Health"}
               </p>
             </div>
 
-            <h1 className="mt-5 max-w-3xl font-display text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+            <h1 className="mt-5 max-w-3xl font-display-alt text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
               {page?.title ?? "FJMCAANA Health Channel"}
             </h1>
 
@@ -36,7 +36,7 @@ export default function HealthChannelPage() {
               {["Free Medical Education", "Physician Led", "FJMU Collaboration"].map((tag) => (
                 <span
                   key={tag}
-                  className="rounded-full border border-cream/20 bg-white/5 px-4 py-2 text-sm text-cream/85 backdrop-blur"
+                  className="rounded-full border border-cream/20 bg-white/5 px-4 py-2 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-cream/85 backdrop-blur"
                 >
                   {tag}
                 </span>
@@ -50,7 +50,7 @@ export default function HealthChannelPage() {
       <section className="mx-auto max-w-7xl px-6 py-16 sm:px-8 sm:py-20">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.18em] text-gold">The Program</p>
+            <p className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-pine-dark">The Program</p>
             <h2 className="mt-3 font-display text-3xl font-semibold text-pine-dark sm:text-4xl">
               Prevention is Our Passion
             </h2>
@@ -79,7 +79,7 @@ export default function HealthChannelPage() {
         <div className="mx-auto max-w-7xl px-6 py-16 sm:px-8 sm:py-20">
           <div className="mb-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
             <div>
-              <p className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Featured Physicians</p>
+              <p className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-pine-dark">Featured Physicians</p>
               <h2 className="mt-3 font-display text-3xl font-semibold text-pine-dark sm:text-4xl">
                 Health education from our experts
               </h2>
@@ -112,14 +112,14 @@ export default function HealthChannelPage() {
                   <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-pine-dark/60 to-transparent" />
 
                   <div className="absolute bottom-5 left-5">
-                    <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-pine-dark backdrop-blur">
+                    <span className="rounded-full bg-white/90 px-3 py-1 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine-dark backdrop-blur">
                       Session {index + 1}
                     </span>
                   </div>
                 </div>
 
                 <div className="p-6">
-                  <p className="font-mono text-xs font-medium uppercase tracking-[0.15em] text-gold">
+                  <p className="font-accent text-xs font-semibold uppercase tracking-[0.15em] text-pine-dark">
                     Health Channel
                   </p>
                   <h3 className="mt-2 font-display text-xl font-semibold leading-snug text-pine-dark">
@@ -137,7 +137,7 @@ export default function HealthChannelPage() {
       {/* VIDEO LIBRARY */}
       <section className="mx-auto max-w-7xl px-6 py-16 sm:px-8 sm:py-24">
         <div className="max-w-3xl">
-          <p className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Watch & Learn</p>
+          <p className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-pine-dark">Watch & Learn</p>
           <h2 className="mt-3 font-display text-3xl font-semibold text-pine-dark sm:text-4xl">
             Health Channel Videos
           </h2>
@@ -172,7 +172,7 @@ export default function HealthChannelPage() {
         <div className="relative z-10 mx-auto max-w-7xl px-6 py-14 sm:px-8 sm:py-16">
           <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
             <div>
-              <p className="font-mono text-xs uppercase tracking-[0.18em] text-gold-light">In Collaboration With</p>
+              <p className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-gold-light">In Collaboration With</p>
               <h2 className="mt-3 font-display text-2xl font-semibold sm:text-3xl">
                 Fatima Jinnah Medical University
               </h2>

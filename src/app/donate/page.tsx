@@ -26,7 +26,7 @@ export default async function DonatePage() {
             the FJMU E-Library, and health initiatives. For check payments and cause-specific giving, contact the FJMCAANA team.
           </p>
           <a 
-            className="mt-6 inline-flex rounded-lg bg-pine px-5 py-3 text-sm font-semibold text-white transition hover:bg-pine-dark"
+            className="mt-6 inline-flex rounded-lg bg-pine px-5 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-white transition hover:bg-pine-dark"
             href="mailto:team@fjmcaana.org?subject=Donation%20inquiry"
           >
             Contact about giving

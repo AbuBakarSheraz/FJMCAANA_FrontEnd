@@ -16,7 +16,7 @@ export default function LeadersSection() {
     <section id="leaders" className="bg-gradient-to-b from-cream to-sage/30">
       <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20 lg:px-10">
         <Reveal>
-          <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Leadership</span>
+          <span className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-pine-dark">Leadership</span>
           <h2 className="mt-2 font-display text-3xl font-semibold text-pine-dark sm:text-4xl">The Executive Committee</h2>
           <p className="mt-4 max-w-2xl text-lg text-ink-soft">Distinguished physicians guiding our mission of service, education, and healthcare transformation.</p>
         </Reveal>
@@ -39,14 +39,14 @@ export default function LeadersSection() {
   <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-pine-dark/10 to-transparent" />
 </div>
               <div className="p-6">
-                <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-gold">
+                <span className="font-accent text-[11px] font-semibold uppercase tracking-[0.14em] text-pine-dark">
                   {leader.role}
                 </span>
                 <h4 className="mt-2 font-display text-lg font-semibold text-pine-dark">{leader.name}</h4>
                 <p className="mt-3 line-clamp-3 text-sm text-ink-soft">{leader.highlight}</p>
                 <Link
                   href={`/team#${leader.slug}`}
-                  className="mt-4 inline-block border-b border-pine/40 text-sm font-semibold text-pine transition-colors hover:border-pine"
+                  className="mt-4 inline-block border-b border-pine/40 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine transition-colors hover:border-pine"
                 >
                   Learn more →
                 </Link>
@@ -58,7 +58,7 @@ export default function LeadersSection() {
         <div className="mt-12 text-center">
           <Link
             href="/team"
-            className="inline-block rounded-full border-2 border-pine px-8 py-3 font-semibold text-pine transition-all hover:bg-pine hover:text-white"
+            className="inline-block rounded-full border-2 border-pine px-8 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine transition-all hover:bg-pine hover:text-white"
           >
             Meet Our Full Team
           </Link>

@@ -33,7 +33,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="group relative py-1 font-mono text-[11px] font-medium uppercase tracking-[0.08em] text-ink-soft transition hover:text-pine-dark"
+              className="group relative py-1 font-accent text-[11px] font-semibold uppercase tracking-[0.08em] text-ink-soft transition hover:text-pine-dark"
             >
               {link.label}
               <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-gold transition-all duration-300 group-hover:w-full" />
@@ -45,7 +45,7 @@ export default function Navbar() {
         <div className="hidden items-center gap-2 lg:flex">
           <a
             href="/get-involved/membership"
-            className="inline-flex items-center gap-1.5 rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-pine-dark transition hover:bg-gold-light"
+            className="inline-flex items-center gap-1.5 rounded-full bg-gold px-5 py-2.5 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine-dark transition hover:bg-gold-light"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -53,7 +53,7 @@ export default function Navbar() {
           </a>
           <a
             href="https://www.paypal.com/us/fundraiser/charity/1554217"
-            className="inline-flex items-center gap-1.5 rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-pine-dark transition hover:bg-gold-light"
+            className="inline-flex items-center gap-1.5 rounded-full bg-gold px-5 py-2.5 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine-dark transition hover:bg-gold-light"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -65,7 +65,7 @@ export default function Navbar() {
         <div className="flex items-center gap-1.5 lg:hidden">
           <a
             href="/get-involved/membership"
-            className="inline-flex items-center rounded-full bg-gold px-3 py-1.5 text-xs font-semibold text-pine-dark transition hover:bg-gold-light"
+            className="inline-flex items-center rounded-full bg-gold px-3 py-1.5 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine-dark transition hover:bg-gold-light"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -73,7 +73,7 @@ export default function Navbar() {
           </a>
           <a
             href="https://www.paypal.com/us/fundraiser/charity/1554217"
-            className="inline-flex items-center rounded-full bg-gold px-3 py-1.5 text-xs font-semibold text-pine-dark transition hover:bg-gold-light"
+            className="inline-flex items-center rounded-full bg-gold px-3 py-1.5 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine-dark transition hover:bg-gold-light"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -65,11 +65,11 @@ export default function ContactPage() {
     <>
       <section className="border-b border-pine/10 bg-sage">
         <Reveal className="mx-auto max-w-7xl px-8 py-8 sm:px-2 sm:py-10">
-          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold">
+          <p className="font-accent text-[11px] font-semibold uppercase tracking-[0.2em] text-pine-dark">
             Contact
           </p>
 
-          <h1 className="mt-3 font-display text-4xl font-semibold text-pine-dark sm:text-5xl">
+          <h1 className="mt-3 font-display-alt text-4xl font-semibold text-pine-dark sm:text-5xl">
             Stay connected
           </h1>
 
@@ -96,13 +96,13 @@ export default function ContactPage() {
             </p>
 
             <div className="mt-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-gold">
+              <p className="font-accent text-xs font-semibold uppercase tracking-widest text-pine-dark">
                 Email
               </p>
 
               <a
                 href="mailto:team@fjmcaana.org"
-                className="mt-2 inline-block text-base font-medium text-pine underline-offset-4 hover:underline"
+                className="mt-2 inline-block font-accent text-base font-semibold uppercase tracking-[0.1em] text-pine underline-offset-4 hover:underline"
               >
                 team@fjmcaana.org
               </a>
@@ -232,7 +232,7 @@ export default function ContactPage() {
               <button
                 type="submit"
                 disabled={loading}
-                className="inline-flex w-full items-center justify-center rounded-lg bg-pine px-6 py-3 text-sm font-semibold text-white transition hover:bg-pine-dark disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+                className="inline-flex w-full items-center justify-center rounded-lg bg-pine px-6 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-white transition hover:bg-pine-dark disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
               >
                 {loading ? "Sending..." : "Send message"}
               </button>

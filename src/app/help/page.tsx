@@ -65,6 +65,65 @@ const PROFESSIONAL_RESOURCES = [
   }
 ];
 
+const YPC_RESOURCES = [
+  {
+    title: "YPC Committee / APPNA Academy of Medicine",
+    href: "https://appnaacademy.org/ypc-committee/",
+  },
+  {
+    title: "APPNA YPC on Facebook",
+    href: "https://www.facebook.com/share/g/1DznB5KYh5/?mibextid=wwXIfr",
+  },
+  {
+    title: "APPNA YPC on X",
+    href: "https://x.com/appnaypc?s=11&t=KeGmCSEqadhO-htCG9gm6Q",
+  },
+  {
+    title: "APPNA YPC on YouTube",
+    href: "https://youtube.com/@appna_org?si=VBNshMk7j9iF7lZG",
+  },
+];
+
+const CONTACT_CHANNELS = [
+  {
+    title: "APPNA YPC WhatsApp Channel",
+    description: "Follow the APPNA Young Physicians Committee channel for latest updates, resources, networking opportunities, and professional development information.",
+    href: "https://whatsapp.com/channel/0029Vb8Vte4GehEIDXyLVo2l",
+    cta: "Follow WhatsApp Channel",
+    iconBg: "bg-green-100",
+    iconColor: "text-green-600",
+    buttonBg: "bg-green-600 hover:bg-green-700",
+    icon: (
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    ),
+  },
+  {
+    title: "APPNA YPC Facebook Group",
+    description: "Join the vibrant community of young Pakistani-American physicians on Facebook for networking, discussions, and support.",
+    href: "https://www.facebook.com/share/g/1DznB5KYh5/?mibextid=wwXIfr",
+    cta: "Join Facebook Group",
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+    buttonBg: "bg-blue-600 hover:bg-blue-700",
+    icon: (
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+    ),
+  },
+  {
+    title: "Residency Application Support",
+    description: "Email all residency inquiries, application questions, and guidance requests to our team. We're here to help you navigate the process.",
+    href: "mailto:team@fjmcaana.org?subject=Residency Inquiry",
+    cta: "Email: team@fjmcaana.org",
+    iconBg: "bg-gold/20",
+    iconColor: "text-gold",
+    buttonBg: "bg-pine hover:bg-pine-dark",
+    outlineIcon: true,
+    icon: (
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+    ),
+  },
+];
+
 const FAQ_ITEMS = [
   {
     question: "How do I apply for the FJMCAANA scholarship?",
@@ -88,6 +147,33 @@ const FAQ_ITEMS = [
   }
 ];
 
+function ChannelCard({ channel }: { channel: (typeof CONTACT_CHANNELS)[number] }) {
+  return (
+    <div className="flex h-full flex-col rounded-xl border border-pine/10 bg-white p-5">
+      <div className={`inline-flex w-fit rounded-lg p-2 ${channel.iconBg}`}>
+        <svg
+          className={`h-6 w-6 ${channel.iconColor}`}
+          fill={channel.outlineIcon ? "none" : "currentColor"}
+          stroke={channel.outlineIcon ? "currentColor" : undefined}
+          viewBox="0 0 24 24"
+        >
+          {channel.icon}
+        </svg>
+      </div>
+      <h4 className="mt-3 font-semibold text-pine-dark">{channel.title}</h4>
+      <p className="mt-1 flex-1 text-sm text-ink-soft">{channel.description}</p>
+      <a
+        href={channel.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`mt-4 inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-white transition ${channel.buttonBg}`}
+      >
+        {channel.cta}
+      </a>
+    </div>
+  );
+}
+
 export default function HelpPage() {
   return (
     <>
@@ -101,94 +187,42 @@ export default function HelpPage() {
       <div className="bg-cream">
         {/* Introduction */}
         <section className="mx-auto max-w-7xl px-8 sm:px-2 py-16">
-          <div className="rounded-2xl bg-gradient-to-br from-pine/5 to-sage/30 p-8 md:p-12">
-            <h2 className="font-display text-2xl font-semibold text-pine-dark sm:text-3xl">
-              We're Here to Support Your Journey
-            </h2>
-            <p className="mt-4 text-lg text-ink-soft leading-relaxed max-w-3xl">
-              Whether you're a current medical student, recent graduate preparing for board exams, or an experienced physician looking to expand your professional network, FJMCAANA provides resources, mentorship, and financial support to help you succeed.
+          <h2 className="font-display text-2xl font-semibold text-pine-dark sm:text-3xl">
+            We&apos;re Here to Support Your Journey
+          </h2>
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-ink-soft">
+            Whether you&apos;re a current medical student, recent graduate preparing for board exams, or an experienced physician looking to expand your professional network, FJMCAANA provides resources, mentorship, and financial support to help you succeed.
+          </p>
+
+          {/* Resources for Training in North America */}
+          <div className="mt-10 rounded-2xl border-2 border-gold/30 bg-gradient-to-br from-pine/5 to-sage/30 p-6 md:p-10">
+            <h3 className="flex items-center gap-2 font-display text-xl font-semibold text-pine-dark">
+              <span className="text-2xl">🎓</span>
+              Resources for Training in North America
+            </h3>
+            <p className="mt-3 max-w-3xl text-sm leading-relaxed text-ink-soft">
+              The APPNA Young Physicians Committee offers resources for FJMU graduates seeking training in the United States or Canada.
             </p>
-            
-            {/* Resources for Training in North America */}
-            <div className="mt-8 rounded-xl border-2 border-gold/30 bg-white p-6">
-              <h3 className="font-display text-xl font-semibold text-pine-dark flex items-center gap-2">
-                <span className="text-2xl">🎓</span>
-                Resources for Training in North America
-              </h3>
-              <div className="mt-6 space-y-4">
-                <div className="flex items-start gap-3">
-                  <div className="flex-none rounded-lg bg-green-100 p-2">
-                    <svg className="h-6 w-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-pine-dark">APPNA YPC WhatsApp Channel</h4>
-                    <p className="mt-1 text-sm text-ink-soft">
-                      Follow the APPNA Young Physicians Committee channel for latest updates, resources, networking opportunities, and professional development information.
-                    </p>
-                    <a 
-                      href="https://whatsapp.com/channel/0029Vb8Vte4GehEIDXyLVo2l"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-3 inline-flex items-center gap-2 rounded-lg bg-green-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-green-700"
-                    >
-                      <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                      </svg>
-                      Follow WhatsApp Channel
-                    </a>
-                  </div>
-                </div>
 
-                <div className="flex items-start gap-3">
-                  <div className="flex-none rounded-lg bg-blue-100 p-2">
-                    <svg className="h-6 w-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-pine-dark">APPNA YPC Facebook Group</h4>
-                    <p className="mt-1 text-sm text-ink-soft">
-                      Join the vibrant community of young Pakistani-American physicians on Facebook for networking, discussions, and support.
-                    </p>
-                    <a 
-                      href="https://www.facebook.com/share/g/19N5SxA3dY/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-3 inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
-                    >
-                      <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                      </svg>
-                      Join Facebook Group
-                    </a>
-                  </div>
-                </div>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              {YPC_RESOURCES.map((resource) => (
+                <a
+                  className="flex items-center justify-between rounded-lg border border-pine/10 bg-white px-4 py-3 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine-dark transition hover:border-pine/30 hover:bg-sage/40"
+                  href={resource.href}
+                  key={resource.href}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  {resource.title}
+                  <span aria-hidden="true">↗</span>
+                </a>
+              ))}
+            </div>
 
-                <div className="flex items-start gap-3">
-                  <div className="flex-none rounded-lg bg-gold/20 p-2">
-                    <svg className="h-6 w-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-pine-dark">Residency Application Support</h4>
-                    <p className="mt-1 text-sm text-ink-soft">
-                      Email all residency inquiries, application questions, and guidance requests to our team. We're here to help you navigate the process.
-                    </p>
-                    <a 
-                      href="mailto:team@fjmcaana.org?subject=Residency Inquiry"
-                      className="mt-3 inline-flex items-center gap-2 rounded-lg bg-pine px-4 py-2 text-sm font-semibold text-white transition hover:bg-pine-dark"
-                    >
-                      <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                      Email: team@fjmcaana.org
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <div className="mt-6 grid gap-4 sm:grid-cols-3">
+              {CONTACT_CHANNELS.map((channel) => (
+                <ChannelCard key={channel.title} channel={channel} />
+              ))}
             </div>
           </div>
         </section>
@@ -215,7 +249,7 @@ export default function HelpPage() {
                 <div className="absolute top-0 right-0 h-24 w-24 bg-gradient-to-br from-gold/10 to-transparent rounded-bl-full" />
                 <div className="relative">
                   <div className="text-4xl mb-4">{resource.icon}</div>
-                  <span className="inline-block rounded-full bg-sage/50 px-3 py-1 text-xs font-semibold text-pine-dark mb-3">
+                  <span className="mb-3 inline-block rounded-full bg-sage/50 px-3 py-1 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine-dark">
                     {resource.category}
                   </span>
                   <h3 className="font-display text-lg font-semibold text-pine-dark">
@@ -224,7 +258,7 @@ export default function HelpPage() {
                   <p className="mt-2 text-sm text-ink-soft leading-relaxed">
                     {resource.description}
                   </p>
-                  <div className="mt-4 flex items-center gap-2 text-sm font-semibold text-pine">
+                  <div className="mt-4 flex items-center gap-2 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine">
                     Learn more
                     <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -253,10 +287,10 @@ export default function HelpPage() {
               {PROFESSIONAL_RESOURCES.map((resource, index) => {
                 const isExternal = resource.link.startsWith('http') || resource.link.startsWith('mailto');
                 const Component = isExternal ? 'a' : Link;
-                const linkProps = isExternal 
+                const linkProps = isExternal
                   ? { href: resource.link, target: "_blank", rel: "noopener noreferrer" }
                   : { href: resource.link };
-                
+
                 return (
                   <Component
                     key={index}
@@ -266,7 +300,7 @@ export default function HelpPage() {
                     <div className="absolute top-0 right-0 h-24 w-24 bg-gradient-to-br from-gold/10 to-transparent rounded-bl-full" />
                     <div className="relative">
                       <div className="text-4xl mb-4">{resource.icon}</div>
-                      <span className="inline-block rounded-full bg-sage/50 px-3 py-1 text-xs font-semibold text-pine-dark mb-3">
+                      <span className="mb-3 inline-block rounded-full bg-sage/50 px-3 py-1 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine-dark">
                         {resource.category}
                       </span>
                       <h3 className="font-display text-lg font-semibold text-pine-dark">
@@ -275,7 +309,7 @@ export default function HelpPage() {
                       <p className="mt-2 text-sm text-ink-soft leading-relaxed">
                         {resource.description}
                       </p>
-                      <div className="mt-4 flex items-center gap-2 text-sm font-semibold text-pine">
+                      <div className="mt-4 flex items-center gap-2 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine">
                         {isExternal ? 'Visit' : 'Learn more'}
                         <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -332,13 +366,13 @@ export default function HelpPage() {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="mailto:team@fjmcaana.org"
-                className="rounded-lg bg-gold px-8 py-3 font-semibold text-pine-dark transition hover:bg-gold-light"
+                className="rounded-lg bg-gold px-8 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine-dark transition hover:bg-gold-light"
               >
                 Email Us
               </a>
               <Link
                 href="/contact"
-                className="rounded-lg border-2 border-white px-8 py-3 font-semibold text-white transition hover:bg-white/10"
+                className="rounded-lg border-2 border-white px-8 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-white transition hover:bg-white/10"
               >
                 Contact Page
               </Link>

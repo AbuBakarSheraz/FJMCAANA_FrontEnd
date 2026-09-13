@@ -139,7 +139,7 @@ export default function ReportsPage() {
             <a
               key={s.id}
               href={`#${s.id}`}
-              className="whitespace-nowrap font-mono text-[11px] uppercase tracking-[0.1em] text-ink-soft transition hover:text-pine-dark"
+              className="whitespace-nowrap font-accent text-[11px] font-semibold uppercase tracking-[0.1em] text-ink-soft transition hover:text-pine-dark"
             >
               {s.label}
             </a>
@@ -197,7 +197,7 @@ export default function ReportsPage() {
                 className="group relative overflow-hidden rounded-xl border border-pine/10 bg-white p-8 transition-all duration-300 hover:shadow-lg hover:border-gold/40"
               >
                 <div className="flex items-start justify-between">
-                  <span className="rounded-full bg-gold/15 px-4 py-1 font-mono text-sm font-semibold text-gold">
+                  <span className="rounded-full bg-gold/15 px-4 py-1 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine-dark">
                     {report.year}
                   </span>
                   <DocIcon className="h-6 w-6 text-pine/30 transition-colors group-hover:text-gold" />
@@ -208,7 +208,7 @@ export default function ReportsPage() {
                 {report.highlights.length > 0 && (
                   <div className="mt-4 flex flex-wrap gap-2">
                     {report.highlights.map((h, i) => (
-                      <span key={i} className="rounded-full bg-sage px-3 py-1 text-xs font-medium text-pine-dark">
+                      <span key={i} className="rounded-full bg-sage px-3 py-1 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine-dark">
                         {h}
                       </span>
                     ))}
@@ -218,7 +218,7 @@ export default function ReportsPage() {
                   href={report.pdfUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 rounded-full bg-pine px-6 py-3 text-sm font-semibold text-white transition hover:bg-pine-dark"
+                  className="mt-6 inline-flex items-center gap-2 rounded-full bg-pine px-6 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-white transition hover:bg-pine-dark"
                 >
                   <DocIcon className="h-4 w-4" />
                   Download PDF
@@ -249,7 +249,7 @@ export default function ReportsPage() {
                   className="group overflow-hidden rounded-xl border border-pine/10 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 >
                   <div className="border-b border-pine/10 bg-white p-6">
-                    <span className="inline-block rounded-full bg-sage px-3 py-1 text-xs font-semibold text-pine-dark">
+                    <span className="inline-block rounded-full bg-sage px-3 py-1 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine-dark">
                       {report.category}
                     </span>
                     <h3 className="mt-4 font-display text-lg font-semibold text-pine-dark">{report.title}</h3>
@@ -261,7 +261,7 @@ export default function ReportsPage() {
                       href={report.pdfUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-4 inline-flex items-center gap-2 border-b border-pine/40 text-sm font-semibold text-pine transition-colors hover:border-pine"
+                      className="mt-4 inline-flex items-center gap-2 border-b border-pine/40 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine transition-colors hover:border-pine"
                     >
                       View Report →
                     </a>
@@ -292,7 +292,7 @@ export default function ReportsPage() {
                 className="group relative overflow-hidden rounded-xl border border-pine/10 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gold/40"
               >
                 <div className="absolute right-4 top-4 z-10">
-                  <span className="rounded-full bg-gold px-4 py-1.5 font-mono text-xs font-bold text-pine-dark shadow">
+                  <span className="rounded-full bg-gold px-4 py-1.5 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine-dark shadow">
                     {report.year}
                   </span>
                 </div>
@@ -314,7 +314,7 @@ export default function ReportsPage() {
                   <div className="mt-6 flex items-center gap-3">
                     <button
                       onClick={() => window.open(report.image, "_blank")}
-                      className="flex-1 rounded-full bg-pine px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-pine-dark"
+                      className="flex-1 rounded-full bg-pine px-4 py-2.5 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-white transition hover:bg-pine-dark"
                     >
                       View Full Report
                     </button>
@@ -326,7 +326,7 @@ export default function ReportsPage() {
                         link.click();
                       }}
                       aria-label={`Download ${report.title}`}
-                      className="rounded-full border border-pine px-4 py-2.5 text-sm font-semibold text-pine transition hover:bg-pine hover:text-white"
+                      className="rounded-full border border-pine px-4 py-2.5 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine transition hover:bg-pine hover:text-white"
                     >
                       <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -387,13 +387,13 @@ export default function ReportsPage() {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="mailto:team@fjmcaana.org?subject=Financial%20Report%20Inquiry"
-                className="rounded-full bg-gold px-8 py-3 font-semibold text-pine-dark transition hover:bg-gold-light"
+                className="rounded-full bg-gold px-8 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine-dark transition hover:bg-gold-light"
               >
                 Contact the Financial Team
               </a>
               <Link
                 href="/contact"
-                className="rounded-full border border-white/40 px-8 py-3 font-semibold text-white transition hover:bg-white/10"
+                className="rounded-full border border-white/40 px-8 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-white transition hover:bg-white/10"
               >
                 General Contact
               </Link>

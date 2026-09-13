@@ -46,7 +46,7 @@ export default function TeamPage() {
 
               {/* Message — flexes to fill remaining space, min-w-0 stops overflow */}
               <div className="flex-1 min-w-0 w-full">
-                <span className="font-mono text-[11px] tracking-widest uppercase text-gold">
+                <span className="font-accent text-[11px] font-semibold tracking-widest uppercase text-pine-dark">
                   {member.role}
                 </span>
                 <h2 className="font-display font-semibold text-2xl sm:text-3xl text-pine-dark mt-2">

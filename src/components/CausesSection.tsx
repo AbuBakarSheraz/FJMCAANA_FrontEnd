@@ -45,14 +45,14 @@ function CauseCard({ cause, featured = false }: { cause: Cause; featured?: boole
       {typeof cause.percentFunded === "number" && (
         <>
           <ProgressBar percent={cause.percentFunded} />
-          <div className="mt-1.5 flex items-center justify-between font-mono text-[11px] uppercase tracking-wide text-ink-soft">
+          <div className="mt-1.5 flex items-center justify-between font-accent text-[11px] font-semibold uppercase tracking-wide text-ink-soft">
             <span>{cause.raisedLabel ?? `${cause.percentFunded}% funded`}</span>
           </div>
         </>
       )}
       <a
         href={cause.link || "https://www.paypal.com/us/fundraiser/charity/1554217"}
-        className="mt-4 inline-block w-fit rounded-md border border-pine px-3 py-1.5 text-xs font-semibold text-pine transition hover:bg-pine hover:text-white"
+        className="mt-4 inline-block w-fit rounded-md border border-pine px-3 py-1.5 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine transition hover:bg-pine hover:text-white"
         target={cause.link ? undefined : "_blank"}
         rel="noopener noreferrer"
       >
@@ -69,7 +69,7 @@ export default function CausesSection({ causes, expanded = false }: { causes: Ca
     <section id="impact" className="bg-sage">
       <div className="mx-auto max-w-7xl px-4 py-10">
         <Reveal>
-          <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Featured Causes</span>
+          <span className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-pine-dark">Featured Causes</span>
           <h2 className="mt-2 font-display text-3xl font-semibold text-pine-dark">Where your gift goes right now</h2>
         </Reveal>
 

@@ -27,7 +27,7 @@ export default function TeamSlider() {
 
   return (
     <section id="team" className="mx-auto max-w-7xl px-8 sm:px-2 py-20">
-      <span className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Our Team</span>
+      <span className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-pine-dark">Our Team</span>
       <h2 className="mb-10 mt-2 font-display text-3xl font-semibold text-pine-dark">
         The people behind FJMCAANA
       </h2>
@@ -54,7 +54,7 @@ export default function TeamSlider() {
             <span className="font-display text-4xl italic leading-none text-pine/15" aria-hidden="true">
               &ldquo;
             </span>
-            <span className="-mt-3 font-mono text-[11px] uppercase tracking-[0.14em] text-gold">
+            <span className="-mt-3 font-accent text-[11px] font-semibold uppercase tracking-[0.14em] text-pine-dark">
               {member.role}
             </span>
             <h3 className="mt-2 font-display text-2xl font-semibold text-pine-dark">{member.name}</h3>
@@ -63,7 +63,7 @@ export default function TeamSlider() {
             </p>
             <Link
               href={`/team#${member.slug}`}
-              className="mt-6 inline-block w-fit border-b border-pine/40 text-sm font-semibold text-pine hover:border-pine"
+              className="mt-6 inline-block w-fit border-b border-pine/40 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine hover:border-pine"
             >
               See more →
             </Link>

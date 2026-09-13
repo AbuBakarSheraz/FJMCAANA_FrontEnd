@@ -87,7 +87,7 @@ export const CONTENT_PAGES: ContentPage[] = [
   },
   {
     path: ["get-involved"], eyebrow: "Get Involved", title: "Build the future with us", description: "Join a professional community that supports its members, alma mater, and communities in Pakistan.",
-    sections: [{ items: [{ title: "Membership", detail: "Annual and lifetime membership for FJMC alumni in the United States and Canada.", href: "/get-involved/membership" }, { title: "Lifetime Members", detail: "Acknowledge the Alumni who have made an enduring commitment.", href: "/get-involved/lifetime-members" }, { title: "Health Channel", detail: "Public health education with physician experts.", href: "/get-involved/health-channel" }, { title: "Volunteer", detail: "Connect with the association to offer your time, skills, or professional network.", href: "/get-involved/volunteer" }] }],
+    sections: [{ items: [{ title: "Membership", detail: "Annual and lifetime membership for FJMC alumni in the United States and Canada.", href: "/get-involved/membership" }, { title: "Lifetime Members", detail: "Acknowledge the Alumni who have made an enduring commitment.", href: "/get-involved/lifetime-members" }, { title: "Health Channel", detail: "Public health education with physician experts.", href: "/get-involved/health-channel" }] }],
   },
   {
     path: ["get-involved", "membership"], eyebrow: "Get Involved", title: "Membership", description: "Membership of FJMCAANA is open to FJMC alumni residing in the United States and Canada.",
@@ -139,10 +139,6 @@ export const CONTENT_PAGES: ContentPage[] = [
     },
   ],
 },
-  {
-    path: ["get-involved", "volunteer"], eyebrow: "Get Involved", title: "Volunteer", description: "FJMCAANA welcomes people who want to support its projects, events, and community.",
-    sections: [{ paragraphs: ["The previous site did not publish a standalone volunteer program or application. To explore ways to help, contact the FJMCAANA team directly."] }],
-  },
   {
     path: ["events"], eyebrow: "Our Impact", title: "Care that reaches further", description: "Healthcare, education, emergency relief, and support for the next generation.",
     sections: [{ items: [{ title: "Past Events", detail: "The happiness moments we lived together.", href: "/events/past-events" }, { title: "Upcoming Events", detail: "Lets meet again.", href: "/events/upcoming-events" }] }],

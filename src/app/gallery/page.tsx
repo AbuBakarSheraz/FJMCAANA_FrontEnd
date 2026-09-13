@@ -92,12 +92,12 @@ export default function GalleryPage() {
         <Reveal className="relative z-10 mx-auto max-w-6xl px-6 text-center">
           <div className="flex items-center justify-center gap-3">
             <span className="h-px w-8 bg-gold/60" />
-            <span className="font-mono text-xs uppercase tracking-[0.2em] text-gold-light">
+            <span className="font-accent text-xs font-semibold uppercase tracking-[0.2em] text-gold-light">
               Moments Worth Keeping
             </span>
             <span className="h-px w-8 bg-gold/60" />
           </div>
-          <h1 className="mt-5 font-display text-4xl font-semibold text-white sm:text-5xl">Gallery</h1>
+          <h1 className="mt-5 font-display-alt text-4xl font-semibold text-white sm:text-5xl">Gallery</h1>
           <p className="mx-auto mt-4 max-w-xl text-cream/80">
             Memories from our professional, cultural, and community events across the years — a
             record of the sisterhood in action.
@@ -121,10 +121,10 @@ export default function GalleryPage() {
                 </div>
 
                 <h3 className="mt-5 font-display text-lg font-semibold text-pine-dark">{item.year}</h3>
-                <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.1em] text-gold">{item.date}</p>
+                <p className="mt-1 font-accent text-[11px] font-semibold uppercase tracking-[0.1em] text-pine-dark">{item.date}</p>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">{item.description}</p>
 
-                <span className="mt-5 inline-flex w-fit items-center gap-1.5 border-b border-pine/40 text-sm font-semibold text-pine transition-all group-hover:translate-x-1 group-hover:border-pine">
+                <span className="mt-5 inline-flex w-fit items-center gap-1.5 border-b border-pine/40 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine transition-all group-hover:translate-x-1 group-hover:border-pine">
                   View Gallery
                   <span aria-hidden="true">→</span>
                 </span>

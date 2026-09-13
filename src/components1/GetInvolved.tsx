@@ -13,12 +13,7 @@ const CARDS = [
     cta: "Watch now",
     href: "#",
   },
-  {
-    title: "Volunteer",
-    body: "Support ongoing projects with your time, skills, or professional network.",
-    cta: "Get started",
-    href: "#",
-  },
+
 ];
 
 export default function GetInvolved() {

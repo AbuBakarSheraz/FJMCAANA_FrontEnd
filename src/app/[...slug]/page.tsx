@@ -21,7 +21,7 @@ export default async function SitePage({ params }: PageProps<"/[...slug]">) {
   const key = path.join("/");
 
   if (key === "about/executive-committee") {
-    return <><Navbar /><PageHeader eyebrow="Leadership" title="Executive Committee" description="The council and executive members leading FJMCAANA's mission, projects, and community." /><main className="max-w-7xl mx-auto px-8 sm:px-2 py-12 sm:py-16"><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{TEAM_MEMBERS.map((member) => <Link href={`/team#${member.slug}`} key={member.slug} className="rounded-xl border border-pine/10 bg-white p-5 transition hover:-translate-y-0.5 hover:border-pine/25 hover:shadow-sm"><p className="font-mono text-[11px] uppercase tracking-widest text-gold">{member.role}</p><h2 className="mt-2 font-display text-xl font-semibold text-pine-dark">{member.name}</h2><p className="mt-3 text-sm leading-relaxed text-ink-soft">{member.highlight}</p><span className="mt-4 inline-block text-sm font-semibold text-pine">Read biography <span aria-hidden="true">→</span></span></Link>)}</div></main><Footer /></>;
+    return <><Navbar /><PageHeader eyebrow="Leadership" title="Executive Committee" description="The council and executive members leading FJMCAANA's mission, projects, and community." /><main className="max-w-7xl mx-auto px-8 sm:px-2 py-12 sm:py-16"><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{TEAM_MEMBERS.map((member) => <Link href={`/team#${member.slug}`} key={member.slug} className="rounded-xl border border-pine/10 bg-white p-5 transition hover:-translate-y-0.5 hover:border-pine/25 hover:shadow-sm"><p className="font-accent text-[11px] font-semibold uppercase tracking-widest text-pine-dark">{member.role}</p><h2 className="mt-2 font-display text-xl font-semibold text-pine-dark">{member.name}</h2><p className="mt-3 text-sm leading-relaxed text-ink-soft">{member.highlight}</p><span className="mt-4 inline-block font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine">Read biography <span aria-hidden="true">→</span></span></Link>)}</div></main><Footer /></>;
   }
 
   if (key === "get-involved/health-channel") {
@@ -117,7 +117,7 @@ if (key === "get-involved/lifetime-members") {
         <p className="mt-4 leading-relaxed text-ink-soft">FJMCAANA states that donations support projects in Pakistan related to its alma mater,
            including scholarships, the FJMU E-Library, and health initiatives. For check payments and cause-specific giving, 
            contact the FJMCAANA team.</p>
-           <a className="mt-6 inline-flex rounded-lg bg-pine px-5 py-3 text-sm font-semibold text-white transition hover:bg-pine-dark"
+           <a className="mt-6 inline-flex rounded-lg bg-pine px-5 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-white transition hover:bg-pine-dark"
             href="mailto:team@fjmcaana.org?subject=Donation%20inquiry">Contact about giving</a>
             </div>
      </section>

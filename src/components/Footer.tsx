@@ -1,5 +1,6 @@
 import SealEmblem from "./SealEmblem";
 import { Reveal } from "@/components/motion/Reveal";
+import SocialLinks from "./SocialLinks";
 
 export default function Footer() {
   return (
@@ -13,7 +14,7 @@ export default function Footer() {
         </div>
         <a
           href="https://www.paypal.com/us/fundraiser/charity/1554217"
-          className="rounded-full bg-gold px-7 py-3 text-sm font-semibold text-pine-dark transition hover:bg-gold-light"
+          className="rounded-full bg-gold px-7 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine-dark transition hover:bg-gold-light"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -21,9 +22,12 @@ export default function Footer() {
         </a>
       </Reveal>
       <div className="relative z-10 border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-8 sm:px-2 py-8 text-center text-xs text-cream/70 sm:flex-row sm:text-left">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-8 pb-24 pt-8 text-center text-xs text-cream/70 sm:px-2 sm:flex-row sm:text-left md:py-8">
           <div>© {new Date().getFullYear()} FJMCAANA — Fatima Jinnah Medical College Alumni Association of North America</div>
-          <a href="mailto:team@fjmcaana.org" className="hover:text-cream">team@fjmcaana.org</a>
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:justify-end">
+            <a href="mailto:team@fjmcaana.org" className="hover:text-cream">team@fjmcaana.org</a>
+            <SocialLinks />
+          </div>
         </div>
       </div>
     </footer>
