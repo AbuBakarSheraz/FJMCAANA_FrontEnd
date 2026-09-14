@@ -124,7 +124,7 @@ export default function CausesSection({
       <div className="mx-auto max-w-7xl px-4 py-10">
         <Reveal>
           <span className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-pine-dark">Featured Causes</span>
-          <h2 className="mt-2 font-display text-3xl font-semibold text-pine-dark">Where your gift goes</h2>
+          <h2 className="mt-2 font-display text-3xl font-semibold text-pine-dark">The Impact of Your Gift</h2>
         </Reveal>
 
         <Stagger className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
