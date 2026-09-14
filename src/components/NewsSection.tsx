@@ -18,7 +18,7 @@ export default function NewsSection({ items }: { items: ContentRecord[] }) {
           {lead && (
             <div className="min-w-0 lg:col-span-2">
               <StaggerItem interactive className="min-w-0">
-                <Link href={lead.link || "/news"} className="group block w-full overflow-hidden rounded-xl border border-pine/10 bg-white transition hover:shadow-sm">
+                <Link href={lead.link || "/reports"} className="group block w-full overflow-hidden rounded-xl border border-pine/10 bg-white transition hover:shadow-sm">
                   <div className="grid sm:grid-cols-[1.2fr_1fr]">
                     <div className="relative h-52 sm:h-full">
                       {lead.image ? (

@@ -1,11 +1,11 @@
 {
   "records": [
-    {
-      "id": "news-annual-projects-2022",
+   
+     {
+      "id": "news-president-report-2026",
       "collection": "news",
-      "title": "Annual Projects/Activities Video Highlights 2022",
-      "summary": "Annual projects and activities video highlights.",
-      "date": "December 31, 2022",
+      "title": "Annual President Report 2026",
+      "summary": "FJMCAANA President's annual report.",
       "featured": true,
       "createdAt": "2022-12-31"
     },
