@@ -49,11 +49,10 @@ export default function LoanPage() {
         <section className="mx-auto max-w-7xl px-8 py-16 sm:px-2">
           <div className="rounded-2xl border border-pine/10 bg-white p-8 shadow-sm sm:p-10">
             <span className="rounded-full bg-gold/20 px-4 py-2 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine-dark">
-              Up to $3,000 · Non-interest loan
+              Supporting FJMU Graduates
             </span>
             <p className="mt-4 max-w-4xl text-lg leading-relaxed text-ink-soft">
-              FJMCAANA is proud to offer financial assistance to FJMU graduates applying for residency training positions in the United States.
-            </p>
+FJMCAANA provides interest-free postgraduate loans of up to $3,000 to eligible FJMU graduates pursuing residency training in the United States.            </p>
             <ul className="mt-8 grid gap-4 text-sm leading-relaxed text-ink-soft sm:grid-cols-2">
               {IMPORTANT_INFORMATION.map((item) => (
                 <li className="rounded-xl bg-sage/50 p-5" key={item}>{item}</li>
