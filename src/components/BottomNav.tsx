@@ -33,7 +33,7 @@ const TABS = [
   },
   {
     href: "__more__",
-    label: "More",
+    label: "Explore",
     icon: (
       <>
         <circle cx="6" cy="6" r="1.3" fill="currentColor" stroke="none" />

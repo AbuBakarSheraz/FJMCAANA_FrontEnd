@@ -131,59 +131,6 @@ export default function ProjectsPage() {
 </Stagger>
         </section>
 
-        {/* Regular Projects Section */}
-        <section className="bg-sage/20 py-8">
-          <div className="mx-auto max-w-7xl px-8 sm:px-2">
-            <Reveal>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="h-1 w-12 bg-gold rounded-full" />
-              <h2 className="font-display text-3xl font-extrabold text-pine">
-                Regular Projects
-              </h2>
-            </div>
-            <p className="mb-12 max-w-3xl text-lg text-ink-soft">
-              Ongoing and completed initiatives addressing specific healthcare, education, and community needs across Pakistan.
-            </p>
-            </Reveal>
-
-            <Stagger className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {REGULAR_PROJECTS.map((project) => (
-                <StaggerItem
-                  key={project.slug}
-                  interactive
-                  className="group relative overflow-hidden rounded-xl border border-pine/10 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
-                >
-                  <div className="relative h-40 overflow-hidden bg-sage">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute top-3 right-3">
-                      <span className="rounded-full bg-white/95 px-2.5 py-1 font-accent text-[11px] font-semibold uppercase tracking-[0.1em] text-pine-dark shadow">
-                        {project.status}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-display text-lg font-semibold text-pine-dark">
-                      {project.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-ink-soft leading-relaxed line-clamp-3">
-                      {project.description}
-                    </p>
-                    <div className="mt-3 text-xs font-semibold text-gold">
-                      {project.impact}
-                    </div>
-                  </div>
-                </StaggerItem>
-              ))}
-            </Stagger>
-          </div>
-        </section>
-
         {/* Call to Action */}
         <section className="mx-auto max-w-7xl px-8 sm:px-2 py-20">
           <Reveal className="rounded-2xl bg-gradient-to-br from-pine-dark to-pine p-12 text-center shadow-xl">

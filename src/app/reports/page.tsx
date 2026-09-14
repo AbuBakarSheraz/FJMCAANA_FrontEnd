@@ -9,6 +9,13 @@ import Link from "next/link";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const ANNUAL_REPORTS = [
+   {
+    year: "2026",
+    title: "FJMCAANA Annual Report 2026",
+    description: "Comprehensive overview of projects, financial stewardship, and community impact for fiscal year 2026.",
+    pdfUrl: "/reports/FJMCAANA_2026_End_of_Year_Report_FINAL_WITH_PRESIDENT_REFLECTION.pdf",
+    highlights: ["$21,000 for Cornea Transplants", "$16,200 Scholarships Awarded", "$26,800 Autism Center"],
+  },
   {
     year: "2022",
     title: "FJMCAANA Annual Report 2022",
@@ -17,14 +24,7 @@ const ANNUAL_REPORTS = [
     date: "December 31, 2022",
     highlights: ["60+ Cornea Transplants", "15 Scholarships Awarded", "29 Houses Built"],
   },
-  {
-    year: "2022",
-    title: "President's Annual Report 2022",
-    description: "Message from the President highlighting achievements, challenges, and vision for the future.",
-    pdfUrl: "/reports/president-report-2022.pdf",
-    date: "December 31, 2022",
-    highlights: [],
-  },
+ 
 ];
 
 

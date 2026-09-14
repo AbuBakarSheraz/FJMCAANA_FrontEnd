@@ -2,6 +2,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 
+const LOAN_APPLICATION_PDF =
+  "/reports/FJMCAANA Post Graduate Loan Application.pdf";
+
+const LOAN_PROGRAM_OVERVIEW_PDF =
+  "/reports/FJMCAANA Post Graduate Loan Program Overview.pdf";
+  
 const ELIGIBILITY = [
   "Must be a graduate of Fatima Jinnah Medical University (FJMU).",
   "Must be in the United States or have positive visa status, such as a green card or H1 visa.",
@@ -45,9 +51,6 @@ export default function LoanPage() {
             <span className="rounded-full bg-gold/20 px-4 py-2 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine-dark">
               Up to $3,000 · Non-interest loan
             </span>
-            <h2 className="mt-6 font-display text-3xl font-semibold text-pine-dark sm:text-4xl">
-              Important Information
-            </h2>
             <p className="mt-4 max-w-4xl text-lg leading-relaxed text-ink-soft">
               FJMCAANA is proud to offer financial assistance to FJMU graduates applying for residency training positions in the United States.
             </p>
@@ -78,20 +81,54 @@ export default function LoanPage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-8 py-16 sm:px-2">
-          <div className="mb-8 flex items-center gap-3">
-            <div className="h-1 w-12 rounded-full bg-gold" />
-            <h2 className="font-display text-3xl font-semibold text-pine-dark">How to Apply</h2>
+       <section className="mx-auto max-w-7xl px-8 py-16 sm:px-2">
+  <div className="mb-8 flex items-center gap-3">
+    <div className="h-1 w-12 rounded-full bg-gold" />
+    <h2 className="font-display text-3xl font-semibold text-pine-dark">
+      How to Apply
+    </h2>
+  </div>
+
+  <div className="grid gap-6 md:grid-cols-3">
+    {APPLICATION_STEPS.map((item, index) => (
+      <div
+        className="rounded-xl border border-pine/10 bg-white p-6 shadow-sm"
+        key={item}
+      >
+        <span className="font-display text-4xl font-semibold text-gold/30">
+          0{index + 1}
+        </span>
+
+        <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+          {item}
+        </p>
+
+        {/* PDF links for Step 1 */}
+        {index === 0 && (
+          <div className="mt-5 flex flex-col gap-2">
+            <a
+              href={LOAN_APPLICATION_PDF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-lg bg-pine px-4 py-2.5 font-accent text-xs font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-pine-dark"
+            >
+              Download Application
+            </a>
+
+            <a
+              href={LOAN_PROGRAM_OVERVIEW_PDF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-lg border border-pine/20 px-4 py-2.5 font-accent text-xs font-semibold uppercase tracking-[0.08em] text-pine-dark transition hover:bg-sage/40"
+            >
+              Program Overview
+            </a>
           </div>
-          <ol className="grid gap-6 md:grid-cols-3">
-            {APPLICATION_STEPS.map((item, index) => (
-              <li className="rounded-xl border border-pine/10 bg-white p-6 shadow-sm" key={item}>
-                <span className="font-display text-4xl font-semibold text-gold/30">0{index + 1}</span>
-                <p className="mt-3 text-sm leading-relaxed text-ink-soft">{item}</p>
-              </li>
-            ))}
-          </ol>
-        </section>
+        )}
+      </div>
+    ))}
+  </div>
+</section>
 
         <section className="bg-sage/20 py-16">
           <div className="mx-auto max-w-7xl px-8 sm:px-2">
