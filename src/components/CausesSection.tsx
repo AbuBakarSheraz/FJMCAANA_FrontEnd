@@ -29,7 +29,7 @@ const DEFAULT_CAUSES: Cause[] = [
       "Fjmcaana is committed to providing free insulin to underprivileged children diagnosed with diabetes. Fjmcaana currently provides support for over 40 children annually via the NGO, Meethi Zindagi.",
     featured: true,
     createdAt: "2022-01-01",
-    link: "/projects",
+    link: "/meethi_zindagi",
   },
   {
     id: "Postgraduate-loan",
