@@ -19,6 +19,7 @@ const DEFAULT_CAUSES: Cause[] = [
       "Providing 60 cornea transplants annually at Sir Ganga Ram Hospital, with each transplant costing $350. Our annual fundraising goal is $21,000.",
     featured: true,
     createdAt: "2022-01-01",
+    link: "/projects",
   },
   {
     id: "meethi-zindagi",
@@ -28,6 +29,7 @@ const DEFAULT_CAUSES: Cause[] = [
       "Fjmcaana is committed to providing free insulin to underprivileged children diagnosed with diabetes. Fjmcaana currently provides support for over 40 children annually via the NGO, Meethi Zindagi.",
     featured: true,
     createdAt: "2022-01-01",
+    link: "/projects",
   },
   {
     id: "Postgraduate-loan",
@@ -37,6 +39,7 @@ const DEFAULT_CAUSES: Cause[] = [
       "your donation can help a deserving graduate of FJMU in her process of seeking residency in the US or Canada. All candidates are chosen based on strict criteria.",
     featured: true,
     createdAt: "2022-01-01",
+    link: "/loan",
   },
   {
     id: "project-flood-relief",
@@ -46,6 +49,7 @@ const DEFAULT_CAUSES: Cause[] = [
       "Supporting the flood-affected Kashani Basti through home reconstruction, clean water, school rehabilitation, Ramadan food hampers, and support for local businesses.",
     featured: true,
     createdAt: "2022-01-01",
+    link: "/projects",
   },
   {
     id: "project-scholarship",
@@ -55,6 +59,7 @@ const DEFAULT_CAUSES: Cause[] = [
       "Supporting FJMU students facing financial hardship through $10,000 in annual scholarships and long-term contributions to the FJMU scholarship endowment.",
     featured: true,
     createdAt: "2022-01-01",
+    link: "/projects",
   },
 ];
 
@@ -101,12 +106,14 @@ function CauseCard({ cause, featured = false }: { cause: Cause; featured?: boole
           </div>
         </>
       )}
-    <Link
-  href="/projects"
-  className="mt-4 inline-block w-fit rounded-md border border-pine px-3 py-1.5 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine transition hover:bg-pine hover:text-white"
->
-  Learn more
-</Link>
+      {cause.link && (
+        <Link
+          href={cause.link}
+          className="mt-4 inline-block w-fit rounded-md border border-pine px-3 py-1.5 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine transition hover:bg-pine hover:text-white"
+        >
+          Learn more
+        </Link>
+      )}
     </StaggerItem>
   );
 }

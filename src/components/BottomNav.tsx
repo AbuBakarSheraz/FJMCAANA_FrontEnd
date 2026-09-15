@@ -15,7 +15,7 @@ const TABS = [
   },
   {
     href: "/get-involved",
-    label: "Involved",
+    label: "Connect",
     icon: (
       <path d="M12 20s-7-4.4-7-9.5A4.5 4.5 0 0 1 12 8a4.5 4.5 0 0 1 7 2.5C19 15.6 12 20 12 20Z" />
     ),
@@ -57,7 +57,7 @@ const MORE_LINKS = [
   { href: "/events", label: "Events" },
   { href: "/gallery", label: "Gallery" },
   { href: "/reports", label: "Reports & Financials" },
-  { href: "/help", label: "Help & Resources" },
+  { href: "/help", label: "Residency Pathways" },
   { href: "/contact", label: "Contact" },
 ];
 

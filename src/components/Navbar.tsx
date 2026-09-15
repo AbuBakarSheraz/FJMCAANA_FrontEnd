@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { href: "/reports", label: "Reports" },
   { href: "/gallery", label: "Gallery" },
   { href: "/get-involved", label: "Get Involved" },
-  { href: "/help", label: "Help & Resources" },
+  { href: "/help", label: "Residency Pathways" },
   { href: "/contact", label: "Contact" },
 ];
 

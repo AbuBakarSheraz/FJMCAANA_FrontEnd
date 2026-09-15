@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Leadership from "@/components/Leadership";
 import LeadersSection from "@/components/LeadersSection";
 import CausesSection from "@/components/CausesSection";
+import ResourcesSection from "@/components/ResourcesSection";
 import GetInvolved from "@/components/GetInvolved";
 import NewsSection from "@/components/NewsSection";
 import Footer from "@/components/Footer";
@@ -19,6 +20,7 @@ export default async function HomePage() {
       <Leadership />
       <LeadersSection />
       <CausesSection />
+      <ResourcesSection />
       <GetInvolved />
       <NewsSection items={news.filter((item) => item.featured).slice(0, 3)} />
       <Footer />

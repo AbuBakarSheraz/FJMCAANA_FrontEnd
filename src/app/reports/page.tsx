@@ -13,7 +13,7 @@ const ANNUAL_REPORTS = [
     year: "2026",
     title: "FJMCAANA Annual Report 2026",
     description: "Comprehensive overview of projects, financial stewardship, and community impact for fiscal year 2026.",
-    pdfUrl: "/reports/FJMCAANA_2026_End_of_Year_Report_FINAL_WITH_PRESIDENT_REFLECTION.pdf",
+    pdfUrl: "/reports/FJMCAANA_2026_End_of_Year_Report_FINAL_WITH_APPNA_NOMINATION.pdf",
     highlights: ["$21,000 for Cornea Transplants", "$16,200 Scholarships Awarded", "$26,800 Autism Center"],
   },
   {

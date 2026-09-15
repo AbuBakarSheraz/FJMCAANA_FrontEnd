@@ -99,8 +99,7 @@ export default function GalleryPage() {
           </div>
           <h1 className="mt-5 font-display-alt text-4xl font-semibold text-white sm:text-5xl">Gallery</h1>
           <p className="mx-auto mt-4 max-w-xl text-cream/80">
-            Memories from our professional, cultural, and community events across the years — a
-            record of the sisterhood in action.
+            Memories from our professional, cultural, and community events across the years.
           </p>
         </Reveal>
       </header>
