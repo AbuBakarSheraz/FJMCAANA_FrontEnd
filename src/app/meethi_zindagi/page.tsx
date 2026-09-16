@@ -11,6 +11,7 @@ const REPORTS = [
     description:
       "Read the annual report to learn about the children supported, insulin assistance provided, and the impact made throughout the year.",
     href: "/mz_reports/MZ_2025.pdf",
+    link: "/mz_reports/presentation24.pdf",
   },
   {
     year: "2024",

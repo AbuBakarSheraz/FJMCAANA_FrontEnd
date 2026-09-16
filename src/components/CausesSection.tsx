@@ -19,7 +19,7 @@ const DEFAULT_CAUSES: Cause[] = [
       "Providing 60 cornea transplants annually at Sir Ganga Ram Hospital, with each transplant costing $350. Our annual fundraising goal is $21,000.",
     featured: true,
     createdAt: "2022-01-01",
-    link: "/projects",
+    link: "/gallery/cornea_transplant",
   },
   {
     id: "meethi-zindagi",
