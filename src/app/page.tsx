@@ -8,6 +8,7 @@ import GetInvolved from "@/components/GetInvolved";
 import NewsSection from "@/components/NewsSection";
 import Footer from "@/components/Footer";
 import { getRecords } from "@/lib/content-store";
+import OrganizationNotice from "@/components/OrganizationNotice";
 
 export const dynamic = "force-dynamic";
 
@@ -17,6 +18,7 @@ export default async function HomePage() {
     <>
       <Navbar />
       <Hero />
+      <OrganizationNotice />
       <Leadership />
       <LeadersSection />
       <CausesSection />

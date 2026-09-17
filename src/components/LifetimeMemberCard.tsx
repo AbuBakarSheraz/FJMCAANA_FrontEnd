@@ -31,7 +31,7 @@ export default function LifetimeMemberCard({
 
         {member.year && (
           <p className="mt-1 text-sm text-ink-soft">
-            Class of {member.year}
+            {member.year}
           </p>
         )}
       </div>

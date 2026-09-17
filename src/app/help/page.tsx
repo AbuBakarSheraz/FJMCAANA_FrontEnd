@@ -4,13 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
 
 const STUDENT_RESOURCES = [
-  {
-    title: "Scholarship Program",
-    description: "Annual scholarships for deserving FJMU students to support their medical education.",
-    icon: "🎓",
-    link: "/projects#scholarship-fund",
-    category: "Financial Aid"
-  },
+ 
   {
     title: "Interest-Free Loans",
     description: "Shariah-compliant financial assistance for tuition, board exam fees, and educational expenses. Zero interest, flexible repayment terms.",
@@ -22,16 +16,10 @@ const STUDENT_RESOURCES = [
     title: "Mentorship Program",
     description: "Connect with experienced FJMU alumni practicing in North America for guidance and career advice.",
     icon: "🤝",
-    link: "#mentorship",
+    link: "/help",
     category: "Career Development"
   },
-  {
-    title: "Board Exam Preparation",
-    description: "Resources and guidance for USMLE, PLAB, and other international medical board examinations.",
-    icon: "📚",
-    link: "#board-prep",
-    category: "Academic Support"
-  }
+
 ];
 
 const PROFESSIONAL_RESOURCES = [
@@ -39,21 +27,15 @@ const PROFESSIONAL_RESOURCES = [
     title: "Networking Opportunities",
     description: "Annual conferences, meetings, and events to connect with fellow FJMU alumni and build professional relationships.",
     icon: "🌐",
-    link: "/impact/events",
+    link: "/networking",
     category: "Professional Network"
   },
-  {
-    title: "New Arrival Orientation",
-    description: "Support for newly arriving physicians with practical guidance on licensing, credentialing, and settling in North America.",
-    icon: "✈️",
-    link: "#orientation",
-    category: "Transition Support"
-  },
+ 
   {
     title: "CME & Professional Development",
     description: "Continuing medical education opportunities and professional development workshops.",
     icon: "📖",
-    link: "#cme",
+    link: "/networking",
     category: "Education"
   },
   {

@@ -12,7 +12,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     slug: "umbreen-chaudhary",
     name: "Dr. Umbreen Chaudhary",
     role: "President",
-    image: "/images/president.png",
+    image: "/images/president.jpeg",
     highlight:
       "President of FJMCAANA 2025 & 2026, Class of '97. Dedicated to celebrating women in medicine and supporting the next generation of female physicians.",
     message: `Ladies of FJMCAANA,
@@ -40,7 +40,7 @@ Umbreen Chaudhary MD`,
     slug: "hina-iqbal",
     name: "Dr. Hina Iqbal",
     role: "Councilor",
-    image: "/team/Hina_Iqbal.png",
+    image: "/team/Hina_Iqbal.jpeg",
     highlight:
       "Family physician in Calgary with a background in OBGYN, women's health, and clinical and qualitative research.",
     message: `I am a family physician in Calgary with a background in OBGYN, women's health, clinical and qualitative research. I have previously worked as a research coordinator in Respirology at the university of Calgary, with CDC's TBTC Consortium and a local NGO in Calgary. I have experience working with multicultural and underserved communities through my community practice and nonprofit organizations. I greatly value health equity, education and patient centred care. I look forward to working together and contributing to our community as a Council Member.`,

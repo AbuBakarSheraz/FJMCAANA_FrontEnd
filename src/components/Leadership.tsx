@@ -30,7 +30,7 @@ export default function Leadership() {
           {/* President Image */}
           <Reveal className="relative mx-auto aspect-[4/5] w-[220px] overflow-hidden rounded-2xl border border-gold-light/70 bg-card shadow-lg sm:mx-0 sm:w-full">
            <Image
-  src="/images/president.png"
+  src="/images/president.jpeg"
   alt="Dr. Umbreen Chaudhary"
   fill
   sizes="

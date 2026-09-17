@@ -4,17 +4,8 @@
      {
       "id": "news-president-report-2026",
       "collection": "news",
-      "title": "Annual President Report 2026",
+      "title": "FJMCAANA Annual Report 2026",
       "summary": "FJMCAANA President's annual report.",
-      "featured": true,
-      "createdAt": "2022-12-31"
-    },
-    {
-      "id": "news-president-report-2022",
-      "collection": "news",
-      "title": "Annual President Report 2022",
-      "summary": "FJMCAANA President's annual report.",
-      "date": "December 31, 2022",
       "featured": true,
       "createdAt": "2022-12-31"
     },

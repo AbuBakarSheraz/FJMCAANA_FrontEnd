@@ -49,4 +49,52 @@ body {
   transition: width 1.2s ease;
 }
 
+
+
+.document-content p {
+  margin-bottom: 1.25rem;
+}
+
+.document-content p:last-child {
+  margin-bottom: 0;
+}
+
+.document-content ol {
+  margin: 1rem 0 0;
+  padding-left: 1.5rem;
+  list-style-type: decimal;
+}
+
+.document-content ul {
+  margin: 1rem 0 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.document-content li {
+  margin-bottom: 0.75rem;
+  padding-left: 0.35rem;
+}
+
+.document-content li:last-child {
+  margin-bottom: 0;
+}
+
+.document-content ol[type="a"] {
+  list-style-type: lower-alpha;
+}
+
+.document-content h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-pine-dark);
+}
+
+.document-content strong {
+  font-weight: 700;
+  color: var(--color-pine-dark);
+}
 /* Admin block unchanged — kept below for brevity in real file */

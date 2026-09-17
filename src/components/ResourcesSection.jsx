@@ -2,48 +2,32 @@ import Link from "next/link";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const RESOURCE_HIGHLIGHTS = [
-  {
-    icon: "🎓",
-    title: "Scholarship Program",
-    description:
-      "Annual scholarships for deserving FJMU students to support their medical education.",
-    category: "Financial Aid",
-  },
+ 
   {
     icon: "💰",
     title: "Interest-Free Loans",
     description:
       "Shariah-compliant financial assistance for tuition, board exams, and educational expenses.",
     category: "Financial Aid",
+    link: "/loans",
   },
-  {
+   {
     icon: "🤝",
-    title: "Mentorship Program",
+    title: "Support for US & Canada Residency",
     description:
-      "Connect with experienced FJMU alumni practicing in North America for guidance and career advice.",
+      "Connect with experienced FJMU alumni practicing in North America about Resources and guidance for USMLE examinatios.",
     category: "Career Development",
-  },
-  {
-    icon: "📚",
-    title: "Board Exam Preparation",
-    description:
-      "Resources and guidance for USMLE, PLAB, and other international medical board examinations.",
-    category: "Academic Support",
-  },
+    link: "/help"
+  }, 
   {
     icon: "🌐",
-    title: "Professional Networking",
+    title: "Connect with FJMCAANA Community",
     description:
       "Connect with fellow FJMU alumni through conferences, meetings, and professional events.",
     category: "Professional Network",
+    link: "/networking"
   },
-  {
-    icon: "✈️",
-    title: "New Arrival Orientation",
-    description:
-      "Practical guidance on licensing, credentialing, and settling in North America.",
-    category: "Transition Support",
-  },
+ 
 ];
 
 function ResourceIcon({ icon }) {
@@ -103,7 +87,7 @@ function ResourceCard({ resource }) {
         </p>
 
         <Link
-              href="/help"
+              href={resource.link}
               className="mt-5 inline-flex items-center gap-2 font-accent text-xs font-semibold uppercase tracking-[0.12em] text-pine">
           Explore resource
           <ArrowIcon />

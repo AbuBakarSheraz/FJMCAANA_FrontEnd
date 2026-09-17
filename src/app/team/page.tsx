@@ -11,7 +11,13 @@ export const metadata: Metadata = {
   description: "Meet the council and executive team of FJMCAANA.",
 };
 
+ const coucilors = TEAM_MEMBERS.filter(
+    (member) =>
+            member.role.toLowerCase().includes("executive") 
+  );
+
 export default function TeamPage() {
+  
   return (
     <>
       <Navbar />
@@ -23,7 +29,7 @@ export default function TeamPage() {
 />
 
       <main className="max-w-7xl mx-auto px-8 sm:px-2 py-16 flex flex-col gap-16">
-        {TEAM_MEMBERS.map((member, i) => {
+        {coucilors.map((member, i) => {
           const imageFirst = i % 2 === 0;
           return (
             <Reveal

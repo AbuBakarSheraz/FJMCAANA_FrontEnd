@@ -12,7 +12,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     slug: "umbreen-chaudhary",
     name: "Umbreen Chaudhary, MD",
     role: "President",
-    image: "/images/president.png",
+    image: "/images/president.jpeg",
     highlight:
       "Founder of Rejuvenation MD and Vein Center, with a passion for philanthropy, mentorship, and empowering young women to pursue meaningful careers.",
     message: `Graduated from Fatima Jinnah Medical University Lahore, Pakistan- 1997 Internal Medicine and Aesthetics
@@ -58,7 +58,7 @@ Dr. Anwar is a Fellow of the Faculty of Pharmaceutical Medicine (FFPM), Royal Co
   {
     slug: "amnah-andrabi",
     name: "Dr. Amnah Andrabi",
-    role: "Councilor",
+    role: "Executive Council Member-at-Large",
     image: "/team/Amnah_Andrabi.jpeg",
     highlight:
       "Assistant Professor of Internal Medicine at the University of North Texas Health Science Center, practicing inpatient medicine at Medical City Arlington.",
@@ -67,8 +67,8 @@ Dr. Anwar is a Fellow of the Faculty of Pharmaceutical Medicine (FFPM), Royal Co
   {
     slug: "hina-iqbal",
     name: "Dr. Hina Iqbal",
-    role: "Councilor",
-    image: "/team/Hina_Iqbal.png",
+    role: "Executive Council Member-at-Large",
+    image: "/team/Hina_Iqbal.jpeg",
     highlight:
       "Family physician in Calgary with a background in OBGYN, women's health, and clinical and qualitative research.",
     message: `I am a family physician in Calgary with a background in OBGYN, women's health, clinical and qualitative research. I have previously worked as a research coordinator in Respirology at the university of Calgary, with CDC's TBTC Consortium and a local NGO in Calgary. I have experience working with multicultural and underserved communities through my community practice and nonprofit organizations. I greatly value health equity, education and patient centred care. I look forward to working together and contributing to our community as a Council Member.`,
@@ -76,7 +76,7 @@ Dr. Anwar is a Fellow of the Faculty of Pharmaceutical Medicine (FFPM), Royal Co
   {
     slug: "sahrish-mahmood",
     name: "Dr. Sahrish Mahmood",
-    role: "Councilor",
+    role: "Executive Council Member-at-Large",
     image: "/team/Sehrish_Mehmood.png",
     highlight:
       "2011 graduate of FJMC, currently living in Virginia and working in peer review and utilization review.",
@@ -86,7 +86,5 @@ In the United States, she has built expertise in Utilization and Peer Review, su
 Her dedication to community service, volunteerism, and leadership has earned her multiple awards and honors. She continues to advocate for culturally responsive healthcare and empower underserved communities through education, outreach, and meaningful engagement.
 
 Inspired by the values of FJMU, Dr. Mahmood believes that true leadership is about serving others, creating connections, and making a lasting difference.`  },
-  
-  
- 
+
 ];

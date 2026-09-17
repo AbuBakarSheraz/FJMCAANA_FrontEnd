@@ -216,19 +216,22 @@ export const HEALTH_CHANNEL_VIDEOS = [
 
 
 export const ALUMNI_PRESIDENTS = [
-  {"name": "Anjum Sadiq, MD", "year": "President 2000", image: "/past presidents/anjum.png"}, 
+    {"name": "Dr. Azra Khan", "year": "President 2025", image: "/past presidents/azra_khan.jpeg"}, 
+         {"name": "Shagufta Jabeen, MD", "year": "President 2017-2018", image: "/past presidents/shagufta.png"}, 
+    {"name": "Samina Hijab", "year": "President 2015-2016", image: "/past presidents/samina.png"},
+      {"name": "Tabassum Saeed, MD", "year": "President 2013-2014", image: "/past presidents/tabassum.png"},
+
   {"name": "Rubina Inayat, MD", "year": "President 2006" , image: "/past presidents/rubina.png"}, 
   {"name": "Shaheen Mian, MD", "year": "President 2008" , image: "/past presidents/shaheen.png"}, 
   {"name": "Sarwat Uzma Iqbal, MD", "year": "President 2009", image: "/past presidents/sarwat.png"},
    {"name": "Nosheen Mazhar, MD", "year": "President 2011" , image: "/past presidents/nausheen.png"}, 
    {"name": "Farhat Osman, MD", "year": "President 2012", image: "/past presidents/farhat.png"},
-    {"name": "Samina Hijab", "year": "President 2015-2016", image: "/past presidents/samina.png"},
-     {"name": "Shagufta Jabeen, MD", "year": "President 2017-2018", image: "/past presidents/shagufta.png"}, 
      {"name": "Fizza Rafiq", "year": "President 2021-2022", image: "/past presidents/fizza.png"}, 
      {"name": "Nighat Mehdi, MD", "year": "President 2017-2018", image: "/past presidents/nighat.png"},
-      {"name": "Tabassum Saeed, MD", "year": "President 2013-2014", image: "/past presidents/tabassum.png"},
        {"name": "Manzar Shafi, MD", "year": "President 2010", image: "/past presidents/manzar.png"}, 
       {"name": "Naheed Chaudry, MD", "year": "President 2007", image: "/past presidents/naheed.png"},
+        {"name": "Anjum Sadiq, MD", "year": "President 2000", image: "/past presidents/anjum.png"}, 
+
       ] as const;
 
 export function getContentPage(path: string[]) {

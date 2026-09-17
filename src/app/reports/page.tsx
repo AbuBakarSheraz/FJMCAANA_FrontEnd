@@ -14,7 +14,7 @@ const ANNUAL_REPORTS = [
     title: "FJMCAANA Annual Report 2026",
     description: "Comprehensive overview of projects, financial stewardship, and community impact for fiscal year 2026.",
     pdfUrl: "/reports/FJMCAANA_2026_End_of_Year_Report_FINAL_WITH_APPNA_NOMINATION.pdf",
-    highlights: ["$21,000 for Cornea Transplants", "$16,200 Scholarships Awarded", "$26,800 Autism Center"],
+    highlights: [],
   },
   {
     year: "2022",
@@ -22,7 +22,7 @@ const ANNUAL_REPORTS = [
     description: "Comprehensive overview of projects, financial stewardship, and community impact for fiscal year 2022.",
     pdfUrl: "/reports/fjmcaana-annual-report-2022.pdf",
     date: "December 31, 2022",
-    highlights: ["60+ Cornea Transplants", "15 Scholarships Awarded", "29 Houses Built"],
+    highlights: [],
   },
  
 ];
@@ -46,14 +46,9 @@ const IMPACT_AREAS = [
   },
   {
     title: "Interest-Free Loans",
-    description: "Student loans, board exam support, financial aid",
+    description: "Student loans, financial aid",
     icon: <path d="M12 3v18M8 7h6.5a2.5 2.5 0 0 1 0 5H9.5a2.5 2.5 0 0 0 0 5H16" />,
   },
-];
-
-const SECTIONS = [
-  { id: "annual", label: "Annual Reports" },
-  { id: "impact", label: "Where Funds Go" },
 ];
 
 function DocIcon({ className = "h-6 w-6" }: { className?: string }) {
@@ -75,21 +70,7 @@ export default function ReportsPage() {
       />
 
       {/* In-page nav */}
-      <div className="sticky top-[57px] z-30 border-y border-pine/10 bg-cream/95 backdrop-blur sm:top-[65px]">
-        <div className="mx-auto flex max-w-7xl gap-6 overflow-x-auto px-8 sm:px-2 py-3.5">
-          {SECTIONS.map((s) => (
-            <a
-              key={s.id}
-              href={`#${s.id}`}
-              className="whitespace-nowrap font-accent text-[11px] font-semibold uppercase tracking-[0.1em] text-ink-soft transition hover:text-pine-dark"
-            >
-              {s.label}
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <div className="bg-cream">
+     <div className="bg-cream">
         {/* Overview */}
         <section className="mx-auto max-w-7xl px-8 sm:px-2 py-8">
           <Reveal className="flex items-start gap-5 rounded-2xl border border-pine/10 bg-white p-8 md:p-12">
@@ -218,15 +199,9 @@ export default function ReportsPage() {
                 href="mailto:team@fjmcaana.org?subject=Financial%20Report%20Inquiry"
                 className="rounded-full bg-gold px-8 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine-dark transition hover:bg-gold-light"
               >
-                Contact the Financial Team
+                Email Us
               </a>
-              <Link
-                href="/contact"
-                className="rounded-full border border-white/40 px-8 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-white transition hover:bg-white/10"
-              >
-                General Contact
-              </Link>
-            </div>
+                         </div>
           </Reveal>
         </section>
       </div>

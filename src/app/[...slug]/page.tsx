@@ -142,7 +142,7 @@ if (key === "get-involved/lifetime-members") {
           <div className="mx-auto w-full max-w-md">
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-sage/20">
               <Image
-                src="/images/president.png"
+                src="/images/president.jpeg"
                 alt="Dr. Umbreen Chaudhary, President FJMCAANA"
                 fill
                 priority

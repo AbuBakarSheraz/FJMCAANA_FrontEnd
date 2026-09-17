@@ -13,7 +13,7 @@ public/
 │
 ├── team/                           # Team member photos
 │   ├── Amnah_Andrabi.png
-│   ├── Hina_Iqbal.png
+│   ├── Hina_Iqbal.jpeg
 │   ├── Sehrish_Mehmood.png
 │   ├── Naghmna_Bajwa.png
 │   ├── Fauzia_Anwar.png

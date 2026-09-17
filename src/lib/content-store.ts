@@ -24,7 +24,6 @@ const filePath = path.join(process.cwd(), "data", "site-content.json");
 
 const seed: ContentRecord[] = [
   { id: "news-annual-projects-2022", collection: "news", title: "Annual Projects/Activities Video Highlights 2022", summary: "Annual projects and activities video highlights.", date: "December 31, 2022", featured: true, createdAt: "2022-12-31" },
-  { id: "news-president-report-2022", collection: "news", title: "Annual President Report 2022", summary: "FJMCAANA President's annual report.", date: "December 31, 2022", featured: true, createdAt: "2022-12-31" },
   { id: "news-annual-report-2022", collection: "news", title: "FJMCAANA Annual Report 2022", summary: "FJMCAANA annual report.", date: "December 31, 2022", featured: true, createdAt: "2022-12-31" },
   { id: "project-cornea", collection: "projects", title: "Cornea Transplants", summary: "Providing 60 cornea transplants annually at Sir Ganga Ram Hospital, with each transplant costing $350. Our annual fundraising goal is $21,000.", featured: true, createdAt: "2022-01-01" },
   { id: "project-flood-relief", collection: "projects", title: "Kashani Basti Flood Relief", summary: "Supporting the flood-affected Kashani Basti through home reconstruction, clean water, school rehabilitation, Ramadan food hampers, and support for local businesses.", featured: true, createdAt: "2022-01-01" },

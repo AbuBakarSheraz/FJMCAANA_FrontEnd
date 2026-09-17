@@ -8,8 +8,7 @@ export default function LeadersSection() {
     (member) =>
       member.role.toLowerCase().includes("president") ||
       member.role.toLowerCase().includes("treasurer") ||
-      member.role.toLowerCase().includes("secretary") ||
-      member.role.toLowerCase().includes("executive"),
+      member.role.toLowerCase().includes("secretary") 
   );
 
   return (
@@ -18,7 +17,7 @@ export default function LeadersSection() {
         <Reveal>
           <span className="font-accent text-xs font-semibold uppercase tracking-[0.18em] text-pine-dark">Leadership</span>
           <h2 className="mt-2 font-display text-3xl font-extrabold text-pine-dark sm:text-4xl">The Executive Committee</h2>
-          <p className="mt-4 max-w-2xl text-lg text-ink-soft">Distinguished physicians guiding our mission of service, education, and healthcare transformation.</p>
+          <p className="mt-4 max-w-2xl text-lg text-ink-soft">The leadership team advancing FJMCAANA’s mission of service, education, and connection.</p>
         </Reveal>
 
         <Stagger className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -29,13 +28,21 @@ export default function LeadersSection() {
               className="group relative overflow-hidden rounded-2xl border border-pine/10 bg-white shadow-sm transition-all duration-500 hover:-translate-y-0.5 hover:shadow-lg"
             >
              <div className="relative aspect-[4/3] overflow-hidden bg-sage/70 p-3 sm:aspect-square sm:p-4">
+                       <Reveal className="relative mx-auto aspect-[4/5] w-[220px] overflow-hidden rounded-2xl border border-gold-light/70 bg-card shadow-lg sm:mx-0 sm:w-full">
+
   <Image
     src={leader.image}
     alt={leader.name}
-    fill
-    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-    className="object-contain transition-transform duration-700 ease-out group-hover:scale-[1.025]"
-  />
+     fill
+  sizes="
+    (max-width: 640px) 220px,
+    (max-width: 1024px) 260px,
+    (max-width: 1280px) 320px,
+    360px
+  "
+  className="object-cover"/>
+            </Reveal>
+
   <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-pine-dark/10 to-transparent" />
 </div>
               <div className="p-6">

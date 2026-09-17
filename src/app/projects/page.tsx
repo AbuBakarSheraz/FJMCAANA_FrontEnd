@@ -105,8 +105,7 @@ export default function ProjectsPage() {
             </h2>
           </div>
           <p className="mb-12 max-w-3xl text-lg text-ink-soft">
-            These cornerstone initiatives run year after year, providing consistent support and measurable impact to communities in Pakistan.
-          </p>
+Explore each year below to discover the funds raised and the projects supported through FJMCAANA’s annual initiatives.          </p>
           </Reveal>
 
          <Stagger className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

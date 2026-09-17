@@ -16,7 +16,7 @@ const DEFAULT_CAUSES: Cause[] = [
     collection: "projects",
     title: "Cornea Transplants",
     summary:
-      "Providing 60 cornea transplants annually at Sir Ganga Ram Hospital, with each transplant costing $350. Our annual fundraising goal is $21,000.",
+      "Launched in 2022 with the generous support of Dr. Fawad Zafar and his family’s foundation, this initiative provides 60 cornea transplants annually at Sir Ganga Ram Hospital. Each transplant costs $350, with an annual fundraising goal of $21,000.  The cornea transplants are free to cost for SGRH patients. ",
     featured: true,
     createdAt: "2022-01-01",
     link: "/gallery/cornea_transplant",
@@ -49,7 +49,7 @@ const DEFAULT_CAUSES: Cause[] = [
       "Supporting the flood-affected Kashani Basti through home reconstruction, clean water, school rehabilitation, Ramadan food hampers, and support for local businesses.",
     featured: true,
     createdAt: "2022-01-01",
-    link: "/projects",
+    link: "/kashani_basti",
   },
   {
     id: "project-scholarship",
