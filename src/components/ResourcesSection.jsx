@@ -9,7 +9,7 @@ const RESOURCE_HIGHLIGHTS = [
     description:
       "Shariah-compliant financial assistance for tuition, board exams, and educational expenses.",
     category: "Financial Aid",
-    link: "/loans",
+    link: "/loan",
   },
    {
     icon: "🤝",
