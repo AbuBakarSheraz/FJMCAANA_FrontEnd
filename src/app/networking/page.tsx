@@ -275,13 +275,12 @@ export default function NetworkingPage() {
                   </p>
 
                   <h3 className="mt-2 font-display text-2xl font-semibold text-pine-dark">
-                    Bring FJMU Alumni Together
+                    committees
                   </h3>
 
                   <p className="mt-3 text-sm leading-6 text-ink-soft">
-                    A local chapter can create a space for FJMU graduates in
-                    your state to connect, support one another, and participate
-                    in the broader FJMCAANA community.
+                   
+Connect with fellow alumni and contribute to the FJMCAANA community by joining a committee.
                   </p>
                 </div>
               </div>

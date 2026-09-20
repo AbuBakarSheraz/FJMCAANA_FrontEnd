@@ -29,7 +29,7 @@ export default function TeamPage() {
 />
 
       <main className="max-w-7xl mx-auto px-8 sm:px-2 py-16 flex flex-col gap-16">
-        {coucilors.map((member, i) => {
+        {TEAM_MEMBERS.map((member, i) => {
           const imageFirst = i % 2 === 0;
           return (
             <Reveal

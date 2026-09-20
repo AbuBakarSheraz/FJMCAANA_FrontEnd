@@ -14,6 +14,23 @@ const ANNUAL_REPORTS = [
     title: "FJMCAANA Annual Report 2026",
     description: "Comprehensive overview of projects, financial stewardship, and community impact for fiscal year 2026.",
     pdfUrl: "/reports/FJMCAANA_2026_End_of_Year_Report_FINAL_WITH_APPNA_NOMINATION.pdf",
+    date: "December 31, 2026",
+    highlights: [],
+  },
+  {
+    year: "2025",
+    title: "FJMCAANA Annual Report 2025",
+    description: "Comprehensive overview of projects, financial stewardship, and community impact for fiscal year 2025.",
+    pdfUrl: "/reports/FJMCAANA_Annual_Report_2025.pdf",
+    date: "December 31, 2025",
+    highlights: [],
+  },
+  {
+    year: "2023",
+    title: "FJMCAANA Annual Report 2023",
+    description: "Comprehensive overview of projects, financial stewardship, and community impact for fiscal year 2023.",
+    pdfUrl: "/reports/FJMCAANA_Annual_Report_2023.pdf",
+    date: "December 31, 2023",
     highlights: [],
   },
   {
@@ -24,7 +41,45 @@ const ANNUAL_REPORTS = [
     date: "December 31, 2022",
     highlights: [],
   },
+   {
+    year: "2021",
+    title: "FJMCAANA Annual Report 2021",
+    description: "Comprehensive overview of projects, financial stewardship, and community impact for fiscal year 2022.",
+    pdfUrl: "/reports/FJMCAANA_Annual_Report_2021.pdf",
+    date: "December 31, 2022",
+    highlights: [],
+  },
+  
+  
+
  
+];
+
+const TAKMIL_REPORTS = [
+   {
+    year: "2023",
+    title: "TAKMIL Annual Report 2023",
+    pdfUrl: "/reports/takmil-report-2023.pdf",
+        date: "December 31, 2023",
+
+    highlights: [],
+  },
+   {
+    year: "2022",
+    title: "TAKMIL Annual Report 2022",
+    pdfUrl: "/reports/takmil-report-2022.pdf",
+        date: "December 31, 2022",
+
+    highlights: [],
+  },
+   {
+    year: "2021",
+    title: "TAKMIL Annual Report 2021",
+    pdfUrl: "/reports/takmil-report-2021.pdf",
+        date: "December 31, 2021",
+    highlights: [],
+  },
+  
 ];
 
 
@@ -126,7 +181,55 @@ export default function ReportsPage() {
                   <DocIcon className="h-6 w-6 text-pine/30 transition-colors group-hover:text-gold" />
                 </div>
                 <h3 className="mt-4 font-display text-xl font-semibold text-pine-dark">{report.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-ink-soft">{report.description}</p>
+                <p className="mt-3 text-xs text-ink-soft/70">Published: {report.date}</p>
+                {report.highlights.length > 0 && (
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {report.highlights.map((h, i) => (
+                      <span key={i} className="rounded-full bg-sage px-3 py-1 font-accent text-xs font-semibold uppercase tracking-[0.1em] text-pine-dark">
+                        {h}
+                      </span>
+                    ))}
+                  </div>
+                )}
+                <a
+                  href={report.pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center gap-2 rounded-full bg-pine px-6 py-3 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-white transition hover:bg-pine-dark"
+                >
+                  <DocIcon className="h-4 w-4" />
+                  Download PDF
+                </a>
+              </StaggerItem>
+            ))}
+          </Stagger>
+        </section>
+
+         <section id="annual" className="mx-auto max-w-7xl scroll-mt-32 px-8 sm:px-2 py-8">
+          <Reveal>
+          <div className="mb-8 flex items-center gap-3">
+            <div className="h-px w-10 bg-gold" />
+            <h2 className="font-display text-3xl font-semibold text-pine-dark">TAKMIL Reports</h2>
+          </div>
+          <p className="mb-12 max-w-3xl text-lg text-ink-soft">
+            Yearly reports documenting our organizational activities, financial stewardship, and community impact.
+          </p>
+          </Reveal>
+
+          <Stagger className="grid gap-6 lg:grid-cols-2">
+            {TAKMIL_REPORTS.map((report, index) => (
+              <StaggerItem
+                key={index}
+                interactive
+                className="group relative overflow-hidden rounded-xl border border-pine/10 bg-white p-8 transition-all duration-300 hover:shadow-lg hover:border-gold/40"
+              >
+                <div className="flex items-start justify-between">
+                  <span className="rounded-full bg-gold/15 px-4 py-1 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine-dark">
+                    {report.year}
+                  </span>
+                  <DocIcon className="h-6 w-6 text-pine/30 transition-colors group-hover:text-gold" />
+                </div>
+                <h3 className="mt-4 font-display text-xl font-semibold text-pine-dark">{report.title}</h3>
                 <p className="mt-3 text-xs text-ink-soft/70">Published: {report.date}</p>
                 {report.highlights.length > 0 && (
                   <div className="mt-4 flex flex-wrap gap-2">

@@ -28,13 +28,20 @@ const ABOUT_CARDS = [
   },
   {
     number: "04",
+    title: "Board of Trustees",
+    description:
+      "The FJMCAANA Board of Trustees (BOT) is composed of former Presidents of the FJMCAANA whose leadership and service have helped shape the organization over the years.",
+    href: "/bot",
+  },
+  {
+    number: "05",
     title: "Constitution & Bylaws",
     description:
       "Explore the governing principles, structure, membership, and responsibilities of the association.",
     href: "/about/constitution-bylaws",
   },
   {
-    number: "05",
+    number: "06",
     title: "Alumni Presidents",
     description:
       "Recognize the alumni leaders who have helped guide FJMCAANA throughout its history.",
@@ -341,7 +348,7 @@ export default function AboutPage() {
                 </span>
 
                 <h2 className="mt-2 font-display text-3xl font-semibold leading-tight text-pine-dark sm:text-4xl">
-                  Rooted in Fatima Jinnah, connected across North America
+                  Rooted in FJMU, connected across North America
                 </h2>
               </div>
 

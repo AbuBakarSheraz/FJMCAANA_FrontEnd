@@ -61,15 +61,6 @@ export default function LeadersSection() {
             </StaggerItem>
           ))}
         </Stagger>
-
-        <div className="mt-8 text-center">
-          <Link
-            href="/team"
-            className="inline-block rounded-full border-2 border-pine px-8 py-2 font-accent text-sm font-semibold uppercase tracking-[0.1em] text-pine transition-all hover:bg-pine hover:text-white"
-          >
-            Meet Our Full Team
-          </Link>
-        </div>
       </div>
     </section>
   );

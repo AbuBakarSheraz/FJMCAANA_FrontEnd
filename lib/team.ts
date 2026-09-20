@@ -85,7 +85,7 @@ Dr. Anwar is a Fellow of the Faculty of Pharmaceutical Medicine (FFPM), Royal Co
   {
     slug: "azra-khan",
     name: "Dr. Azra Khan",
-    role: "Past President 2025",
+    role: "Past President 2024",
     image: "/team/Azra_Khan.png",
     highlight:
       "MBBS, FJMU Lahore 1984 — anesthesiologist in South Florida and a longtime advocate for medical education across borders.",

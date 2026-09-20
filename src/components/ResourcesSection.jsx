@@ -7,7 +7,7 @@ const RESOURCE_HIGHLIGHTS = [
     icon: "💰",
     title: "Interest-Free Loans",
     description:
-      "Shariah-compliant financial assistance for tuition, board exams, and educational expenses.",
+      "FJMCAAA provides interest free loans  to qualified FJMU candidates  for post graduate residency training in the US",
     category: "Financial Aid",
     link: "/loan",
   },
@@ -25,7 +25,7 @@ const RESOURCE_HIGHLIGHTS = [
     description:
       "Connect with fellow FJMU alumni through conferences, meetings, and professional events.",
     category: "Professional Network",
-    link: "/networking"
+    link: "/connect",
   },
  
 ];

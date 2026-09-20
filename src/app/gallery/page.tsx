@@ -13,6 +13,14 @@ export const metadata = {
 
 const galleryYears = [
   {
+    title: "Fjmcaana summer alumni dinner 2026",
+    year: "2026",
+    subtitle: "Summer Alumni Dinner",
+    description:
+      "Memories from the FJMCAANA Summer Alumni Dinner in 2026.",
+    link: "/gallery/fjmcaana-summer-alumni-dinner-2026",
+  },
+  {
     title: "FJMCAANA at FJMU",
     year: "2025",
     subtitle: "December 2025",
@@ -27,6 +35,22 @@ const galleryYears = [
     description:
       "Memories from the FJMCAANA APPNA Board of Directors victory lunch in 2025.",
     link: "/gallery/FJMCAANA-Appna-BOD-victory-lunch-2025",
+  },
+  {
+    title: "Fjmcaana annual dinner 2024 at Appna",
+    year: "2024",
+    subtitle: "Annual Dinner",
+    description:
+      "Memories from the FJMCAANA Appna annual dinner in 2024.",
+    link: "/gallery/fjmcaana_annual_dinner_2024_at_appna",
+  },
+  {
+    title: "Appna annual dinner 2023",
+    year: "2023",
+    subtitle: "Annual Dinner",
+    description:
+      "Memories from the FJMCAANA Appna annual dinner in 2023.",
+    link: "/gallery/appna_annual_dinner_2023",
   },
   {
     title: "FJMCAANA Summer Convention",

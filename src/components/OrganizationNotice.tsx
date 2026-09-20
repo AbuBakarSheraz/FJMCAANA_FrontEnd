@@ -19,7 +19,7 @@ export default function OrganizationNotice() {
           {/* CTA */}
           <div className="shrink-0">
             <Link
-              href="/constitution-bylaws"
+              href="/about/constitution-bylaws"
               className="group inline-flex items-center justify-center gap-3 rounded-sm bg-gold px-7 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-pine-dark transition-all duration-300 hover:bg-gold-light hover:shadow-lg"
             >
               Constitution &amp; Bylaws

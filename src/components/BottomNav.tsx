@@ -23,7 +23,7 @@ const TABS = [
   null, // reserved for the raised Donate button
   {
     href: "/projects",
-    label: "Projects",
+    label: "Donations & Projects",
     icon: (
       <>
         <circle cx="12" cy="12" r="8" />
@@ -53,7 +53,7 @@ const TABS = [
 const MORE_LINKS = [
   { href: "/about", label: "About" },
   { href: "/team", label: "Our Team" },
-  { href: "/projects", label: "Projects" },
+  { href: "/projects", label: "Donations & Projects" },
   { href: "/events", label: "Events" },
   { href: "/gallery", label: "Gallery" },
   { href: "/reports", label: "Reports & Financials" },

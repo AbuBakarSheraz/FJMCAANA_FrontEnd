@@ -9,6 +9,7 @@ import NewsSection from "@/components/NewsSection";
 import Footer from "@/components/Footer";
 import { getRecords } from "@/lib/content-store";
 import OrganizationNotice from "@/components/OrganizationNotice";
+import Announcement from "@/components/Announcement";
 
 export const dynamic = "force-dynamic";
 
@@ -17,6 +18,7 @@ export default async function HomePage() {
   return (
     <>
       <Navbar />
+      <Announcement />
       <Hero />
       <OrganizationNotice />
       <Leadership />
