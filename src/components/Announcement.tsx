@@ -187,7 +187,7 @@ export default function Announcement() {
               }}
             >
               <a
-                href="https://book.passkey.com/event/51257498/owner/1322/home"
+                href="https://appna.org"
                 rel="noopener noreferrer"
                 onClick={handleClose}
                 className="flex items-center justify-center w-full rounded-xl text-white font-semibold text-sm py-3 px-6 transition-all duration-200 hover:opacity-90 active:scale-95"
