@@ -205,7 +205,7 @@ export default function ReportsPage() {
           </Stagger>
         </section>
 
-         <section id="annual" className="mx-auto max-w-7xl scroll-mt-32 px-8 sm:px-2 py-8">
+         <section id="takmil" className="mx-auto max-w-7xl scroll-mt-32 px-8 sm:px-2 py-8">
           <Reveal>
           <div className="mb-8 flex items-center gap-3">
             <div className="h-px w-10 bg-gold" />
