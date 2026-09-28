@@ -27,7 +27,7 @@ export const MEMBERSHIP_TIERS: MembershipTier[] = [
     slug: "annual",
     name: "Annual FJMCAANA Membership",
     price: "$50",
-    priceNote: "Valid until August 24, 2027",
+    priceNote: "Valid January - December",
     benefits: [
       "Voting rights in all elections",
       "Supports meeting and office expenses",
@@ -50,7 +50,7 @@ export const MEMBERSHIP_TIERS: MembershipTier[] = [
     slug: "resident",
     name: "Resident/Fellow Membership",
     price: "Free",
-    priceNote: "Valid until August 24, 2027",
+    priceNote: "Valid January - December",
     benefits: [
       "Open to current residents and fellows",
       "Full community access while training",

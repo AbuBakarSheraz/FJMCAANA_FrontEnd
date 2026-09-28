@@ -24,9 +24,12 @@ I am originally from the USA and moved to Pakistan for my medical education at F
     name: "Sumra Rathore, MD, MPH",
     role: "Secretary",
     image: "/team/Sumra_Rathore.jpeg",
-    highlight:
-      "Board-certified pathologist and Medical Director of Sonic Health Laboratory, the third largest commercial referral laboratory in the United States.",
-    message: `Sumra Rathore, MD, MPH, class of 1987 is board-certified pathologist. She is the Medical Director of Sonic Health Laboratory, third largest commercial referral laboratory in the United States. She served as treasurer of FJ alumni a decade ago and is excited to serve in the same capacity with a much-renewed interest. She is an avid animal lover and loves nature and the outdoors. Her husband is a physician, her elder son and his wife work for the US government, and her younger son is a third-year resident.`,
+    highlight: "Board-certified pathologist and Medical Director of a pathology laboratory at a leading Southeastern Georgia healthcare system.",
+    message: `Dr. Rathore is a board-certified pathologist and physician leader who serves as Medical Director of a Pathology Laboratory  at a leading Southeastern Georgia Healthcare system. Her career reflects a commitment to clinical excellence, leadership, service, and mentorship.
+
+A proud graduate of Fatima Jinnah Medical College, Class of 1987, Dr. Rathore has previously served the FJ Medical College Alumni Association of North America  (FJMCAANA) as Treasurer and currently serves as Secretary of FJMCAANA. She is passionate about mentoring physicians and believes alumni should guide the next generation while upholding FJMU values of excellence, compassion, integrity, and service.
+
+Her vision is to foster a connected, inclusive, and active global alumni community that shares expertise, supports one another, and advances medical education. Outside medicine and alumni service, she enjoys animals, nature, travel, and the outdoors. She is married to pediatrician Mobeen Rathore, is the mother of two sons, and a new grandmother. Through her leadership and dedication, she seeks to honor FJMU’s legacy and strengthen its future.`,
   },
   {
     slug: "naghmna-bajwa",

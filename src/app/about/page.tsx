@@ -42,7 +42,7 @@ const ABOUT_CARDS = [
   },
   {
     number: "06",
-    title: "Alumni Presidents",
+    title: "Past FJMCAANA Presidents",
     description:
       "Recognize the alumni leaders who have helped guide FJMCAANA throughout its history.",
     href: "/about/alumni-presidents",

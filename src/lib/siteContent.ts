@@ -58,7 +58,7 @@ export const CONTENT_PAGES: ContentPage[] = [
         { title: "Executive Committee", detail: "Meet the current council and executive leadership.", href: "/about/executive-committee" },
         { title: "Constitution and Bylaws", detail: "Constitution, bylaws, and annual reporting.", href: "/about/constitution-bylaws" },
         // { title: "Lifetime Members", detail: "Constitution, bylaws, and annual reporting.", href: "/about/constitution-bylaws" },
-        { title: "Alumni Presidents", detail: "Meet with our previous leaders", href: "/about/alumni-presidents" },
+        { title: "Past FJMCAANA Presidents", detail: "Meet with our previous leaders", href: "/about/alumni-presidents" },
       ] },
     ],
   },
@@ -217,10 +217,11 @@ export const HEALTH_CHANNEL_VIDEOS = [
 
 export const ALUMNI_PRESIDENTS = [
     {"name": "Dr. Azra Khan", "year": "President 2025", image: "/past presidents/azra_khan.jpeg"}, 
-         {"name": "Shagufta Jabeen, MD", "year": "President 2017-2018", image: "/past presidents/shagufta.png"}, 
-    {"name": "Samina Hijab", "year": "President 2015-2016", image: "/past presidents/samina.png"},
-      {"name": "Tabassum Saeed, MD", "year": "President 2013-2014", image: "/past presidents/tabassum.png"},
+    {"name": "Dr.Amna Buttar", "year": "President 2019", image: "/past presidents/Dr.Amna_Buttar.jpeg"}, 
 
+    {"name": "Shagufta Jabeen, MD", "year": "President 2017-2018", image: "/past presidents/shagufta.png"}, 
+    {"name": "Samina Hijab", "year": "President 2015-2016", image: "/past presidents/samina.png"},
+    {"name": "Tabassum Saeed, MD", "year": "President 2013-2014", image: "/past presidents/tabassum.png"},
   {"name": "Rubina Inayat, MD", "year": "President 2006" , image: "/past presidents/rubina.png"}, 
   {"name": "Shaheen Mian, MD", "year": "President 2008" , image: "/past presidents/shaheen.png"}, 
   {"name": "Sarwat Uzma Iqbal, MD", "year": "President 2009", image: "/past presidents/sarwat.png"},

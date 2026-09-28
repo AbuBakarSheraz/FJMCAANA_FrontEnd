@@ -58,7 +58,7 @@ export const CONTENT_PAGES: ContentPage[] = [
         { title: "Executive Committee", detail: "Meet the current council and executive leadership.", href: "/about/executive-committee" },
         { title: "Constitution and Bylaws", detail: "Constitution, bylaws, and annual reporting.", href: "/about/constitution-bylaws" },
         // { title: "Lifetime Members", detail: "Constitution, bylaws, and annual reporting.", href: "/about/constitution-bylaws" },
-        { title: "Alumni Presidents", detail: "Meet with our previous leaders", href: "/about/alumni-presidents" },
+        { title: "Past FJMCAANA Presidents", detail: "Meet with our previous leaders", href: "/about/alumni-presidents" },
       ] },
     ],
   },

@@ -36,7 +36,7 @@ const DEFAULT_CAUSES: Cause[] = [
     collection: "projects",
     title: "Postgraduate Loans",
     summary:
-      "your donation can help a deserving graduate of FJMU in her process of seeking residency in the US or Canada. All candidates are chosen based on strict criteria.",
+      "your donation can help a deserving graduate of FJMU in her process of seeking residency in the US. All candidates are chosen based on strict criteria.",
     featured: true,
     createdAt: "2022-01-01",
     link: "/loan",
@@ -82,11 +82,11 @@ const DEFAULT_CAUSES: Cause[] = [
     link: "/reports#takmil",
   },
     {
-    id: "Autism Center at SHRH",
+    id: "Autism Center at SGRH",
     collection: "projects",
-    title: "Autism Center at SHRH",
+    title: "Autism Center at SGRH",
     summary:
-      "Launching in 2026, the new Autism Center at SHRH will provide specialized support and services for individuals with autism and their families. The project was made possible through more than $26,000 raised by FJMCAANA, with an additional $25,000 matching contribution from APPNA, bringing the initiative to life through a shared commitment to expanding autism care and support.",
+      "Launching in 2026, the new Autism Center at SGRH will provide specialized support and services for individuals with autism and their families. The project was made possible through more than $26,000 raised by FJMCAANA, with an additional $25,000 matching contribution from APPNA, bringing the initiative to life through a shared commitment to expanding autism care and support.",
     featured: true,
     createdAt: "2022-01-01",
     link: "/autism",

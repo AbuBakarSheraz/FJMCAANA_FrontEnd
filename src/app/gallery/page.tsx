@@ -289,7 +289,7 @@ export default function GalleryPage() {
         {/* Gallery cards */}
         <section
           id="memories"
-          className="scroll-mt-32 bg-sage py-16 sm:py-20"
+          className="scroll-mt-32 bg-sage py-14 sm:py-16"
         >
           <div className="mx-auto max-w-7xl px-8 sm:px-2">
             <Reveal>
@@ -300,21 +300,15 @@ export default function GalleryPage() {
                   Explore Our Memories
                 </h2>
               </div>
-
-              <p className="mb-12 max-w-3xl text-lg text-ink-soft">
-                Browse our collection of photographs and memories from
-                important events and milestones throughout the years.
-              </p>
             </Reveal>
 
-            <Stagger className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {galleryYears.map((item) => (
-                <GalleryCard
-                  key={`${item.title}-${item.year}`}
-                  item={item}
-                />
-              ))}
-            </Stagger>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+  {galleryYears.map((item) => (
+    <Reveal key={`${item.title}-${item.year}`}>
+      <GalleryCard item={item} />
+    </Reveal>
+  ))}
+</div>
           </div>
         </section>
 
