@@ -217,7 +217,7 @@ export const HEALTH_CHANNEL_VIDEOS = [
 
 export const ALUMNI_PRESIDENTS = [
     {"name": "Dr. Azra Khan", "year": "President 2025", image: "/past presidents/azra_khan.jpeg"}, 
-    {"name": "Dr.Amna Buttar", "year": "President 2019", image: "/past presidents/Dr.Amna_Buttar.jpeg"}, 
+    {"name": "Dr.Amna Buttar", "year": "Past President", image: "/past presidents/Dr.Amna_Buttar.jpeg"}, 
 
     {"name": "Shagufta Jabeen, MD", "year": "President 2017-2018", image: "/past presidents/shagufta.png"}, 
     {"name": "Samina Hijab", "year": "President 2015-2016", image: "/past presidents/samina.png"},
