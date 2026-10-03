@@ -61,26 +61,16 @@ const DEFAULT_CAUSES: Cause[] = [
     createdAt: "2022-01-01",
     link: "/projects",
   },
-    {
-    id: "TAKMIL(Teach a Kid Make a Life)",
-    collection: "projects",
-    title: "TAKMIL (Teach a Kid Make a Life)",
-    summary:
-      "TAKMIL is a nonprofit initiative dedicated to expanding access to education for underserved children in Pakistan. FJMCAANA has supported TAKMIL’s mission through charitable contributions, helping provide educational opportunities and resources to children in communities where access to quality schooling is limited.",
-    featured: true,
-    createdAt: "2022-01-01",
-    link: "https://youtu.be/5vFTDEN-twI?si=z9w3LyLxMOeAKZwx",
-  },
   {
-    id: "TAKMIL(Teach a Kid Make a Life) Reports",
-    collection: "projects",
-    title: "TAKMIL (Teach a Kid Make a Life) Reports",
-    summary:
-      "TAKMIL is a nonprofit initiative dedicated to expanding access to education for underserved children in Pakistan. FJMCAANA has supported TAKMIL’s mission through charitable contributions, helping provide educational opportunities and resources to children in communities where access to quality schooling is limited.",
-    featured: true,
-    createdAt: "2022-01-01",
-    link: "/reports#takmil",
-  },
+  id: "TAKMIL(Teach a Kid Make a Life)",
+  collection: "projects",
+  title: "TAKMIL (Teach a Kid Make a Life)",
+  summary:
+    "TAKMIL is a nonprofit initiative dedicated to expanding access to education for underserved children in Pakistan. FJMCAANA has supported TAKMIL's mission through charitable contributions, helping provide educational opportunities and resources to children in communities where access to quality schooling is limited.",
+  featured: true,
+  createdAt: "2022-01-01",
+  link: "/takmil",
+},
     {
     id: "Autism Center at SGRH",
     collection: "projects",

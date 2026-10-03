@@ -57,6 +57,7 @@ const MORE_LINKS = [
   { href: "/events", label: "Events" },
   { href: "/gallery", label: "Gallery" },
   { href: "/reports", label: "Reports & Financials" },
+   { href: "/featured_member", label: "Featured Member" },
   { href: "/help", label: "Residency Pathways" },
   { href: "/contact", label: "Contact" },
 ];
