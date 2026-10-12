@@ -28,20 +28,7 @@ export default function Leadership() {
         >
 
           {/* President Image */}
-          <Reveal className="relative mx-auto aspect-[4/5] w-[220px] overflow-hidden rounded-2xl border border-gold-light/70 bg-card shadow-lg sm:mx-0 sm:w-full">
-           <Image
-  src="/images/president.jpeg"
-  alt="Dr. Umbreen Chaudhary"
-  fill
-  sizes="
-    (max-width: 640px) 220px,
-    (max-width: 1024px) 260px,
-    (max-width: 1280px) 320px,
-    360px
-  "
-  className="object-cover"
-/>
-          </Reveal>
+        
 
           {/* Message */}
           <Reveal className="relative pt-2 lg:pt-4">
