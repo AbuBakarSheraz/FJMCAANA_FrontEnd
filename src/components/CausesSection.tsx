@@ -36,7 +36,7 @@ const DEFAULT_CAUSES: Cause[] = [
     collection: "projects",
     title: "Postgraduate Loans",
     summary:
-      "your donation can help a deserving graduate of FJMU in her process of seeking residency in the US. All candidates are chosen based on strict criteria.",
+      "Your donation can help a deserving graduate of FJMU in her process of seeking residency in the US. All candidates are chosen based on strict criteria.",
     featured: true,
     createdAt: "2022-01-01",
     link: "/loan",

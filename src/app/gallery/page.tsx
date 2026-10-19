@@ -18,7 +18,7 @@ const galleryYears = [
     subtitle: "Summer Alumni Dinner",
     description:
       "Memories from the FJMCAANA Summer Alumni Dinner in 2026.",
-    link: "/gallery/fjmcaana-summer-alumni-dinner-2026",
+    link: "/gallery/fjmcaana_summer_alumni_dinner_2026",
   },
   {
     title: "FJMCAANA at FJMU",

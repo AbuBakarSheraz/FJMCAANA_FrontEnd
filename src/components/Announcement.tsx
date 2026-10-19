@@ -168,7 +168,7 @@ export default function Announcement() {
             =================================================== */}
             <div className="overflow-y-auto flex-1">
               <Image
-                src="/future_events/dinner.jpeg"
+                src="/future_events/gala.jpeg"
                 alt="APPNA NC Annual Banquet, Entertainment & CME"
                 width={440}
                 height={600}
