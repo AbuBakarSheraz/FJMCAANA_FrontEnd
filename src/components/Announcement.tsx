@@ -180,27 +180,7 @@ export default function Announcement() {
             {/* ===================================================
                 CTA SECTION
             =================================================== */}
-            <div
-              className="flex-shrink-0 px-5 py-4 flex flex-col gap-2"
-              style={{
-                borderTop: "1px solid #f0f0f0",
-              }}
-            >
-              <a
-                href="https://appna.org"
-                rel="noopener noreferrer"
-                onClick={handleClose}
-                className="flex items-center justify-center w-full rounded-xl text-white font-semibold text-sm py-3 px-6 transition-all duration-200 hover:opacity-90 active:scale-95"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #09521f 0%, #104324 100%)",
-                  boxShadow:
-                    "0 4px 14px rgba(7, 62, 32, 0.35)",
-                }}
-              >
-                Buy Tickets Online
-              </a>
-            </div>
+            
           </div>
         </div>
       )}
